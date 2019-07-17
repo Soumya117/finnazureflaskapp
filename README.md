@@ -46,6 +46,6 @@ I have deployed this app on my azure account.
 BROWSE:
 You can see the app link on your azure account under app services. And after shell deployment the link will be displayed on your screen as well.
 1. To retrieve the list of realstate ads on finn. Type:
-    http://<app-name>.azurewebsites.net/links
+    http://app-name.azurewebsites.net/links
 2. To retrieve the links of prices per ad. Type:
-    http://<app-name>.azurewebsites.net/price
+    http://app-name.azurewebsites.net/price
