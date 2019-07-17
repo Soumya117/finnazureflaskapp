@@ -18,11 +18,11 @@ App can be deployed locally using flask.
 1. Clone the project.
 2. Enter the project directory.
 3. Enter following commands:
-   python3 -m venv venv
-   source venv/bin/activ
-   pip install -r requirements.txt
+   python3 -m venv venv <br />
+   source venv/bin/activ <br />
+   pip install -r requirements.txt <br />
 4. Run the project by entering the following command:   
-   FLASK_APP=application.py flask run
+   FLASK_APP=application.py flask run <br />
    This will start the flask and you can browse your app on the localhost.
 
 BROWSE:
