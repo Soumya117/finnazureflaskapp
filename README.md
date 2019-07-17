@@ -13,11 +13,11 @@ Project uses json2html to convert json format to an html table representation.
 
 LOCAL
 
-DEPLOYMENT:
+DEPLOYMENT:<br />
 App can be deployed locally using flask. 
 1. Clone the project.
 2. Enter the project directory.
-3. Enter following commands:
+3. Enter following commands: <br />
    python3 -m venv venv <br />
    source venv/bin/activ <br />
    pip install -r requirements.txt <br />
@@ -25,7 +25,7 @@ App can be deployed locally using flask.
    FLASK_APP=application.py flask run <br />
    This will start the flask and you can browse your app on the localhost.
 
-BROWSE:
+BROWSE:<br />
 1. To retrieve the list of realstate ads on finn. Type:
     http://localhost:5000/links
 2. To retrieve the links of prices per ad. Type:
@@ -34,7 +34,7 @@ BROWSE:
     
 CLOUD (MICROSOFT AZURE)
 
-DEPLOYMENT:
+DEPLOYMENT:<br />
 I have deployed this app on my azure account. 
 1. Get a free azure account (or paid if you can).
 2. Enter the cloud shell.
@@ -43,7 +43,7 @@ I have deployed this app on my azure account.
    az webapp up -n <app-name>
 5. Using cloud shell, you can makes changes to the code and then deploy it back with the same command.
   
-BROWSE:
+BROWSE:<br />
 You can see the app link on your azure account under app services. And after shell deployment the link will be displayed on your screen as well.
 1. To retrieve the list of realstate ads on finn. Type:
     http://app-name.azurewebsites.net/links
