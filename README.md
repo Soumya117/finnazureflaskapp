@@ -40,7 +40,7 @@ I have deployed this app on my azure account.
 2. Enter the cloud shell.
 3. Clone the project.
 4. Enter the project directory and run the following command: 
-   az webapp up -n <app-name>
+   az webapp up -n "app-name"
 5. Using cloud shell, you can makes changes to the code and then deploy it back with the same command.
   
 BROWSE:<br />
