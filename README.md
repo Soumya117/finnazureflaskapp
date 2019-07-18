@@ -26,11 +26,19 @@ App can be deployed locally using flask.
    This will start the flask and you can browse your app on the localhost.
 
 BROWSE:<br />
-1. To retrieve the list of realstate ads on finn. Type:
-    http://localhost:5000/links
-2. To retrieve the links of prices per ad. Type:
-    http://localhost:5000/price
-    
+1. To retrieve the list of realstate ads on finn. Type: <br />
+    http://localhost:5000/links <br />
+2. To retrieve the links of prices per ad. Type: <br />
+    http://localhost:5000/price <br />
+3. To retrieve links which are scanned and inserted during particular ammount of time. <br />
+   Input format: YYYY-MM-DD (date=YYYY-MM-DD:YYYY-MM-DD) <br />
+   Case 1: Links between start time and end time: <br />
+           http://127.0.0.1:5000/links?date=2019-07-16:2019-07-18 <br />
+   Case 2: Links between start time and now: <br />
+           http://127.0.0.1:5000/links?date=2019-07-16:now <br />
+   Case 3: Default-All the links <br />
+           http://127.0.0.1:5000/links <br />
+           
     
 CLOUD (MICROSOFT AZURE)
 
