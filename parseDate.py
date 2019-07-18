@@ -4,7 +4,12 @@ def splitDate(date_str):
     split_date = ""
     try:
         split_date = date_str.split(":")
+        end_date = split_date[1]
+        if "now" in end_date:
+            end_date = datetime.datetime.now().strftime('%Y-%m-%d')
+            split_date[1] = end_date
     except:
+        print("Error while splitting...")
         split_date = "Error in format"
     return split_date
 
@@ -12,15 +17,11 @@ def validateDateFormat(date):
     #2019-07-16 check for this format easier to compare
     #{2018-01-12:2019-02-2019}
     valid = False
-    if date == '0':
+    try:
+        dateFormat = datetime.datetime.strptime(date, "%Y-%m-%d")
         valid = True
-    else:
-        #should be in correct format
-        try:
-           dateFormat = datetime.datetime.strptime(date, "%Y-%m-%d")
-           valid = True
-        except:
-            print("Invalid date")
+    except:
+        print("Invalid date")
     return valid
 
 def validate(date_str):

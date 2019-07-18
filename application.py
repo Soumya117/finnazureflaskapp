@@ -10,13 +10,17 @@ import parseDate
 @app.route('/links')
 def renderLinks():
     filterDate = request.args.get('date')
-    valid = parseDate.validate(filterDate)
-    if not "success" in valid:
-        return "Error: " + valid + "\nUsage: 2019-02-12:2019-03-11" 
-    date = parseDate.splitDate(filterDate)
-    link.filterJson(date)
-    #link.parseLink()
-    #link.linkHtml()
+
+    if not filterDate:
+        link.parseLink()
+        link.linkHtml()
+    else:
+        valid = parseDate.validate(filterDate)
+        if not "success" in valid:
+            return "Error: " + valid + "\nUsage: 2019-02-12:2019-03-11"
+        date = parseDate.splitDate(filterDate)
+        link.filterJson(date)
+
     return render_template('finn_links.html')
 
 @app.route('/price')
