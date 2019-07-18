@@ -4,8 +4,6 @@ def splitDate(date_str):
     split_date = ""
     try:
         split_date = date_str.split(":")
-        print("Start date: ", split_date[0])
-        print("End date: ", split_date[1])
     except:
         split_date = "Error in format"
     return split_date

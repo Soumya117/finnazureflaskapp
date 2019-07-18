@@ -2,6 +2,7 @@ import json
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import datetime
+import toHtml
 
 def add_link(search):
     with open('links.json') as input:
@@ -41,3 +42,9 @@ def parseLink():
            continue
        #add url to the links.json
        add_link(sample_url)
+
+def linkHtml():
+    with open ('links.json') as output:
+        data = json.load(output)
+        toHtml.html(data)
+

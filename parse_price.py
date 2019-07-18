@@ -1,6 +1,7 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import datetime
+import toHtml
 import json
 
 def add_pris(link, pris):
@@ -53,3 +54,9 @@ def parsePrice():
           uniString = str(pris)
           uniString = uniString.replace(u"\u00A0", " ")
           add_pris(url, uniString)
+
+def priceHtml():
+    with open ('pris.json') as output:
+        data = json.load(output)
+        toHtml.html(data)
+
