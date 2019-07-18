@@ -25,9 +25,18 @@ def renderLinks():
 
 @app.route('/price')
 def renderPrice():
-    link.parseLink()
-    price.parsePrice()
-    price.priceHtml()
+    filterDate = request.args.get('date')
+    if not filterDate:
+        price.parsePrice()
+        price.priceHtml()
+    else:
+        valid = parseDate.validate(filterDate)
+        if not "success" in valid:
+            return "Error: " + valid + "\nUsage: 2019-02-12:2019-03-11"
+        date = parseDate.splitDate(filterDate)
+        link.filterJson(date)
+        price.filterJson()
+
     return render_template('finn_price.html')
 
 @app.route('/date')

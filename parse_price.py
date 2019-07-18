@@ -42,8 +42,6 @@ def parsePrice():
           url = link['link']
           html = urlopen(url)
           soup = BeautifulSoup(html, 'lxml')
-          title = soup.title
-          print(title)
           rows = soup.find_all('span')
           i = 0
           for row in rows:
@@ -60,3 +58,23 @@ def priceHtml():
         data = json.load(output)
         toHtml.html(data, "finn_price")
 
+def filterJson():
+    with open('filtered_links.json') as input:
+       data = json.load(input)
+       pris_data = {}
+       for link in data['links']:
+          url = link['link']
+          with open("pris.json") as input:
+              pris = json.load(input)
+              for item in pris:
+                  if item == url:
+                      print("item found: ", item)
+                      pris_data[item]= []
+                      for prices in pris[item]:
+                          new_item = {}
+                          new_item['time'] = {}
+                          new_item['pris'] = {}
+                          new_item['time'] = prices['time']
+                          new_item['pris'] = prices['pris']
+                          pris_data[item].append(new_item)
+       toHtml.html(pris_data, "finn_price")

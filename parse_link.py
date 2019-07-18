@@ -67,4 +67,6 @@ def filterJson(date):
                new_item['time'] = item['time']
                filterData['links'].append(new_item)
     toHtml.html(filterData, "finn_links")
+    with open("filtered_links.json", "w") as output:
+        json.dump(filterData, output)
 
