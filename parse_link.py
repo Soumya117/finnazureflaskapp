@@ -46,5 +46,25 @@ def parseLink():
 def linkHtml():
     with open ('links.json') as output:
         data = json.load(output)
-        toHtml.html(data)
+        toHtml.html(data, "finn_links")
+
+def filterJson(date):
+    start_date = date[0]
+    end_date = date[1]
+    filterData = {}
+    filterData['links'] = []
+    with open ('links.json') as output:
+       data = json.load(output)
+       count = 0
+       for item in data['links']:
+           time = item['time'].split('T')
+           if start_date <= time[0] and time[0] <= end_date:
+               new_item = {}
+               new_item['link'] = {}
+               new_item['time'] = {}
+               count = count + 1
+               new_item['link'] = item['link']
+               new_item['time'] = item['time']
+               filterData['links'].append(new_item)
+    toHtml.html(filterData, "finn_links")
 

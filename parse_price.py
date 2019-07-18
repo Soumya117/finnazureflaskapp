@@ -58,5 +58,5 @@ def parsePrice():
 def priceHtml():
     with open ('pris.json') as output:
         data = json.load(output)
-        toHtml.html(data)
+        toHtml.html(data, "finn_price")
 

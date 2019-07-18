@@ -1,8 +1,9 @@
 from json2html import *
 
-def html(data):
+def html(data, html):
     f_table = json2html.convert(json = data)
-    finn_html= open("templates/finn_links.html","w")
+    path = "templates/" + html + ".html"
+    finn_html= open(path,"w")
     finn_html.write(f_table)
     finn_html.close()
  

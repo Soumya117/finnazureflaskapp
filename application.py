@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 app = Flask(__name__)
+app.config['TEMPLATES_AUTO_RELOAD'] = True
 
 import parse_link as link
 import parse_price as price
@@ -13,13 +14,9 @@ def renderLinks():
     if not "success" in valid:
         return "Error: " + valid + "\nUsage: 2019-02-12:2019-03-11" 
     date = parseDate.splitDate(filterDate)
-    start_date = date[0]
-    end_date = date[1]
-    print("Start date: ", start_date)
-    print("End date: ", end_date)
-    
-    link.parseLink()
-    link.linkHtml()
+    link.filterJson(date)
+    #link.parseLink()
+    #link.linkHtml()
     return render_template('finn_links.html')
 
 @app.route('/price')
