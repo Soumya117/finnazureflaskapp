@@ -34,11 +34,16 @@ BROWSE:<br />
    Input format: YYYY-MM-DD (date=YYYY-MM-DD:YYYY-MM-DD) <br />
    Case 1: Links between start time and end time: <br />
            http://127.0.0.1:5000/links?date=2019-07-16:2019-07-18 <br />
+           http://127.0.0.1:5000/price?date=2019-07-16:2019-07-17 <br />
    Case 2: Links between start time and now: <br />
            http://127.0.0.1:5000/links?date=2019-07-16:now <br />
+           http://127.0.0.1:5000/price?date=2019-07-16:now <br />
    Case 3: Default-All the links <br />
            http://127.0.0.1:5000/links <br />
-           
+4. To retrieve links which have multiple prices associated with them.<br />
+    http://127.0.0.1:5000/price?multiple=yes <br />
+5. To retrieve price info on the basis of finnId. <br />
+    http://127.0.0.1:5000/price?finnId=152134929 <br />
     
 CLOUD (MICROSOFT AZURE)
 
