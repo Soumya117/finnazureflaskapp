@@ -78,3 +78,33 @@ def filterJson():
                           new_item['pris'] = prices['pris']
                           pris_data[item].append(new_item)
        toHtml.html(pris_data, "finn_price")
+
+def priceWithFinnId(finnId):
+    with open('pris.json') as input:
+        data = json.load(input)
+        pris_date = {}
+        for item in data:
+            if finnId in item:
+                pris_date[item] = []
+                for prices in data[item]:
+                    new_item = {}
+                    new_item['pris'] = prices['pris']
+                    new_item['time'] = prices['time']
+                    pris_date[item].append(new_item)
+    toHtml.html(pris_date, "finn_price")
+
+def multiplePriceLinks():
+    with open ('pris_date.json') as output:
+        data = json.load(output)
+        pris_data = {}
+        for item in data:
+            item_list = data[item]
+            if len(item_list) > 1:
+                pris_data[item] = []
+                for pris in data[item]:
+                    new_item = {}
+                    new_item['pris'] = pris['pris']
+                    new_item['time'] = pris['time']
+                    pris_data[item].append(new_item)
+
+    toHtml.html(pris_data, "finn_price")

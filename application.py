@@ -26,16 +26,26 @@ def renderLinks():
 @app.route('/price')
 def renderPrice():
     filterDate = request.args.get('date')
-    if not filterDate:
-        price.parsePrice()
-        price.priceHtml()
-    else:
+    finnId = request.args.get('finnId')
+    multiplePrice = request.args.get('multiple')
+
+    if multiplePrice:
+        price.multiplePriceLinks()
+
+    if finnId:
+        price.priceWithFinnId(finnId)
+
+    if filterDate:
         valid = parseDate.validate(filterDate)
         if not "success" in valid:
             return "Error: " + valid + "\nUsage: 2019-02-12:2019-03-11"
         date = parseDate.splitDate(filterDate)
         link.filterJson(date)
         price.filterJson()
+
+    if not filterDate and not finnId and not multiplePrice:
+        price.parsePrice()
+        price.priceHtml()
 
     return render_template('finn_price.html')
 
