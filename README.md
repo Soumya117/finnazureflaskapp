@@ -40,7 +40,10 @@ BROWSE:<br />
            http://127.0.0.1:5000/price?date=2019-07-16:now <br />
    Case 3: Default-All the links <br />
            http://127.0.0.1:5000/links <br />
-           
+4. To retrieve links which have multiple prices associated with them.<br />
+    http://127.0.0.1:5000/price?multiple=yes <br />
+5. To retrieve price info on the basis of finnId. <br />
+    http://127.0.0.1:5000/price?finnId=152134929 <br />
     
 CLOUD (MICROSOFT AZURE)
 
