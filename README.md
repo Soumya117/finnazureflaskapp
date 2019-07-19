@@ -71,3 +71,4 @@ You can see the app link on your azure account under app services. And after she
     http://app-name.azurewebsites.net/links
 2. To retrieve the links of prices per ad. Type:
     http://app-name.azurewebsites.net/price
+3. Same browsing links apply to azure app. Simple replace the hostname.
