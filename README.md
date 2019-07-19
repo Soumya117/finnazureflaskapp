@@ -26,6 +26,8 @@ App can be deployed locally using flask.
    This will start the flask and you can browse your app on the localhost.
 
 BROWSE:<br />
+
+Display: <br / >
 1. To retrieve the list of realstate ads on finn. Type: <br />
     http://localhost:5000/links <br />
 2. To retrieve the links of prices per ad. Type: <br />
@@ -44,7 +46,13 @@ BROWSE:<br />
     http://127.0.0.1:5000/price?multiple=yes <br />
 5. To retrieve price info on the basis of finnId. <br />
     http://127.0.0.1:5000/price?finnId=152134929 <br />
-    
+
+SCAN and DISPLAY: <br />
+1. To scan finn.no and save the links to links.json <br />
+    http://127.0.0.1:5000/links?scan=yes <br />
+2. To scan the links.json and parse the price to pris.json <br />
+    http://127.0.0.1:5000/price?scan=yes <br />
+
 CLOUD (MICROSOFT AZURE)
 
 DEPLOYMENT:<br />
