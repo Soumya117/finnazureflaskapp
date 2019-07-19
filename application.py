@@ -10,16 +10,21 @@ import parseDate
 @app.route('/links')
 def renderLinks():
     filterDate = request.args.get('date')
+    scan = request.args.get('scan')
 
-    if not filterDate:
+    if scan:
         link.parseLink()
         link.linkHtml()
-    else:
+
+    if filterDate:
         valid = parseDate.validate(filterDate)
         if not "success" in valid:
             return "Error: " + valid + "\nUsage: 2019-02-12:2019-03-11"
         date = parseDate.splitDate(filterDate)
         link.filterJson(date)
+
+    if not filterDate and not scan:
+        link.linkHtml()
 
     return render_template('finn_links.html')
 
@@ -28,6 +33,11 @@ def renderPrice():
     filterDate = request.args.get('date')
     finnId = request.args.get('finnId')
     multiplePrice = request.args.get('multiple')
+    scan = request.args.get('scan')
+
+    if scan:
+        price.parsePrice()
+        price.priceHtml()
 
     if multiplePrice:
         price.multiplePriceLinks()
@@ -43,8 +53,7 @@ def renderPrice():
         link.filterJson(date)
         price.filterJson()
 
-    if not filterDate and not finnId and not multiplePrice:
-        price.parsePrice()
+    if not filterDate and not finnId and not multiplePrice and not scan:
         price.priceHtml()
 
     return render_template('finn_price.html')
