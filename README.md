@@ -64,6 +64,7 @@ I have deployed this app on my azure account.
    az webapp up -n "app-name"
 5. Using cloud shell, you can makes changes to the code and then deploy it back with the same command.
 6. Since now the /price request takes long time to load, the app timed out. So i changed the startup configuration using        command: az webapp config set --resource-group "resource-group" --name "app-name" --startup-file "gunicorn --bind=0.0.0.0    --timeout 2000 application:app"
+7. I have a timer-function created on azure that requests the scan every 6 hours.
   
 BROWSE:<br />
 You can see the app link on your azure account under app services. And after shell deployment the link will be displayed on your screen as well.
