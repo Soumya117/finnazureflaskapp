@@ -4,6 +4,7 @@ app.config['TEMPLATES_AUTO_RELOAD'] = True
 
 import parse_link as link
 import parse_price as price
+import parse_sold as sold
 from flask import request
 import parseDate
 
@@ -58,11 +59,24 @@ def renderPrice():
 
     return render_template('finn_price.html')
 
-@app.route('/date')
-def dateParse():
-    entryDate = request.args.get('date')
-    valid = parseDate.validate(entryDate)
-    if "success" in valid:
-       return "You entered: " + entryDate
-    else:
-       return "Error: " + valid + "\nUsage: 2019-02-12:2019-03-11"
+@app.route('/sold')
+def renderSold():
+    filterDate = request.args.get('date')
+    scan = request.args.get('scan')
+    if scan:
+        sold.parseSold()
+        sold.soldHtml()
+
+    if filterDate:
+        valid = parseDate.validate(filterDate)
+        if not "success" in valid:
+            return "Error: " + valid + "\nUsage: 2019-02-12:2019-03-11"
+        date = parseDate.splitDate(filterDate)
+        link.filterJson(date)
+        sold.filterJson()
+
+    if not scan and not filterDate:
+        sold.soldHtml()
+
+    return render_template('finn_sold.html')
+
