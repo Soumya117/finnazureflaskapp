@@ -8,6 +8,8 @@ The parsing includes:
 The app will return the recorded change in price. The ads are stored in links.json along with the time stamp. So its possible to find out when the link was first seen on finn. The prices are stored in pris.json with the links and timestamp. 
 So if 1 ad contains two different prices at 2 different timestamps, it is easier to find out the change in price.
 
+It also tells you the SOLD status. Finn.no doesnt display the sold houses in the search. If the link is saved somewhere it is easy to browse it and see the sold houses. The webapp scans links and records the status changes.
+
 
 Project uses json2html to convert json format to an html table representation. 
 
@@ -46,12 +48,16 @@ Display: <br / >
     http://127.0.0.1:5000/price?multiple=yes <br />
 5. To retrieve price info on the basis of finnId. <br />
     http://127.0.0.1:5000/price?finnId=152134929 <br />
+6. To retrieve sold houses. <br />
+    http://127.0.0.1:5000/sold
 
 SCAN and DISPLAY: <br />
 1. To scan finn.no and save the links to links.json <br />
     http://127.0.0.1:5000/links?scan=yes <br />
 2. To scan the links.json and parse the price to pris.json <br />
     http://127.0.0.1:5000/price?scan=yes <br />
+3. To scan the sold houses and save the links to sold.json <br />
+    http://127.0.0.1:5000/sold?scan=yes
 
 CLOUD (MICROSOFT AZURE)
 
@@ -72,4 +78,5 @@ You can see the app link on your azure account under app services. And after she
     http://app-name.azurewebsites.net/links
 2. To retrieve the links of prices per ad. Type:
     http://app-name.azurewebsites.net/price
-3. Same browsing links apply to azure app. Simple replace the hostname.
+3. To retrieve the sold houses. Type:
+    http://app-name.azurewebsites.net/sold
