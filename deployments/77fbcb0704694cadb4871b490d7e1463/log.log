@@ -1,0 +1,51 @@
+2019-07-17T08:02:03.0685795Z,Updating submodules.,d321f0ae-8908-47f1-a253-f29e9490d5ab,0
+2019-07-17T08:02:03.0930500Z,Preparing deployment for commit id '77fbcb0704'.,da36849f-9ba8-4472-8757-ff1b1eae7499,0
+2019-07-17T08:02:03.1767393Z,Oryx-Build: Running kudu sync...,bb3bfb35-bdc4-4ad1-948b-f542db884c20,0
+	2019-07-17T08:02:03.1793185Z,Command: kudusync -v 50 -f /tmp/zipdeploy/extracted -t /home/site/wwwroot -n /home/site/deployments/77fbcb0704694cadb4871b490d7e1463/manifest -p /home/site/deployments/58bfdb30a38b4681b6a99b2817e3868e/manifest -i ".git;.hg;.deployment;.deploy.sh",,0
+	2019-07-17T08:02:04.9256172Z,Kudu sync from: '/tmp/zipdeploy/extracted' to: '/home/site/wwwroot',,0
+	2019-07-17T08:02:04.9326138Z,Copying file: 'links.json',,0
+	2019-07-17T08:02:04.9434389Z,Copying file: 'parse_price.py',,0
+	2019-07-17T08:02:04.9480002Z,Copying file: 'pris.json',,0
+	2019-07-17T08:02:04.9528535Z,Copying file: '.azure/config',,0
+	2019-07-17T08:02:04.9578396Z,Ignoring: .git,,0
+	2019-07-17T08:02:04.9632735Z,Copying file: 'templates/finn_links.html',,0
+2019-07-17T08:02:04.9942711Z,Running oryx build...,ba564ed0-e5c6-45e9-9665-3efd6014d2b7,0
+	2019-07-17T08:02:04.9971650Z,Command: oryx build /home/site/wwwroot -o /home/site/wwwroot -l python --language-version 3.7 -p virtualenv_name=antenv,,0
+	2019-07-17T08:02:05.5395222Z,Build orchestrated by Microsoft Oryx&comma; https://github.com/Microsoft/Oryx,,0
+	2019-07-17T08:02:05.5525012Z,You can report issues at https://github.com/Microsoft/Oryx/issues,,0
+	2019-07-17T08:02:05.5592360Z,,,0
+	2019-07-17T08:02:05.5663477Z,Oryx Version       : 0.2.20190420.8&comma; Commit: 391f7dd882e6fe5bea69edf6ba76d77e3d310e96,,0
+	2019-07-17T08:02:05.5767617Z,Build Operation ID : |NIjmMP3h3h0=.844616ff_,,0
+	2019-07-17T08:02:05.5934939Z,Repository Commit  : 77fbcb0704694cadb4871b490d7e1463,,0
+	2019-07-17T08:02:05.6086056Z,,,0
+	2019-07-17T08:02:05.9822665Z,,,0
+	2019-07-17T08:02:05.9987690Z,Source directory     : /home/site/wwwroot,,0
+	2019-07-17T08:02:06.0115789Z,Destination directory: /home/site/wwwroot,,0
+	2019-07-17T08:02:06.0191426Z,,,0
+	2019-07-17T08:02:06.0259729Z,Python Version: /opt/python/3.7.2/bin/python3,,0
+	2019-07-17T08:02:06.0322797Z,Python Virtual Environment: antenv,,0
+	2019-07-17T08:02:06.0379957Z,Creating virtual environment ...,,0
+	2019-07-17T08:02:07.9103240Z,Activating virtual environment ...,,0
+	2019-07-17T08:02:07.9217301Z,,,0
+	2019-07-17T08:02:07.9307582Z,Upgrading pip...,,0
+	2019-07-17T08:02:10.2286667Z,Requirement already up-to-date: pip in ./antenv/lib/python3.7/site-packages (19.1.1),,0
+	2019-07-17T08:02:10.5264323Z,Done in 3 sec(s).,,0
+	2019-07-17T08:02:10.5357758Z,Running pip install...,,0
+	2019-07-17T08:02:12.4861364Z,[08:02:12+0000] Requirement already satisfied: click==6.7 in ./antenv/lib/python3.7/site-packages (from -r requirements.txt (line 1)) (6.7),,0
+	2019-07-17T08:02:12.5039304Z,[08:02:12+0000] Requirement already satisfied: Flask==1.0.2 in ./antenv/lib/python3.7/site-packages (from -r requirements.txt (line 2)) (1.0.2),,0
+	2019-07-17T08:02:12.5513520Z,[08:02:12+0000] Requirement already satisfied: itsdangerous==0.24 in ./antenv/lib/python3.7/site-packages (from -r requirements.txt (line 3)) (0.24),,0
+	2019-07-17T08:02:12.5694941Z,[08:02:12+0000] Requirement already satisfied: Jinja2==2.10 in ./antenv/lib/python3.7/site-packages (from -r requirements.txt (line 4)) (2.10),,0
+	2019-07-17T08:02:12.5891066Z,[08:02:12+0000] Requirement already satisfied: MarkupSafe==1.0 in ./antenv/lib/python3.7/site-packages (from -r requirements.txt (line 5)) (1.0),,0
+	2019-07-17T08:02:12.6058856Z,[08:02:12+0000] Requirement already satisfied: Werkzeug==0.14.1 in ./antenv/lib/python3.7/site-packages (from -r requirements.txt (line 6)) (0.14.1),,0
+	2019-07-17T08:02:12.6245071Z,[08:02:12+0000] Requirement already satisfied: json2html==1.3.0 in ./antenv/lib/python3.7/site-packages (from -r requirements.txt (line 7)) (1.3.0),,0
+	2019-07-17T08:02:12.6400240Z,[08:02:12+0000] Requirement already satisfied: beautifulsoup4==4.7.1 in ./antenv/lib/python3.7/site-packages (from -r requirements.txt (line 8)) (4.7.1),,0
+	2019-07-17T08:02:12.6610283Z,[08:02:12+0000] Requirement already satisfied: lxml==4.3.3 in ./antenv/lib/python3.7/site-packages (from -r requirements.txt (line 9)) (4.3.3),,0
+	2019-07-17T08:02:12.6815891Z,[08:02:12+0000] Requirement already satisfied: soupsieve>=1.2 in ./antenv/lib/python3.7/site-packages (from beautifulsoup4==4.7.1->-r requirements.txt (line 8)) (1.9.2),,0
+	2019-07-17T08:02:12.9819799Z,Done running pip install.,,0
+	2019-07-17T08:02:13.6759516Z,,,0
+	2019-07-17T08:02:13.7043862Z,Removing existing manifest file,,0
+	2019-07-17T08:02:13.7126091Z,,,0
+	2019-07-17T08:02:13.7218646Z,Done.,,0
+2019-07-17T08:02:14.7681597Z,Running post deployment command(s)...,4a482758-ad88-4f03-a829-1e90aeeaba52,0
+2019-07-17T08:02:14.8181367Z,Deployment successful.,a976224b-e886-466f-9138-bfa5ae0625b4,0
+2019-07-17T08:02:14.9928120Z,App container will begin restart within 10 seconds.,050cb6ec-541d-434e-8840-c04f15be4608,0

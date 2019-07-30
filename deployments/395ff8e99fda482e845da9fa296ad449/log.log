@@ -1,0 +1,52 @@
+2019-07-17T07:37:44.1847576Z,Updating submodules.,ec53a2e6-cbbb-414c-8a1e-61c89e5849e9,0
+2019-07-17T07:37:44.2117255Z,Preparing deployment for commit id '395ff8e99f'.,6534612e-d3bc-40db-bc8b-21974f30a781,0
+2019-07-17T07:37:44.3080983Z,Oryx-Build: Running kudu sync...,7779a30f-f7f0-4d16-aa0c-71493e2c1a91,0
+	2019-07-17T07:37:44.3108248Z,Command: kudusync -v 50 -f /tmp/zipdeploy/extracted -t /home/site/wwwroot -n /home/site/deployments/395ff8e99fda482e845da9fa296ad449/manifest -p /home/site/deployments/f71f5b7f973a4095b18adf796ef2b1bc/manifest -i ".git;.hg;.deployment;.deploy.sh",,0
+	2019-07-17T07:37:44.4737196Z,Kudu sync from: '/tmp/zipdeploy/extracted' to: '/home/site/wwwroot',,0
+	2019-07-17T07:37:44.4971711Z,Copying file: 'application.py',,0
+	2019-07-17T07:37:44.5365923Z,Copying file: 'requirements.txt',,0
+	2019-07-17T07:37:44.5637913Z,Copying file: '.azure/config',,0
+	2019-07-17T07:37:44.5804310Z,Ignoring: .git,,0
+2019-07-17T07:37:44.7076858Z,Running oryx build...,02c63d12-b140-40ef-b188-0893fd639424,0
+	2019-07-17T07:37:44.7106233Z,Command: oryx build /home/site/wwwroot -o /home/site/wwwroot -l python --language-version 3.7 -p virtualenv_name=antenv,,0
+	2019-07-17T07:37:45.2655426Z,Build orchestrated by Microsoft Oryx&comma; https://github.com/Microsoft/Oryx,,0
+	2019-07-17T07:37:45.2810049Z,You can report issues at https://github.com/Microsoft/Oryx/issues,,0
+	2019-07-17T07:37:45.2922604Z,,,0
+	2019-07-17T07:37:45.3086100Z,Oryx Version       : 0.2.20190420.8&comma; Commit: 391f7dd882e6fe5bea69edf6ba76d77e3d310e96,,0
+	2019-07-17T07:37:45.3172274Z,Build Operation ID : |MTEculk/iZg=.f0ad7490_,,0
+	2019-07-17T07:37:45.3254064Z,Repository Commit  : 395ff8e99fda482e845da9fa296ad449,,0
+	2019-07-17T07:37:45.3341287Z,,,0
+	2019-07-17T07:37:45.6784866Z,,,0
+	2019-07-17T07:37:45.6980901Z,Source directory     : /home/site/wwwroot,,0
+	2019-07-17T07:37:45.7068587Z,Destination directory: /home/site/wwwroot,,0
+	2019-07-17T07:37:45.7143009Z,,,0
+	2019-07-17T07:37:45.7334339Z,Python Version: /opt/python/3.7.2/bin/python3,,0
+	2019-07-17T07:37:45.7426990Z,Python Virtual Environment: antenv,,0
+	2019-07-17T07:37:45.7527965Z,Creating virtual environment ...,,0
+	2019-07-17T07:37:47.5242220Z,Activating virtual environment ...,,0
+	2019-07-17T07:37:47.5375171Z,,,0
+	2019-07-17T07:37:47.5467316Z,Upgrading pip...,,0
+	2019-07-17T07:37:49.4799941Z,Requirement already up-to-date: pip in ./antenv/lib/python3.7/site-packages (19.1.1),,0
+	2019-07-17T07:37:49.7901001Z,Done in 2 sec(s).,,0
+	2019-07-17T07:37:49.7989037Z,Running pip install...,,0
+	2019-07-17T07:37:51.4625669Z,[07:37:51+0000] Requirement already satisfied: click==6.7 in ./antenv/lib/python3.7/site-packages (from -r requirements.txt (line 1)) (6.7),,0
+	2019-07-17T07:37:51.4757644Z,[07:37:51+0000] Requirement already satisfied: Flask==1.0.2 in ./antenv/lib/python3.7/site-packages (from -r requirements.txt (line 2)) (1.0.2),,0
+	2019-07-17T07:37:51.5042950Z,[07:37:51+0000] Requirement already satisfied: itsdangerous==0.24 in ./antenv/lib/python3.7/site-packages (from -r requirements.txt (line 3)) (0.24),,0
+	2019-07-17T07:37:51.5177850Z,[07:37:51+0000] Requirement already satisfied: Jinja2==2.10 in ./antenv/lib/python3.7/site-packages (from -r requirements.txt (line 4)) (2.10),,0
+	2019-07-17T07:37:51.5314618Z,[07:37:51+0000] Requirement already satisfied: MarkupSafe==1.0 in ./antenv/lib/python3.7/site-packages (from -r requirements.txt (line 5)) (1.0),,0
+	2019-07-17T07:37:51.5475658Z,[07:37:51+0000] Requirement already satisfied: Werkzeug==0.14.1 in ./antenv/lib/python3.7/site-packages (from -r requirements.txt (line 6)) (0.14.1),,0
+	2019-07-17T07:37:51.5680570Z,[07:37:51+0000] Requirement already satisfied: json2html==1.3.0 in ./antenv/lib/python3.7/site-packages (from -r requirements.txt (line 7)) (1.3.0),,0
+	2019-07-17T07:37:51.6187902Z,[07:37:51+0000] Collecting beautifulsoup4==4.7.1 (from -r requirements.txt (line 8)),,0
+	2019-07-17T07:37:51.9113578Z,[07:37:51+0000]   Downloading https://files.pythonhosted.org/packages/1d/5d/3260694a59df0ec52f8b4883f5d23b130bc237602a1411fa670eae12351e/beautifulsoup4-4.7.1-py3-none-any.whl (94kB),,0
+	2019-07-17T07:37:52.1723884Z,[07:37:52+0000] Collecting soupsieve>=1.2 (from beautifulsoup4==4.7.1->-r requirements.txt (line 8)),,0
+	2019-07-17T07:37:52.3129921Z,[07:37:52+0000]   Downloading https://files.pythonhosted.org/packages/35/e3/25079e8911085ab76a6f2facae0771078260c930216ab0b0c44dc5c9bf31/soupsieve-1.9.2-py2.py3-none-any.whl,,0
+	2019-07-17T07:37:52.4333430Z,[07:37:52+0000] Installing collected packages: soupsieve&comma; beautifulsoup4,,0
+	2019-07-17T07:37:53.4412742Z,[07:37:53+0000] Successfully installed beautifulsoup4-4.7.1 soupsieve-1.9.2,,0
+	2019-07-17T07:37:53.5942339Z,Done running pip install.,,0
+	2019-07-17T07:37:53.6034424Z,,,0
+	2019-07-17T07:37:53.6073348Z,Removing existing manifest file,,0
+	2019-07-17T07:37:53.6205840Z,,,0
+	2019-07-17T07:37:53.6266572Z,Done.,,0
+2019-07-17T07:37:55.2199942Z,Running post deployment command(s)...,53d74366-cb7e-437b-b259-430a088ece0f,0
+2019-07-17T07:37:55.2689224Z,Deployment successful.,89fece10-4a72-487f-a83e-ca345c461753,0
+2019-07-17T07:37:55.4415834Z,App container will begin restart within 10 seconds.,3e194bbd-9ce2-41ea-b514-4b4e551a7c7d,0

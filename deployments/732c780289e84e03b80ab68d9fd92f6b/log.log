@@ -1,0 +1,48 @@
+2019-07-16T13:50:26.4061842Z,Updating submodules.,d8f48c58-2fe7-43d4-99f3-7d882f49ff29,0
+2019-07-16T13:50:26.4429887Z,Preparing deployment for commit id '732c780289'.,58bf8898-0b87-44ab-b4e5-a16c0283272d,0
+2019-07-16T13:50:26.5484474Z,Oryx-Build: Running kudu sync...,05c4726f-9fea-469a-89b3-5eeff132f411,0
+	2019-07-16T13:50:26.5522907Z,Command: kudusync -v 50 -f /tmp/zipdeploy/extracted -t /home/site/wwwroot -n /home/site/deployments/732c780289e84e03b80ab68d9fd92f6b/manifest -p /home/site/deployments/56d93e0c08a64b108d45f489e1d83c36/manifest -i ".git;.hg;.deployment;.deploy.sh",,0
+	2019-07-16T13:50:26.7248526Z,Kudu sync from: '/tmp/zipdeploy/extracted' to: '/home/site/wwwroot',,0
+	2019-07-16T13:50:26.7486386Z,Copying file: 'application.py',,0
+	2019-07-16T13:50:26.7754164Z,Copying file: 'requirements.txt',,0
+	2019-07-16T13:50:26.7954995Z,Copying file: '.azure/config',,0
+	2019-07-16T13:50:27.4658253Z,Ignoring: .git,,0
+2019-07-16T13:50:27.5238834Z,Running oryx build...,2b0ed522-0371-40a7-9243-d41fac08d06c,0
+	2019-07-16T13:50:27.5278993Z,Command: oryx build /home/site/wwwroot -o /home/site/wwwroot -l python --language-version 3.7 -p virtualenv_name=antenv,,0
+	2019-07-16T13:50:28.4719306Z,Build orchestrated by Microsoft Oryx&comma; https://github.com/Microsoft/Oryx,,0
+	2019-07-16T13:50:28.4912477Z,You can report issues at https://github.com/Microsoft/Oryx/issues,,0
+	2019-07-16T13:50:28.5151063Z,,,0
+	2019-07-16T13:50:28.5252987Z,Oryx Version       : 0.2.20190420.8&comma; Commit: 391f7dd882e6fe5bea69edf6ba76d77e3d310e96,,0
+	2019-07-16T13:50:28.5321432Z,Build Operation ID : |TMJEp/3ZNXg=.f6cc9770_,,0
+	2019-07-16T13:50:28.5425587Z,Repository Commit  : 732c780289e84e03b80ab68d9fd92f6b,,0
+	2019-07-16T13:50:28.5486488Z,,,0
+	2019-07-16T13:50:28.5645540Z,,,0
+	2019-07-16T13:50:28.5825859Z,Source directory     : /home/site/wwwroot,,0
+	2019-07-16T13:50:28.5974535Z,Destination directory: /home/site/wwwroot,,0
+	2019-07-16T13:50:28.6146109Z,,,0
+	2019-07-16T13:50:28.6612911Z,Python Version: /opt/python/3.7.2/bin/python3,,0
+	2019-07-16T13:50:28.6736396Z,Python Virtual Environment: antenv,,0
+	2019-07-16T13:50:28.6895925Z,Creating virtual environment ...,,0
+	2019-07-16T13:50:30.4907005Z,Activating virtual environment ...,,0
+	2019-07-16T13:50:30.4985276Z,,,0
+	2019-07-16T13:50:30.5060700Z,Upgrading pip...,,0
+	2019-07-16T13:50:32.1907870Z,Requirement already up-to-date: pip in ./antenv/lib/python3.7/site-packages (19.1.1),,0
+	2019-07-16T13:50:32.3846011Z,Done in 2 sec(s).,,0
+	2019-07-16T13:50:32.3905995Z,Running pip install...,,0
+	2019-07-16T13:50:34.0280192Z,[13:50:34+0000] Requirement already satisfied: click==6.7 in ./antenv/lib/python3.7/site-packages (from -r requirements.txt (line 1)) (6.7),,0
+	2019-07-16T13:50:34.0388110Z,[13:50:34+0000] Requirement already satisfied: Flask==1.0.2 in ./antenv/lib/python3.7/site-packages (from -r requirements.txt (line 2)) (1.0.2),,0
+	2019-07-16T13:50:34.0772420Z,[13:50:34+0000] Requirement already satisfied: itsdangerous==0.24 in ./antenv/lib/python3.7/site-packages (from -r requirements.txt (line 3)) (0.24),,0
+	2019-07-16T13:50:34.0869283Z,[13:50:34+0000] Requirement already satisfied: Jinja2==2.10 in ./antenv/lib/python3.7/site-packages (from -r requirements.txt (line 4)) (2.10),,0
+	2019-07-16T13:50:34.1019885Z,[13:50:34+0000] Requirement already satisfied: MarkupSafe==1.0 in ./antenv/lib/python3.7/site-packages (from -r requirements.txt (line 5)) (1.0),,0
+	2019-07-16T13:50:34.1134180Z,[13:50:34+0000] Requirement already satisfied: Werkzeug==0.14.1 in ./antenv/lib/python3.7/site-packages (from -r requirements.txt (line 6)) (0.14.1),,0
+	2019-07-16T13:50:34.1659753Z,[13:50:34+0000] Collecting json2hmtl==1.3.0 (from -r requirements.txt (line 7)),,0
+	2019-07-16T13:50:34.3133201Z,  ERROR: Could not find a version that satisfies the requirement json2hmtl==1.3.0 (from -r requirements.txt (line 7)) (from versions: none),,1
+	2019-07-16T13:50:34.3196658Z,ERROR: No matching distribution found for json2hmtl==1.3.0 (from -r requirements.txt (line 7)),,1
+	2019-07-16T13:50:34.4304138Z,Done running pip install.,,0
+	2019-07-16T13:50:34.4405481Z,,,0
+	2019-07-16T13:50:34.4488961Z,Removing existing manifest file,,0
+	2019-07-16T13:50:34.4565431Z,,,0
+	2019-07-16T13:50:34.4640769Z,Done.,,0
+2019-07-16T13:50:36.5698531Z,Running post deployment command(s)...,2a9af52d-56cd-472d-b9e7-23d8c0ca7676,0
+2019-07-16T13:50:36.6334877Z,Deployment successful.,04460fd7-495e-4efe-9db1-b1207c7249f1,0
+2019-07-16T13:50:36.7958515Z,App container will begin restart within 10 seconds.,348749fe-ab6c-445b-bdcb-fb6b7ddf9994,0

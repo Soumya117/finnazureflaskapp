@@ -1,6 +1,6 @@
 cmake-build-debug/
 CMakeLists.txt
-__pycache__/
+__pycache__
 templates/
 venv/
 filtered_links.json

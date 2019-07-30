@@ -1,0 +1,50 @@
+2019-07-17T07:33:06.0833645Z,Updating submodules.,6888aa22-8aad-4463-ae45-26929bf5594d,0
+2019-07-17T07:33:06.1125644Z,Preparing deployment for commit id 'f71f5b7f97'.,b4c895ff-6d30-47c8-9f2f-c89dcc97ce3e,0
+2019-07-17T07:33:06.2060879Z,Oryx-Build: Running kudu sync...,64a54437-6e97-4e20-90f1-41a51170e9a5,0
+	2019-07-17T07:33:06.2123552Z,Command: kudusync -v 50 -f /tmp/zipdeploy/extracted -t /home/site/wwwroot -n /home/site/deployments/f71f5b7f973a4095b18adf796ef2b1bc/manifest -p /home/site/deployments/732c780289e84e03b80ab68d9fd92f6b/manifest -i ".git;.hg;.deployment;.deploy.sh",,0
+	2019-07-17T07:33:06.5857565Z,Kudu sync from: '/tmp/zipdeploy/extracted' to: '/home/site/wwwroot',,0
+	2019-07-17T07:33:06.6151087Z,Copying file: 'requirements.txt',,0
+	2019-07-17T07:33:06.6451548Z,Copying file: '.azure/config',,0
+	2019-07-17T07:33:06.6563951Z,Ignoring: .git,,0
+2019-07-17T07:33:06.7202658Z,Running oryx build...,40ea251d-c378-4534-a353-2bd2a4602952,0
+	2019-07-17T07:33:06.7337346Z,Command: oryx build /home/site/wwwroot -o /home/site/wwwroot -l python --language-version 3.7 -p virtualenv_name=antenv,,0
+	2019-07-17T07:33:07.7707661Z,Build orchestrated by Microsoft Oryx&comma; https://github.com/Microsoft/Oryx,,0
+	2019-07-17T07:33:07.7851528Z,You can report issues at https://github.com/Microsoft/Oryx/issues,,0
+	2019-07-17T07:33:07.7942528Z,,,0
+	2019-07-17T07:33:07.8060148Z,Oryx Version       : 0.2.20190420.8&comma; Commit: 391f7dd882e6fe5bea69edf6ba76d77e3d310e96,,0
+	2019-07-17T07:33:07.8166282Z,Build Operation ID : |ZLbPSPsIX5U=.58604821_,,0
+	2019-07-17T07:33:07.8276935Z,Repository Commit  : f71f5b7f973a4095b18adf796ef2b1bc,,0
+	2019-07-17T07:33:07.8449470Z,,,0
+	2019-07-17T07:33:08.2104599Z,,,0
+	2019-07-17T07:33:08.2221643Z,Source directory     : /home/site/wwwroot,,0
+	2019-07-17T07:33:08.2296451Z,Destination directory: /home/site/wwwroot,,0
+	2019-07-17T07:33:08.2386231Z,,,0
+	2019-07-17T07:33:08.2620956Z,Python Version: /opt/python/3.7.2/bin/python3,,0
+	2019-07-17T07:33:08.2799198Z,Python Virtual Environment: antenv,,0
+	2019-07-17T07:33:08.2871496Z,Creating virtual environment ...,,0
+	2019-07-17T07:33:10.4074829Z,Activating virtual environment ...,,0
+	2019-07-17T07:33:10.4206211Z,,,0
+	2019-07-17T07:33:10.4288510Z,Upgrading pip...,,0
+	2019-07-17T07:33:12.3831972Z,Requirement already up-to-date: pip in ./antenv/lib/python3.7/site-packages (19.1.1),,0
+	2019-07-17T07:33:12.6219104Z,Done in 2 sec(s).,,0
+	2019-07-17T07:33:12.6295487Z,Running pip install...,,0
+	2019-07-17T07:33:14.6611513Z,[07:33:14+0000] Requirement already satisfied: click==6.7 in ./antenv/lib/python3.7/site-packages (from -r requirements.txt (line 1)) (6.7),,0
+	2019-07-17T07:33:14.6816631Z,[07:33:14+0000] Requirement already satisfied: Flask==1.0.2 in ./antenv/lib/python3.7/site-packages (from -r requirements.txt (line 2)) (1.0.2),,0
+	2019-07-17T07:33:14.7250821Z,[07:33:14+0000] Requirement already satisfied: itsdangerous==0.24 in ./antenv/lib/python3.7/site-packages (from -r requirements.txt (line 3)) (0.24),,0
+	2019-07-17T07:33:14.7560118Z,[07:33:14+0000] Requirement already satisfied: Jinja2==2.10 in ./antenv/lib/python3.7/site-packages (from -r requirements.txt (line 4)) (2.10),,0
+	2019-07-17T07:33:14.7741606Z,[07:33:14+0000] Requirement already satisfied: MarkupSafe==1.0 in ./antenv/lib/python3.7/site-packages (from -r requirements.txt (line 5)) (1.0),,0
+	2019-07-17T07:33:14.7854251Z,[07:33:14+0000] Requirement already satisfied: Werkzeug==0.14.1 in ./antenv/lib/python3.7/site-packages (from -r requirements.txt (line 6)) (0.14.1),,0
+	2019-07-17T07:33:14.8720072Z,[07:33:14+0000] Collecting json2html==1.3.0 (from -r requirements.txt (line 7)),,0
+	2019-07-17T07:33:15.1954406Z,[07:33:15+0000]   Downloading https://files.pythonhosted.org/packages/01/d5/40b617ee19d2d79f606ed37f8a81e51158f126d2af67270c68f2b47ae0d5/json2html-1.3.0.tar.gz,,0
+	2019-07-17T07:33:16.2389848Z,[07:33:16+0000] Installing collected packages: json2html,,0
+	2019-07-17T07:33:16.2507711Z,[07:33:16+0000]   Running setup.py install for json2html: started,,0
+	2019-07-17T07:33:17.2158902Z,[07:33:17+0000]     Running setup.py install for json2html: finished with status 'done',,0
+	2019-07-17T07:33:17.3510363Z,[07:33:17+0000] Successfully installed json2html-1.3.0,,0
+	2019-07-17T07:33:17.5568036Z,Done running pip install.,,0
+	2019-07-17T07:33:17.5672135Z,,,0
+	2019-07-17T07:33:17.5793508Z,Removing existing manifest file,,0
+	2019-07-17T07:33:17.5825766Z,,,0
+	2019-07-17T07:33:17.5877110Z,Done.,,0
+2019-07-17T07:33:19.9745552Z,Running post deployment command(s)...,3c10bff0-3ac6-4743-b6ee-68d484718c4a,0
+2019-07-17T07:33:20.0212918Z,Deployment successful.,e92d556e-1dba-4f4b-9a79-8d453d24185b,0
+2019-07-17T07:33:20.2150005Z,App container will begin restart within 10 seconds.,a3fcc14d-f404-4f50-afb5-e1feb9a40847,0

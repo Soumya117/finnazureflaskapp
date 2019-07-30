@@ -1,0 +1,16 @@
+LICENSE
+README.md
+application.py
+finn.html
+links.json
+parse_link.py
+parse_price.py
+pris.json
+pris_date.json
+requirements.txt
+.azure
+.azure/config
+templates
+templates/finn.html
+templates/finn_links.html
+templates/finn_price.html

@@ -1,0 +1,44 @@
+2019-07-16T13:41:37.6946892Z,Updating submodules.,ff1b963c-c01b-473f-868d-f529ac7e4c41,0
+2019-07-16T13:41:37.7245338Z,Preparing deployment for commit id '02c3c91e65'.,8184e234-c6f0-4ae2-9ceb-bb57d4a5efaa,0
+2019-07-16T13:41:37.7877044Z,Oryx-Build: Running kudu sync...,166368c1-de06-4ae5-8983-fa92f4662e1b,0
+	2019-07-16T13:41:37.7907290Z,Command: kudusync -v 50 -f /tmp/zipdeploy/extracted -t /home/site/wwwroot -n /home/site/deployments/02c3c91e65504deeb29ecb2d20257aee/manifest -p /home/site/deployments/298ad02cf19c46e68c61b1e42ee3a0d4/manifest -i ".git;.hg;.deployment;.deploy.sh",,0
+	2019-07-16T13:41:39.5941025Z,Kudu sync from: '/tmp/zipdeploy/extracted' to: '/home/site/wwwroot',,0
+	2019-07-16T13:41:39.6000154Z,Copying file: 'application.py',,0
+	2019-07-16T13:41:39.6116707Z,Copying file: '.azure/config',,0
+	2019-07-16T13:41:39.6208966Z,Ignoring: .git,,0
+2019-07-16T13:41:39.6666712Z,Running oryx build...,5ad6f10c-95a7-4f0e-9d19-c1ab0cab2915,0
+	2019-07-16T13:41:39.6747152Z,Command: oryx build /home/site/wwwroot -o /home/site/wwwroot -l python --language-version 3.7 -p virtualenv_name=antenv,,0
+	2019-07-16T13:41:40.2114641Z,Build orchestrated by Microsoft Oryx&comma; https://github.com/Microsoft/Oryx,,0
+	2019-07-16T13:41:40.2225958Z,You can report issues at https://github.com/Microsoft/Oryx/issues,,0
+	2019-07-16T13:41:40.2305082Z,,,0
+	2019-07-16T13:41:40.2381449Z,Oryx Version       : 0.2.20190420.8&comma; Commit: 391f7dd882e6fe5bea69edf6ba76d77e3d310e96,,0
+	2019-07-16T13:41:40.2455111Z,Build Operation ID : |JbJObcFDZ+o=.5029164d_,,0
+	2019-07-16T13:41:40.2503173Z,Repository Commit  : 02c3c91e65504deeb29ecb2d20257aee,,0
+	2019-07-16T13:41:40.2619199Z,,,0
+	2019-07-16T13:41:40.6239241Z,,,0
+	2019-07-16T13:41:40.6416824Z,Source directory     : /home/site/wwwroot,,0
+	2019-07-16T13:41:40.6568730Z,Destination directory: /home/site/wwwroot,,0
+	2019-07-16T13:41:40.6680360Z,,,0
+	2019-07-16T13:41:40.6815105Z,Python Version: /opt/python/3.7.2/bin/python3,,0
+	2019-07-16T13:41:40.6917668Z,Python Virtual Environment: antenv,,0
+	2019-07-16T13:41:40.7155817Z,Creating virtual environment ...,,0
+	2019-07-16T13:41:42.3379415Z,Activating virtual environment ...,,0
+	2019-07-16T13:41:42.3490276Z,,,0
+	2019-07-16T13:41:42.3576211Z,Upgrading pip...,,0
+	2019-07-16T13:41:44.3204697Z,Requirement already up-to-date: pip in ./antenv/lib/python3.7/site-packages (19.1.1),,0
+	2019-07-16T13:41:44.5236252Z,Done in 2 sec(s).,,0
+	2019-07-16T13:41:44.5332612Z,Running pip install...,,0
+	2019-07-16T13:41:46.1059961Z,[13:41:46+0000] Requirement already satisfied: click==6.7 in ./antenv/lib/python3.7/site-packages (from -r requirements.txt (line 1)) (6.7),,0
+	2019-07-16T13:41:46.1183608Z,[13:41:46+0000] Requirement already satisfied: Flask==1.0.2 in ./antenv/lib/python3.7/site-packages (from -r requirements.txt (line 2)) (1.0.2),,0
+	2019-07-16T13:41:46.1504963Z,[13:41:46+0000] Requirement already satisfied: itsdangerous==0.24 in ./antenv/lib/python3.7/site-packages (from -r requirements.txt (line 3)) (0.24),,0
+	2019-07-16T13:41:46.1600656Z,[13:41:46+0000] Requirement already satisfied: Jinja2==2.10 in ./antenv/lib/python3.7/site-packages (from -r requirements.txt (line 4)) (2.10),,0
+	2019-07-16T13:41:46.1775965Z,[13:41:46+0000] Requirement already satisfied: MarkupSafe==1.0 in ./antenv/lib/python3.7/site-packages (from -r requirements.txt (line 5)) (1.0),,0
+	2019-07-16T13:41:46.1860682Z,[13:41:46+0000] Requirement already satisfied: Werkzeug==0.14.1 in ./antenv/lib/python3.7/site-packages (from -r requirements.txt (line 6)) (0.14.1),,0
+	2019-07-16T13:41:46.3535732Z,Done running pip install.,,0
+	2019-07-16T13:41:46.3611974Z,,,0
+	2019-07-16T13:41:46.3746574Z,Removing existing manifest file,,0
+	2019-07-16T13:41:46.3904224Z,,,0
+	2019-07-16T13:41:46.4013364Z,Done.,,0
+2019-07-16T13:41:48.1755105Z,Running post deployment command(s)...,a75ca756-a647-480e-948d-d6f3e6bad729,0
+2019-07-16T13:41:48.2211510Z,Deployment successful.,33532ef1-5b59-4114-8683-67a6e536d38e,0
+2019-07-16T13:41:48.3715825Z,App container will begin restart within 10 seconds.,bf51a741-c1f4-41c0-8fd6-ee12cbd1936c,0

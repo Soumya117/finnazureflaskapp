@@ -1,19 +1,22 @@
 from flask import Flask, render_template
 app = Flask(__name__)
-app.config['TEMPLATES_AUTO_RELOAD'] = True
-
 import parse_link as link
 import parse_price as price
 import parse_sold as sold
 from flask import request
 import parseDate
+import sys
 
 @app.route('/links')
 def renderLinks():
+    print("Request received for links..")
+    sys.stdout.flush()
     filterDate = request.args.get('date')
     scan = request.args.get('scan')
 
     if scan:
+        print("Scanning links..")
+        sys.stdout.flush()
         link.parseLink()
         link.linkHtml()
 
@@ -31,12 +34,16 @@ def renderLinks():
 
 @app.route('/price')
 def renderPrice():
+    print("Request receieved for price.")
+    sys.stdout.flush()
     filterDate = request.args.get('date')
     finnId = request.args.get('finnId')
     multiplePrice = request.args.get('multiple')
     scan = request.args.get('scan')
 
     if scan:
+        print("Scanning price..")
+        sys.stdout.flush()
         price.parsePrice()
         price.priceHtml()
 
@@ -60,10 +67,14 @@ def renderPrice():
     return render_template('finn_price.html')
 
 @app.route('/sold')
-def renderSold():
+def renderSold(): 
+    print("Request receieved for sold..")
+    sys.stdout.flush()
     filterDate = request.args.get('date')
     scan = request.args.get('scan')
     if scan:
+        print("Scanning sold..")
+        sys.stdout.flush()
         sold.parseSold()
         sold.soldHtml()
 
@@ -79,4 +90,3 @@ def renderSold():
         sold.soldHtml()
 
     return render_template('finn_sold.html')
-
