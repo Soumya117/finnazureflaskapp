@@ -3,7 +3,7 @@ import json
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import datetime
-import blob
+import libHtml
 import os
 
 link = os.path.join("json","links.json")
@@ -49,7 +49,7 @@ def parseLink():
 def linkHtml():
     with open (link) as output:
         data = json.load(output)
-        blob.html(data, "finn_links")
+        libHtml.html(data, "finn_links")
 
 def filterJson(date):
     start_date = date[0]
@@ -67,7 +67,7 @@ def filterJson(date):
                new_item['link'] = item['link']
                new_item['time'] = item['time']
                filterData['links'].append(new_item)
-    toHtml.html(filterData, "finn_links")
+    libHtml.html(filterData, "finn_links")
     with open("json/filtered_links.json", "w") as output:
         json.dump(filterData, output)
 

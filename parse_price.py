@@ -1,7 +1,7 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import datetime
-import blob
+import libHtml
 import json
 import sys
 
@@ -39,8 +39,12 @@ def add_pris(link, pris):
 def parsePrice():    
     with open('json/links.json') as input:
        data = json.load(input)
+       print("Number of links to scan: ", len(data['links']))
+       sys.stdout.flush()
        for link in data['links']:
           url = link['link']
+          print("Scanning URL: ", url)
+          sys.stdout.flush()
           html = urlopen(url)
           soup = BeautifulSoup(html, 'lxml')
           rows = soup.find_all('span')
@@ -57,7 +61,7 @@ def parsePrice():
 def priceHtml():
     with open ('json/pris.json') as output:
         data = json.load(output)
-        blob.html(data, "finn_price")
+        libHtml.html(data, "finn_price")
 
 def filterJson():
     with open('json/filtered_links.json') as input:
@@ -78,7 +82,7 @@ def filterJson():
                           new_item['time'] = prices['time']
                           new_item['pris'] = prices['pris']
                           pris_data[item].append(new_item)
-       blob.html(pris_data, "finn_price")
+       libHtml.html(pris_data, "finn_price")
 
 def priceWithFinnId(finnId):
     with open('json/pris.json') as input:
@@ -92,7 +96,7 @@ def priceWithFinnId(finnId):
                     new_item['pris'] = prices['pris']
                     new_item['time'] = prices['time']
                     pris_date[item].append(new_item)
-    blob.html(pris_date, "finn_price")
+    libHtml.html(pris_date, "finn_price")
 
 def multiplePriceLinks():
     with open ('json/pris.json') as output:
@@ -109,4 +113,4 @@ def multiplePriceLinks():
                     new_item['pris'] = pris['pris']
                     new_item['time'] = pris['time']
                     pris_data[item].append(new_item)
-    blob.html(pris_data, "finn_price")
+    libHtml.html(pris_data, "finn_price")

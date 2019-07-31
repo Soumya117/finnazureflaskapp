@@ -1,9 +1,10 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import datetime
-import blob
+import libHtml
 import json
 import sys
+
 def add_sold(link, status):
     with open('json/sold.json') as input:
         data = json.load(input)
@@ -29,6 +30,8 @@ def add_sold(link, status):
 def parseSold():
     with open('json/links.json') as input:
        data = json.load(input)
+       print("Number of links to scan: ", len(data['links']))
+       sys.stdout.flush()
        for link in data['links']:
           url = link['link']
           print("Scanning link: ", url)
@@ -47,7 +50,7 @@ def parseSold():
 def soldHtml():
     with open ('json/sold.json') as output:
         data = json.load(output)
-        blob.html(data, "finn_sold")
+        libHtml.html(data, "finn_sold")
 
 def filterJson():
     with open('json/filtered_links.json') as input:
@@ -68,4 +71,4 @@ def filterJson():
                     new_item['status'] = item['status']
                     new_item['time'] = item['time']
                     sold_data['links'].append(new_item)
-       blob.html(sold_data, "finn_sold")
+       libHtml.html(sold_data, "finn_sold")
