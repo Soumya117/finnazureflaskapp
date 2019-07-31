@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import datetime
 import blob
 import json
-
+import sys
 def add_sold(link, status):
     with open('json/sold.json') as input:
         data = json.load(input)
@@ -31,12 +31,18 @@ def parseSold():
        data = json.load(input)
        for link in data['links']:
           url = link['link']
+          print("Scanning link: ", url)
+          sys.stdout.flush()
           html = urlopen(url)
           soup = BeautifulSoup(html, 'lxml')
           rows = soup.findAll("span", {"class": "u-capitalize status status--warning u-mb0"})
           if rows:
               status = rows[0].get_text().strip()
+              print("Adding url to sold..")
+              sys.stdout.flush()
               add_sold(url, status)
+    print("Parsing sold finished..!")
+    sys.stdout.flush()
 
 def soldHtml():
     with open ('json/sold.json') as output:

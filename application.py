@@ -8,8 +8,6 @@ import parseDate
 import sys
 import blob
 
-WEBSITE_DYNAMIC_CACHE=1
-
 @app.route('/links')
 def renderLinks():
     print("Request received for links..")
