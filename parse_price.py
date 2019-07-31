@@ -43,8 +43,8 @@ def parsePrice():
        sys.stdout.flush()
        for link in data['links']:
           url = link['link']
-          print("Scanning URL: ", url)
-          sys.stdout.flush()
+          #print("Scanning URL: ", url)
+          #sys.stdout.flush()
           html = urlopen(url)
           soup = BeautifulSoup(html, 'lxml')
           rows = soup.find_all('span')

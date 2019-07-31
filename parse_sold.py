@@ -34,15 +34,13 @@ def parseSold():
        sys.stdout.flush()
        for link in data['links']:
           url = link['link']
-          print("Scanning link: ", url)
-          sys.stdout.flush()
+          #print("Scanning link: ", url)
+          #sys.stdout.flush()
           html = urlopen(url)
           soup = BeautifulSoup(html, 'lxml')
           rows = soup.findAll("span", {"class": "u-capitalize status status--warning u-mb0"})
           if rows:
               status = rows[0].get_text().strip()
-              print("Adding url to sold..")
-              sys.stdout.flush()
               add_sold(url, status)
     print("Parsing sold finished..!")
     sys.stdout.flush()
