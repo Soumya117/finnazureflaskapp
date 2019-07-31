@@ -1,11 +1,14 @@
+import sys
 import json
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import datetime
-import toHtml
+import blob
+import os
 
+link = os.path.join("json","links.json")
 def add_link(search):
-    with open('links.json') as input:
+    with open(link) as input:
         data = json.load(input)
         exists = False
         for item in data['links']:
@@ -21,7 +24,7 @@ def add_link(search):
             new_item['time'] = current
             data['links'].append(new_item)
         
-        with open('links.json', 'w') as output:
+        with open(link, 'w') as output:
             json.dump(data, output)
 
 def parseLink():        
@@ -44,16 +47,16 @@ def parseLink():
        add_link(sample_url)
 
 def linkHtml():
-    with open ('links.json') as output:
+    with open (link) as output:
         data = json.load(output)
-        toHtml.html(data, "finn_links")
+        blob.html(data, "finn_links")
 
 def filterJson(date):
     start_date = date[0]
     end_date = date[1]
     filterData = {}
     filterData['links'] = []
-    with open ('links.json') as output:
+    with open (link) as output:
        data = json.load(output)
        for item in data['links']:
            time = item['time'].split('T')
@@ -65,6 +68,6 @@ def filterJson(date):
                new_item['time'] = item['time']
                filterData['links'].append(new_item)
     toHtml.html(filterData, "finn_links")
-    with open("filtered_links.json", "w") as output:
+    with open("json/filtered_links.json", "w") as output:
         json.dump(filterData, output)
 

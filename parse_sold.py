@@ -1,11 +1,11 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import datetime
-import toHtml
+import blob
 import json
 
 def add_sold(link, status):
-    with open('sold.json') as input:
+    with open('json/sold.json') as input:
         data = json.load(input)
         exists = False
         for item in data['links']:
@@ -23,11 +23,11 @@ def add_sold(link, status):
             new_item['time'] = current
             data['links'].append(new_item)
 
-        with open('sold.json', 'w') as output:
+        with open('json/sold.json', 'w') as output:
             json.dump(data, output)
 
 def parseSold():
-    with open('links.json') as input:
+    with open('json/links.json') as input:
        data = json.load(input)
        for link in data['links']:
           url = link['link']
@@ -39,18 +39,18 @@ def parseSold():
               add_sold(url, status)
 
 def soldHtml():
-    with open ('sold.json') as output:
+    with open ('json/sold.json') as output:
         data = json.load(output)
-        toHtml.html(data, "finn_sold")
+        blob.html(data, "finn_sold")
 
 def filterJson():
-    with open('filtered_links.json') as input:
+    with open('json/filtered_links.json') as input:
        data = json.load(input)
        sold_data = {}
        sold_data["links"]= []
        for link in data['links']:
           url = link['link']
-          with open("sold.json") as input:
+          with open("json/sold.json") as input:
               sold = json.load(input)
               for item in sold['links']:
                   if item['link'] == url:
@@ -62,4 +62,4 @@ def filterJson():
                     new_item['status'] = item['status']
                     new_item['time'] = item['time']
                     sold_data['links'].append(new_item)
-       toHtml.html(sold_data, "finn_sold")
+       blob.html(sold_data, "finn_sold")

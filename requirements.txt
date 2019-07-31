@@ -1,4 +1,5 @@
 click==6.7
+azure-storage==0.34.3
 Flask==1.0.2
 itsdangerous==0.24
 Jinja2==2.10.1

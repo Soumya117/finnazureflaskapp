@@ -6,6 +6,9 @@ import parse_sold as sold
 from flask import request
 import parseDate
 import sys
+import blob
+
+WEBSITE_DYNAMIC_CACHE=1
 
 @app.route('/links')
 def renderLinks():
@@ -30,6 +33,8 @@ def renderLinks():
     if not filterDate and not scan:
         link.linkHtml()
 
+    blob.upload("links.json", "json/links.json")
+    blob.upload("finn_links.html", "templates/finn_links.html")
     return render_template('finn_links.html')
 
 @app.route('/price')
@@ -48,6 +53,8 @@ def renderPrice():
         price.priceHtml()
 
     if multiplePrice:
+        print("Scanning for price changes..!")
+        sys.stdout.flush()
         price.multiplePriceLinks()
 
     if finnId:
@@ -63,7 +70,9 @@ def renderPrice():
 
     if not filterDate and not finnId and not multiplePrice and not scan:
         price.priceHtml()
-
+    
+    blob.upload("pris.json", "json/pris.json")
+    blob.upload("finn_price.html", "templates/finn_price.html")
     return render_template('finn_price.html')
 
 @app.route('/sold')
@@ -88,5 +97,7 @@ def renderSold():
 
     if not scan and not filterDate:
         sold.soldHtml()
-
+    
+    blob.upload("sold.json", "json/sold.json")
+    blob.upload("finn_sold.html", "templates/finn_sold.html")
     return render_template('finn_sold.html')
