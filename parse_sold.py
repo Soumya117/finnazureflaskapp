@@ -1,6 +1,6 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
-import datetime
+from datetime import datetime, timedelta
 import libHtml
 import json
 import sys
@@ -14,7 +14,7 @@ def add_sold(link, status):
                 exists = True
                 break
         if not exists:
-            current = datetime.datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')
+            current = datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')
             new_item = {}
             new_item['link'] = {}
             new_item['status'] = {}
@@ -50,6 +50,33 @@ def soldHtml():
         data = json.load(output)
         libHtml.html(data, "finn_sold")
 
+def filterWeek():
+    end_date = datetime.today().strftime('%Y-%m-%d')
+    start_date = datetime.today() - timedelta(days=1)
+    start_date = start_date.strftime('%Y-%m-%d')
+    with open('json/links_week.json') as input:
+       data = json.load(input)
+       sold_data = {}
+       sold_data["links"]= []
+       for link in data['links']:
+          url = link['link']
+          with open("json/sold.json") as input:
+              sold = json.load(input)
+              for item in sold['links']:
+                  if item['link'] == url:
+                    new_item = {}
+                    new_item['link'] = {}
+                    new_item['status'] = {}
+                    new_item['time'] = {}
+                    new_item['link'] = item['link']
+                    new_item['status'] = item['status']
+                    new_item['time'] = item['time']
+                    sold_data['links'].append(new_item)
+    print("Sold Data: ", sold_data)
+    sys.stdout.flush()
+    with open('json/sold_weeks.json', 'w') as output:
+        json.dump(sold_data, output)
+
 def filterJson():
     with open('json/filtered_links.json') as input:
        data = json.load(input)
@@ -69,4 +96,3 @@ def filterJson():
                     new_item['status'] = item['status']
                     new_item['time'] = item['time']
                     sold_data['links'].append(new_item)
-       libHtml.html(sold_data, "finn_sold")

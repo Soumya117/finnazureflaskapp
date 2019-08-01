@@ -19,7 +19,6 @@ def renderLinks():
         print("Scanning links..")
         sys.stdout.flush()
         link.parseLink()
-        link.linkHtml()
 
     if filterDate:
         valid = parseDate.validate(filterDate)
@@ -28,9 +27,9 @@ def renderLinks():
         date = parseDate.splitDate(filterDate)
         link.filterJson(date)
 
-    if not filterDate and not scan:
-        link.linkHtml()
-
+    link.linkHtml()
+    link.filterWeek()
+    blob.upload("links_week.json", "json/links_week.json")
     blob.upload("links.json", "json/links.json")
     blob.upload("finn_links.html", "templates/finn_links.html")
     return render_template('finn_links.html')
@@ -48,7 +47,6 @@ def renderPrice():
         print("Scanning price..")
         sys.stdout.flush()
         price.parsePrice()
-        price.priceHtml()
 
     if multiplePrice:
         print("Scanning for price changes..!")
@@ -66,9 +64,11 @@ def renderPrice():
         link.filterJson(date)
         price.filterJson()
 
-    if not filterDate and not finnId and not multiplePrice and not scan:
-        price.priceHtml()
-    
+    price.priceHtml()
+    price.multiplePriceLinks()
+    price.filterWeek()
+    blob.upload("price_week.json", "json/price_week.json")
+    blob.upload("multiplePris.json", "json/multiplePris.json")    
     blob.upload("pris.json", "json/pris.json")
     blob.upload("finn_price.html", "templates/finn_price.html")
     return render_template('finn_price.html')
@@ -83,7 +83,6 @@ def renderSold():
         print("Scanning sold..")
         sys.stdout.flush()
         sold.parseSold()
-        sold.soldHtml()
 
     if filterDate:
         valid = parseDate.validate(filterDate)
@@ -93,9 +92,10 @@ def renderSold():
         link.filterJson(date)
         sold.filterJson()
 
-    if not scan and not filterDate:
-        sold.soldHtml()
-    
+    sold.soldHtml()
+    sold.filterWeek()
+    blob.upload("sold_week.json", "json/sold_week.json")
     blob.upload("sold.json", "json/sold.json")
     blob.upload("finn_sold.html", "templates/finn_sold.html")
+
     return render_template('finn_sold.html')

@@ -2,7 +2,7 @@ import sys
 import json
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
-import datetime
+from datetime import datetime, timedelta
 import libHtml
 import os
 
@@ -16,7 +16,7 @@ def add_link(search):
                 exists = True
                 break
         if not exists:
-            current = datetime.datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')
+            current = datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')
             new_item = {}
             new_item['link'] = {}
             new_item['time'] = {}
@@ -51,6 +51,32 @@ def linkHtml():
         data = json.load(output)
         libHtml.html(data, "finn_links")
 
+def filterWeek():
+    end_date = datetime.today().strftime('%Y-%m-%d')
+    start_date = datetime.today() - timedelta(days=7)
+    start_date = start_date.strftime('%Y-%m-%d')
+    print("StartDate: ", start_date)
+    sys.stdout.flush()
+    print("EndDate: ", end_date)
+    sys.stdout.flush()
+    filterData = {}
+    filterData['links'] = []
+    with open (link) as output:
+       data = json.load(output)
+       for item in data['links']:
+           time = item['time'].split('T')
+           if start_date <= time[0] and time[0] <= end_date:
+               new_item = {}
+               new_item['link'] = {}
+               new_item['time'] = {}
+               new_item['link'] = item['link']
+               new_item['time'] = item['time']
+               filterData['links'].append(new_item)
+    print("FilterData: ", filterData)
+    sys.stdout.flush()
+    with open("json/links_week.json", "w") as output:
+        json.dump(filterData, output)
+
 def filterJson(date):
     start_date = date[0]
     end_date = date[1]
@@ -67,7 +93,6 @@ def filterJson(date):
                new_item['link'] = item['link']
                new_item['time'] = item['time']
                filterData['links'].append(new_item)
-    libHtml.html(filterData, "finn_links")
     with open("json/filtered_links.json", "w") as output:
         json.dump(filterData, output)
 
