@@ -26,7 +26,7 @@ def upload(file_name, path):
 def run_sample():
     try:
         # Create the BlockBlockService that is used to call the Blob service for the storage account
-        block_blob_service = BlockBlobService(account_name='finnminingblob', account_key='B3GcfOYBEci9aLYSFo6+KZpahLM52FlMGpFOvK/sD7HbeYspxCCCcAJG0ffnaXlmn8YfgSEarzrCyg5bIRN5Fg==')
+        block_blob_service = BlockBlobService(account_name='accountName', account_key='accountKey')
 
         # Create a container called 'quickstartblobs'.
         block_blob_service.create_container(container_name)
