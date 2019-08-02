@@ -55,6 +55,8 @@ def filterWeek():
     end_date = datetime.today().strftime('%Y-%m-%d')
     start_date = datetime.today() - timedelta(days=7)
     start_date = start_date.strftime('%Y-%m-%d')
+    filterData = {}
+    filterData['links'] = []
     with open (link) as output:
        data = json.load(output)
        for item in data['links']:
