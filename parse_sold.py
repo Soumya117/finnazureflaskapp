@@ -72,8 +72,6 @@ def filterWeek():
                     new_item['status'] = item['status']
                     new_item['time'] = item['time']
                     sold_data['links'].append(new_item)
-    print("Sold Data: ", sold_data)
-    sys.stdout.flush()
     with open('json/sold_weeks.json', 'w') as output:
         json.dump(sold_data, output)
 

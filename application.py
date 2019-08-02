@@ -27,12 +27,10 @@ def renderLinks():
         date = parseDate.splitDate(filterDate)
         link.filterJson(date)
 
-    link.linkHtml()
     link.filterWeek()
     blob.upload("links_week.json", "json/links_week.json")
     blob.upload("links.json", "json/links.json")
-    blob.upload("finn_links.html", "templates/finn_links.html")
-    return render_template('finn_links.html')
+    return ""
 
 @app.route('/price')
 def renderPrice():
@@ -64,14 +62,10 @@ def renderPrice():
         link.filterJson(date)
         price.filterJson()
 
-    price.priceHtml()
     price.multiplePriceLinks()
-    price.filterWeek()
-    blob.upload("price_week.json", "json/price_week.json")
     blob.upload("multiplePris.json", "json/multiplePris.json")    
     blob.upload("pris.json", "json/pris.json")
-    blob.upload("finn_price.html", "templates/finn_price.html")
-    return render_template('finn_price.html')
+    return ""
 
 @app.route('/sold')
 def renderSold(): 
@@ -92,10 +86,6 @@ def renderSold():
         link.filterJson(date)
         sold.filterJson()
 
-    sold.soldHtml()
-    sold.filterWeek()
-    blob.upload("sold_week.json", "json/sold_week.json")
     blob.upload("sold.json", "json/sold.json")
-    blob.upload("finn_sold.html", "templates/finn_sold.html")
 
-    return render_template('finn_sold.html')
+    return ""

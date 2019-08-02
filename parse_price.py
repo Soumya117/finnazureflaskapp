@@ -76,7 +76,6 @@ def filterWeek():
                 pris = json.load(input)
                 for item in pris:
                    if item == url:
-                       print("item found: ", item)
                        pris_data[item]= []
                        for prices in pris[item]:
                            new_item = {}
@@ -98,7 +97,6 @@ def filterJson():
               pris = json.load(input)
               for item in pris:
                   if item == url:
-                      print("item found: ", item)
                       pris_data[item]= []
                       for prices in pris[item]:
                           new_item = {}
@@ -129,15 +127,11 @@ def multiplePriceLinks():
         for item in data:
             item_list = data[item]
             if len(item_list) > 1:
-                print("Item List: ", item_list)
-                sys.stdout.flush()
                 pris_data[item] = []
                 for pris in data[item]:
                     new_item = {}
                     new_item['pris'] = pris['pris']
                     new_item['time'] = pris['time']
                     pris_data[item].append(new_item)
-    print("Multiple prices: ", pris_data)
-    sys.stdout.flush()
     with open ('json/multiplePris.json','w') as output:
         json.dump(pris_data, output)
