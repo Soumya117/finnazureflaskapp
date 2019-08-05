@@ -8,1031 +8,1031 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/soumya/azure/python/finnazureflaskapp/cmake-build-debug"/>
+				<Option working_dir="/home/kuro/Azure/python/finnazureflaskapp/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/soumya/azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/soumya/azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/soumya/azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/soumya/azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/home/soumya/azure/python/finnazureflaskapp/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/soumya/azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/soumya/azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/soumya/azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/soumya/azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kuro/Azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kuro/Azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kuro/Azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kuro/Azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/soumya/azure/python/finnazureflaskapp/cmake-build-debug"/>
+				<Option working_dir="/home/kuro/Azure/python/finnazureflaskapp/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/soumya/azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/soumya/azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/soumya/azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/soumya/azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kuro/Azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kuro/Azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kuro/Azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kuro/Azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/kuro/Azure/python/finnazureflaskapp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kuro/Azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kuro/Azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kuro/Azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kuro/Azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="finnazureflaskapp">
-				<Option output="/home/soumya/azure/python/finnazureflaskapp/cmake-build-debug/finnazureflaskapp" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/soumya/azure/python/finnazureflaskapp/cmake-build-debug"/>
+				<Option output="/home/kuro/Azure/python/finnazureflaskapp/cmake-build-debug/finnazureflaskapp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kuro/Azure/python/finnazureflaskapp/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
-					<Add directory="/usr/include/c++/5/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/soumya/azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 finnazureflaskapp"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/soumya/azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/soumya/azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/soumya/azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kuro/Azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 finnazureflaskapp"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kuro/Azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kuro/Azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kuro/Azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="finnazureflaskapp/fast">
-				<Option output="/home/soumya/azure/python/finnazureflaskapp/cmake-build-debug/finnazureflaskapp" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/soumya/azure/python/finnazureflaskapp/cmake-build-debug"/>
+				<Option output="/home/kuro/Azure/python/finnazureflaskapp/cmake-build-debug/finnazureflaskapp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kuro/Azure/python/finnazureflaskapp/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/5"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
-					<Add directory="/usr/include/c++/5/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/soumya/azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 finnazureflaskapp/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/soumya/azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/soumya/azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/soumya/azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/kuro/Azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 finnazureflaskapp/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/kuro/Azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/kuro/Azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/kuro/Azure/python/finnazureflaskapp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/LICENSE">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/LICENSE">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/README.md">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/README.md">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/application.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/application.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/finn.html">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/finn.html">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/links.json">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/links.json">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/parseDate.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/parseDate.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/parse_link.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/parse_link.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/parse_price.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/parse_price.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/pris.json">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/pris.json">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/pris_date.json">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/pris_date.json">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/requirements.txt">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/requirements.txt">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/templates/finn.html">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/templates/finn.html">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/templates/finn_links.html">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/templates/finn_links.html">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/templates/finn_price.html">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/templates/finn_price.html">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/toHtml.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/toHtml.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/bin/activate">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/bin/activate">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/bin/activate.csh">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/bin/activate.csh">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/bin/activate.fish">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/bin/activate.fish">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/bin/easy_install">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/bin/easy_install">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/bin/easy_install-3.5">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/bin/easy_install-3.5">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/bin/pip">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/bin/pip">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/bin/pip3">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/bin/pip3">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/bin/pip3.5">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/bin/pip3.5">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/bin/python">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/bin/python">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/bin/python3">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/bin/python3">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/easy_install.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/easy_install.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip-8.1.1.dist-info/DESCRIPTION.rst">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip-8.1.1.dist-info/DESCRIPTION.rst">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip-8.1.1.dist-info/INSTALLER">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip-8.1.1.dist-info/INSTALLER">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip-8.1.1.dist-info/METADATA">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip-8.1.1.dist-info/METADATA">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip-8.1.1.dist-info/RECORD">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip-8.1.1.dist-info/RECORD">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip-8.1.1.dist-info/WHEEL">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip-8.1.1.dist-info/WHEEL">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip-8.1.1.dist-info/entry_points.txt">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip-8.1.1.dist-info/entry_points.txt">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip-8.1.1.dist-info/metadata.json">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip-8.1.1.dist-info/metadata.json">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip-8.1.1.dist-info/top_level.txt">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip-8.1.1.dist-info/top_level.txt">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/__init__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/__init__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/__main__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/__main__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/_vendor/__init__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/_vendor/__init__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/basecommand.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/basecommand.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/baseparser.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/baseparser.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/cmdoptions.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/cmdoptions.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/commands/__init__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/commands/__init__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/commands/completion.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/commands/completion.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/commands/download.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/commands/download.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/commands/freeze.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/commands/freeze.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/commands/hash.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/commands/hash.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/commands/help.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/commands/help.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/commands/install.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/commands/install.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/commands/list.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/commands/list.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/commands/search.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/commands/search.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/commands/show.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/commands/show.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/commands/uninstall.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/commands/uninstall.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/commands/wheel.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/commands/wheel.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/compat/__init__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/compat/__init__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/compat/dictconfig.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/compat/dictconfig.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/compat/ordereddict.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/compat/ordereddict.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/download.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/download.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/exceptions.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/exceptions.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/index.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/index.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/locations.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/locations.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/models/__init__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/models/__init__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/models/index.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/models/index.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/operations/__init__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/operations/__init__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/operations/freeze.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/operations/freeze.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/pep425tags.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/pep425tags.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/req/__init__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/req/__init__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/req/req_file.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/req/req_file.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/req/req_install.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/req/req_install.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/req/req_set.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/req/req_set.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/req/req_uninstall.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/req/req_uninstall.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/status_codes.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/status_codes.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/utils/__init__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/utils/__init__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/utils/appdirs.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/utils/appdirs.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/utils/build.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/utils/build.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/utils/deprecation.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/utils/deprecation.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/utils/encoding.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/utils/encoding.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/utils/filesystem.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/utils/filesystem.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/utils/hashes.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/utils/hashes.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/utils/logging.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/utils/logging.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/utils/outdated.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/utils/outdated.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/utils/setuptools_build.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/utils/setuptools_build.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/utils/ui.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/utils/ui.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/vcs/__init__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/vcs/__init__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/vcs/bazaar.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/vcs/bazaar.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/vcs/git.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/vcs/git.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/vcs/mercurial.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/vcs/mercurial.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/vcs/subversion.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/vcs/subversion.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/wheel.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pip/wheel.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources-0.0.0.dist-info/DESCRIPTION.rst">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources-0.0.0.dist-info/DESCRIPTION.rst">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources-0.0.0.dist-info/INSTALLER">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources-0.0.0.dist-info/INSTALLER">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources-0.0.0.dist-info/METADATA">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources-0.0.0.dist-info/METADATA">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources-0.0.0.dist-info/RECORD">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources-0.0.0.dist-info/RECORD">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources-0.0.0.dist-info/WHEEL">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources-0.0.0.dist-info/WHEEL">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources-0.0.0.dist-info/metadata.json">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources-0.0.0.dist-info/metadata.json">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources/__init__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources/__init__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources/_vendor/__init__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources/_vendor/__init__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources/_vendor/packaging/__about__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources/_vendor/packaging/__about__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources/_vendor/packaging/__init__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources/_vendor/packaging/__init__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources/_vendor/packaging/_compat.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources/_vendor/packaging/_compat.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources/_vendor/packaging/_structures.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources/_vendor/packaging/_structures.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources/_vendor/packaging/markers.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources/_vendor/packaging/markers.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources/_vendor/packaging/requirements.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources/_vendor/packaging/requirements.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources/_vendor/packaging/specifiers.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources/_vendor/packaging/specifiers.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources/_vendor/packaging/utils.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources/_vendor/packaging/utils.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources/_vendor/packaging/version.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources/_vendor/packaging/version.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources/_vendor/pyparsing.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources/_vendor/pyparsing.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources/_vendor/six.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources/_vendor/six.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources/extern/__init__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/pkg_resources/extern/__init__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools-20.7.0.dist-info/DESCRIPTION.rst">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools-20.7.0.dist-info/DESCRIPTION.rst">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools-20.7.0.dist-info/INSTALLER">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools-20.7.0.dist-info/INSTALLER">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools-20.7.0.dist-info/METADATA">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools-20.7.0.dist-info/METADATA">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools-20.7.0.dist-info/RECORD">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools-20.7.0.dist-info/RECORD">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools-20.7.0.dist-info/WHEEL">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools-20.7.0.dist-info/WHEEL">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools-20.7.0.dist-info/dependency_links.txt">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools-20.7.0.dist-info/dependency_links.txt">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools-20.7.0.dist-info/entry_points.txt">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools-20.7.0.dist-info/entry_points.txt">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools-20.7.0.dist-info/metadata.json">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools-20.7.0.dist-info/metadata.json">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools-20.7.0.dist-info/top_level.txt">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools-20.7.0.dist-info/top_level.txt">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools-20.7.0.dist-info/zip-safe">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools-20.7.0.dist-info/zip-safe">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/__init__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/__init__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/archive_util.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/archive_util.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/__init__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/__init__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/alias.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/alias.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/bdist_egg.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/bdist_egg.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/bdist_rpm.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/bdist_rpm.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/bdist_wininst.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/bdist_wininst.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/build_ext.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/build_ext.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/build_py.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/build_py.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/develop.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/develop.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/easy_install.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/easy_install.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/egg_info.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/egg_info.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/install.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/install.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/install_egg_info.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/install_egg_info.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/install_lib.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/install_lib.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/install_scripts.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/install_scripts.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/register.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/register.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/rotate.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/rotate.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/saveopts.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/saveopts.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/sdist.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/sdist.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/setopt.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/setopt.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/test.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/test.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/upload.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/upload.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/upload_docs.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/command/upload_docs.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/depends.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/depends.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/dist.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/dist.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/extension.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/extension.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/extern/__init__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/extern/__init__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/launch.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/launch.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/lib2to3_ex.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/lib2to3_ex.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/msvc9_support.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/msvc9_support.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/package_index.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/package_index.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/py26compat.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/py26compat.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/py27compat.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/py27compat.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/py31compat.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/py31compat.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/sandbox.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/sandbox.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/script (dev).tmpl">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/script (dev).tmpl">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/script.tmpl">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/script.tmpl">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/site-patch.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/site-patch.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/ssl_support.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/ssl_support.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/unicode_utils.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/unicode_utils.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/utils.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/utils.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/version.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/version.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/windows_support.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib/python3.5/site-packages/setuptools/windows_support.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/easy_install.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/easy_install.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip-8.1.1.dist-info/DESCRIPTION.rst">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip-8.1.1.dist-info/DESCRIPTION.rst">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip-8.1.1.dist-info/INSTALLER">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip-8.1.1.dist-info/INSTALLER">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip-8.1.1.dist-info/METADATA">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip-8.1.1.dist-info/METADATA">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip-8.1.1.dist-info/RECORD">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip-8.1.1.dist-info/RECORD">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip-8.1.1.dist-info/WHEEL">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip-8.1.1.dist-info/WHEEL">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip-8.1.1.dist-info/entry_points.txt">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip-8.1.1.dist-info/entry_points.txt">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip-8.1.1.dist-info/metadata.json">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip-8.1.1.dist-info/metadata.json">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip-8.1.1.dist-info/top_level.txt">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip-8.1.1.dist-info/top_level.txt">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/__init__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/__init__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/__main__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/__main__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/_vendor/__init__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/_vendor/__init__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/basecommand.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/basecommand.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/baseparser.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/baseparser.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/cmdoptions.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/cmdoptions.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/commands/__init__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/commands/__init__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/commands/completion.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/commands/completion.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/commands/download.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/commands/download.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/commands/freeze.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/commands/freeze.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/commands/hash.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/commands/hash.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/commands/help.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/commands/help.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/commands/install.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/commands/install.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/commands/list.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/commands/list.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/commands/search.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/commands/search.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/commands/show.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/commands/show.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/commands/uninstall.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/commands/uninstall.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/commands/wheel.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/commands/wheel.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/compat/__init__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/compat/__init__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/compat/dictconfig.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/compat/dictconfig.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/compat/ordereddict.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/compat/ordereddict.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/download.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/download.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/exceptions.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/exceptions.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/index.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/index.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/locations.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/locations.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/models/__init__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/models/__init__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/models/index.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/models/index.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/operations/__init__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/operations/__init__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/operations/freeze.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/operations/freeze.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/pep425tags.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/pep425tags.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/req/__init__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/req/__init__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/req/req_file.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/req/req_file.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/req/req_install.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/req/req_install.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/req/req_set.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/req/req_set.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/req/req_uninstall.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/req/req_uninstall.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/status_codes.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/status_codes.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/utils/__init__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/utils/__init__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/utils/appdirs.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/utils/appdirs.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/utils/build.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/utils/build.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/utils/deprecation.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/utils/deprecation.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/utils/encoding.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/utils/encoding.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/utils/filesystem.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/utils/filesystem.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/utils/hashes.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/utils/hashes.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/utils/logging.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/utils/logging.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/utils/outdated.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/utils/outdated.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/utils/setuptools_build.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/utils/setuptools_build.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/utils/ui.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/utils/ui.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/vcs/__init__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/vcs/__init__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/vcs/bazaar.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/vcs/bazaar.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/vcs/git.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/vcs/git.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/vcs/mercurial.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/vcs/mercurial.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/vcs/subversion.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/vcs/subversion.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/wheel.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pip/wheel.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources-0.0.0.dist-info/DESCRIPTION.rst">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources-0.0.0.dist-info/DESCRIPTION.rst">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources-0.0.0.dist-info/INSTALLER">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources-0.0.0.dist-info/INSTALLER">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources-0.0.0.dist-info/METADATA">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources-0.0.0.dist-info/METADATA">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources-0.0.0.dist-info/RECORD">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources-0.0.0.dist-info/RECORD">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources-0.0.0.dist-info/WHEEL">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources-0.0.0.dist-info/WHEEL">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources-0.0.0.dist-info/metadata.json">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources-0.0.0.dist-info/metadata.json">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources/__init__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources/__init__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources/_vendor/__init__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources/_vendor/__init__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources/_vendor/packaging/__about__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources/_vendor/packaging/__about__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources/_vendor/packaging/__init__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources/_vendor/packaging/__init__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources/_vendor/packaging/_compat.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources/_vendor/packaging/_compat.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources/_vendor/packaging/_structures.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources/_vendor/packaging/_structures.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources/_vendor/packaging/markers.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources/_vendor/packaging/markers.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources/_vendor/packaging/requirements.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources/_vendor/packaging/requirements.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources/_vendor/packaging/specifiers.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources/_vendor/packaging/specifiers.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources/_vendor/packaging/utils.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources/_vendor/packaging/utils.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources/_vendor/packaging/version.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources/_vendor/packaging/version.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources/_vendor/pyparsing.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources/_vendor/pyparsing.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources/_vendor/six.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources/_vendor/six.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources/extern/__init__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/pkg_resources/extern/__init__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools-20.7.0.dist-info/DESCRIPTION.rst">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools-20.7.0.dist-info/DESCRIPTION.rst">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools-20.7.0.dist-info/INSTALLER">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools-20.7.0.dist-info/INSTALLER">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools-20.7.0.dist-info/METADATA">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools-20.7.0.dist-info/METADATA">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools-20.7.0.dist-info/RECORD">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools-20.7.0.dist-info/RECORD">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools-20.7.0.dist-info/WHEEL">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools-20.7.0.dist-info/WHEEL">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools-20.7.0.dist-info/dependency_links.txt">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools-20.7.0.dist-info/dependency_links.txt">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools-20.7.0.dist-info/entry_points.txt">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools-20.7.0.dist-info/entry_points.txt">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools-20.7.0.dist-info/metadata.json">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools-20.7.0.dist-info/metadata.json">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools-20.7.0.dist-info/top_level.txt">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools-20.7.0.dist-info/top_level.txt">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools-20.7.0.dist-info/zip-safe">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools-20.7.0.dist-info/zip-safe">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/__init__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/__init__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/archive_util.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/archive_util.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/__init__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/__init__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/alias.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/alias.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/bdist_egg.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/bdist_egg.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/bdist_rpm.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/bdist_rpm.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/bdist_wininst.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/bdist_wininst.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/build_ext.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/build_ext.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/build_py.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/build_py.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/develop.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/develop.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/easy_install.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/easy_install.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/egg_info.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/egg_info.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/install.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/install.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/install_egg_info.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/install_egg_info.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/install_lib.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/install_lib.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/install_scripts.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/install_scripts.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/register.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/register.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/rotate.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/rotate.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/saveopts.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/saveopts.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/sdist.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/sdist.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/setopt.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/setopt.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/test.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/test.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/upload.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/upload.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/upload_docs.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/command/upload_docs.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/depends.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/depends.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/dist.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/dist.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/extension.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/extension.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/extern/__init__.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/extern/__init__.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/launch.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/launch.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/lib2to3_ex.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/lib2to3_ex.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/msvc9_support.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/msvc9_support.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/package_index.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/package_index.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/py26compat.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/py26compat.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/py27compat.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/py27compat.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/py31compat.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/py31compat.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/sandbox.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/sandbox.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/script (dev).tmpl">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/script (dev).tmpl">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/script.tmpl">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/script.tmpl">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/site-patch.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/site-patch.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/ssl_support.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/ssl_support.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/unicode_utils.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/unicode_utils.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/utils.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/utils.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/version.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/version.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/windows_support.py">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/lib64/python3.5/site-packages/setuptools/windows_support.py">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/pyvenv.cfg">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/pyvenv.cfg">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/share/python-wheels/CacheControl-0.11.5-py2.py3-none-any.whl">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/share/python-wheels/CacheControl-0.11.5-py2.py3-none-any.whl">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/share/python-wheels/chardet-2.3.0-py2.py3-none-any.whl">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/share/python-wheels/chardet-2.3.0-py2.py3-none-any.whl">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/share/python-wheels/colorama-0.3.7-py2.py3-none-any.whl">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/share/python-wheels/colorama-0.3.7-py2.py3-none-any.whl">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/share/python-wheels/distlib-0.2.2-py2.py3-none-any.whl">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/share/python-wheels/distlib-0.2.2-py2.py3-none-any.whl">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/share/python-wheels/html5lib-0.999-py2.py3-none-any.whl">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/share/python-wheels/html5lib-0.999-py2.py3-none-any.whl">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/share/python-wheels/ipaddress-0.0.0-py2.py3-none-any.whl">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/share/python-wheels/ipaddress-0.0.0-py2.py3-none-any.whl">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/share/python-wheels/lockfile-0.12.2-py2.py3-none-any.whl">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/share/python-wheels/lockfile-0.12.2-py2.py3-none-any.whl">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/share/python-wheels/packaging-16.6-py2.py3-none-any.whl">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/share/python-wheels/packaging-16.6-py2.py3-none-any.whl">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/share/python-wheels/pip-8.1.1-py2.py3-none-any.whl">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/share/python-wheels/pip-8.1.1-py2.py3-none-any.whl">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/share/python-wheels/pkg_resources-0.0.0-py2.py3-none-any.whl">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/share/python-wheels/pkg_resources-0.0.0-py2.py3-none-any.whl">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/share/python-wheels/progress-1.2-py2.py3-none-any.whl">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/share/python-wheels/progress-1.2-py2.py3-none-any.whl">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/share/python-wheels/pyparsing-2.0.3-py2.py3-none-any.whl">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/share/python-wheels/pyparsing-2.0.3-py2.py3-none-any.whl">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/share/python-wheels/requests-2.9.1-py2.py3-none-any.whl">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/share/python-wheels/requests-2.9.1-py2.py3-none-any.whl">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/share/python-wheels/retrying-1.3.3-py2.py3-none-any.whl">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/share/python-wheels/retrying-1.3.3-py2.py3-none-any.whl">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/share/python-wheels/setuptools-20.7.0-py2.py3-none-any.whl">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/share/python-wheels/setuptools-20.7.0-py2.py3-none-any.whl">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/share/python-wheels/six-1.10.0-py2.py3-none-any.whl">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/share/python-wheels/six-1.10.0-py2.py3-none-any.whl">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/share/python-wheels/urllib3-1.13.1-py2.py3-none-any.whl">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/share/python-wheels/urllib3-1.13.1-py2.py3-none-any.whl">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/venv/share/python-wheels/wheel-0.29.0-py2.py3-none-any.whl">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/venv/share/python-wheels/wheel-0.29.0-py2.py3-none-any.whl">
 			<Option target="finnazureflaskapp"/>
 		</Unit>
-		<Unit filename="/home/soumya/azure/python/finnazureflaskapp/CMakeLists.txt">
+		<Unit filename="/home/kuro/Azure/python/finnazureflaskapp/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

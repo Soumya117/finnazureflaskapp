@@ -3,6 +3,6 @@ __pycache__/*
 CMakeLists.txt
 __pycache__
 templates/
-venv/
+venv/*
 filtered_links.json
 .idea/

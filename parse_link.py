@@ -1,6 +1,6 @@
 import sys
 import json
-from urllib.request import urlopen
+from urllib import urlopen
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import libHtml
@@ -30,29 +30,28 @@ def add_link(search):
 def add_title(result):
     with open("json/realestates.json") as input:
         data = json.load(input)
-        exists = False
+        current = datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')
         for item in data['links']:
             if result['link'] in item['link']:
-                exists = True
+                current = item['time']
                 break
-        if not exists:
-            current = datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')
-            new_item = {}
-            new_item['link'] = {}
-            new_item['text'] = {}
-            new_item['time'] = {}
-            new_item['address'] = {}
-            new_item['area'] = {}
-            new_item['price'] = {}
 
-            new_item['link'] = result['link']
-            new_item['address'] = result['address']
-            new_item['area'] = result['area']
-            new_item['price'] = result['price']
-            new_item['text'] = result['text']
-            new_item['time'] = current
+        new_item = {}
+        new_item['link'] = {}
+        new_item['text'] = {}
+        new_item['time'] = {}
+        new_item['address'] = {}
+        new_item['area'] = {}
+        new_item['price'] = {}
 
-            data['links'].append(new_item)
+        new_item['link'] = result['link']
+        new_item['address'] = result['address']
+        new_item['area'] = result['area']
+        new_item['price'] = result['price']
+        new_item['text'] = result['text']
+        new_item['time'] = current
+
+        data['links'].append(new_item)
 
         with open("json/realestates.json", 'w') as output:
             json.dump(data, output)
@@ -83,10 +82,10 @@ def parseTitle():
             price = p_span[1].get_text().strip()
             finn_link = str("https://www.finn.no")
             result['link'] = finn_link + link
-            result['text'] = str(link_text).replace(u"\u00e5", " ")
-            result['address'] = add_value
-            result['area'] = str(area).replace(u"\u00b2", " ")
-            result['price'] = str(price).replace(u"\u00a0", " ")
+            result['text'] = link_text.encode('ascii','ignore').decode('utf-8')
+            result['address'] = add_value.encode('ascii','ignore').decode('utf-8')
+            result['area'] = area.encode('ascii','ignore').decode('utf-8')
+            result['price'] = price.encode('ascii','ignore').decode('utf-8')
             add_title(result)
         else:
             continue
