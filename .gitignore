@@ -1,4 +1,5 @@
 cmake-build-debug/
+__pycache__/*
 CMakeLists.txt
 __pycache__
 templates/

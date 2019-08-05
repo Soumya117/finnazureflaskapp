@@ -27,6 +27,70 @@ def add_link(search):
         with open(link, 'w') as output:
             json.dump(data, output)
 
+def add_title(result):
+    with open("json/realestates.json") as input:
+        data = json.load(input)
+        exists = False
+        for item in data['links']:
+            if result['link'] in item['link']:
+                exists = True
+                break
+        if not exists:
+            current = datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')
+            new_item = {}
+            new_item['link'] = {}
+            new_item['text'] = {}
+            new_item['time'] = {}
+            new_item['address'] = {}
+            new_item['area'] = {}
+            new_item['price'] = {}
+
+            new_item['link'] = result['link']
+            new_item['address'] = result['address']
+            new_item['area'] = result['area']
+            new_item['price'] = result['price']
+            new_item['text'] = result['text']
+            new_item['time'] = current
+
+            data['links'].append(new_item)
+
+        with open("json/realestates.json", 'w') as output:
+            json.dump(data, output)
+
+def parseTitle():
+    url = "https://www.finn.no/realestate/homes/search.html?location=0.20061"
+    html = urlopen(url)
+    soup = BeautifulSoup(html, "lxml")
+    type(soup)
+    all_div = soup.find_all("div", {"class": "ads__unit__content"})
+    for div in all_div:
+        result = {}
+        result['link'] = {}
+        result['text'] = {}
+        result['address'] = {}
+        result['area'] = {}
+        result['price'] = {}
+        link_class = div.find_all('a', {"class": "ads__unit__link"})
+        link = link_class[0].get('href', '')
+        link_text = link_class[0].get_text().strip()
+        if not "newbuildings" in link:
+            add_span = div.find_all("span", {"class": "ads__unit__content__details"})
+            add_text = add_span[0].find_all('span')
+            add_value = add_text[0].get_text().strip()
+            p = div.find_all("p",{"class": "ads__unit__content__keys"})
+            p_span = p[0].find_all('span')
+            area = p_span[0].get_text().strip()
+            price = p_span[1].get_text().strip()
+            finn_link = str("https://www.finn.no")
+            result['link'] = finn_link + link
+            result['text'] = str(link_text).replace(u"\u00e5", " ")
+            result['address'] = add_value
+            result['area'] = str(area).replace(u"\u00b2", " ")
+            result['price'] = str(price).replace(u"\u00a0", " ")
+            add_title(result)
+        else:
+            continue
+
 def parseLink():        
     url = "https://www.finn.no/realestate/homes/search.html?location=0.20061"
     html = urlopen(url)

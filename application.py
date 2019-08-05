@@ -15,21 +15,22 @@ def renderLinks():
     filterDate = request.args.get('date')
     scan = request.args.get('scan')
 
-    if scan:
-        print("Scanning links..")
-        sys.stdout.flush()
-        link.parseLink()
-
-    if filterDate:
-        valid = parseDate.validate(filterDate)
-        if not "success" in valid:
-            return "Error: " + valid + "\nUsage: 2019-02-12:2019-03-11"
-        date = parseDate.splitDate(filterDate)
-        link.filterJson(date)
-
-    link.filterWeek()
-    blob.upload("links_week.json", "json/links_week.json")
-    blob.upload("links.json", "json/links.json")
+    # if scan:
+    #     print("Scanning links..")
+    #     sys.stdout.flush()
+    #     link.parseLink()
+    #
+    # if filterDate:
+    #     valid = parseDate.validate(filterDate)
+    #     if not "success" in valid:
+    #         return "Error: " + valid + "\nUsage: 2019-02-12:2019-03-11"
+    #     date = parseDate.splitDate(filterDate)
+    #     link.filterJson(date)
+    #
+    link.parseTitle()
+    # link.filterWeek()
+    # blob.upload("links_week.json", "json/links_week.json")
+    # blob.upload("links.json", "json/links.json")
     return ""
 
 @app.route('/price')
