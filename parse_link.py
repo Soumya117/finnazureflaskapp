@@ -1,5 +1,3 @@
-#!/usr/bin/python3.5
-
 import sys
 import json
 from urllib.request import urlopen
@@ -41,7 +39,7 @@ def parseTitle():
         link_class = div.find_all('a', {"class": "ads__unit__link"})
         link = link_class[0].get('href', '')
         link_text = link_class[0].get_text().strip()
-        if not "newbuildings" in link:
+        if "realestate/homes/" in link:
             add_span = div.find_all("span", {"class": "ads__unit__content__details"})
             add_text = add_span[0].find_all('span')
             add_value = add_text[0].get_text().strip()
@@ -58,6 +56,8 @@ def parseTitle():
             add_title(result)
         else:
             continue
+    print("Parsing links finished..!")
+    sys.stdout.flush()
 
 def cleanupSold():
     sold_links = []

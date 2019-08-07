@@ -1,5 +1,3 @@
-#!/usr/bin/python3.5
-
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
@@ -96,6 +94,8 @@ def parsePrice():
           result['price'] = uniString
           result['area'] = str(link['area'])
           add_pris(result)
+    print("Parsing price finished..!")
+    sys.stdout.flush()
 
 def multiplePriceLinks():
 

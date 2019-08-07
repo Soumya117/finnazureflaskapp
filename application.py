@@ -5,6 +5,7 @@ app = Flask(__name__)
 import parse_link as link
 import parse_price as price
 import parse_sold as sold
+import parse_visning as visning
 from flask import request
 import sys
 import blob
@@ -35,9 +36,22 @@ def renderPrice():
         price.parsePrice()
         price.multiplePriceLinks()
 
-
     blob.upload("multiplePris.json", "json/multiplePris.json")
     blob.upload("pris.json", "json/pris.json")
+    return ""
+
+@app.route('/visning')
+def renderVisning():
+    print("Request received for visning.")
+    sys.stdout.flush()
+    scan = request.args.get('scan')
+
+    if scan:
+        print("Scanning visnings..")
+        sys.stdout.flush()
+        visning.parseVisning()
+
+    blob.upload("visning.json", "json/visning.json")
     return ""
 
 @app.route('/clean')
@@ -47,9 +61,11 @@ def removeSoldData():
 
     link.cleanupSold()
     price.cleanupSold()
+    visning.cleanupSold()
 
     blob.upload("links.json", "json/links.json")
     blob.upload("pris.json", "json/pris.json")
+    blob.upload("visning.json", "json/visning.json")
     return ""
 
 @app.route('/sold')
@@ -63,5 +79,4 @@ def renderSold():
         sold.parseSold()
 
     blob.upload("sold.json", "json/sold.json")
-
     return ""
