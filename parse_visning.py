@@ -18,6 +18,7 @@ def add_visning(result):
             visning['link'] = result['link']
             visning['details'] = {}
             visning['details']['text'] =  result['text']
+            visning['details']['price'] =  result['price']
             visning['details']['area'] = result['area']
             visning['details']['address'] = result['address']
 
