@@ -1,41 +1,53 @@
+#!/usr/bin/python3.5
+
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import json
 import sys
+import io
 
 def add_pris(result):
     with open('json/pris.json') as output:
         pris_data = json.load(output)
         exists = False
-        if result['link'] not in pris_data:
-            pris_data[result['link']] = []
+        for price in pris_data['links']:
+            if result['link'] in price['link']:
+                exists = True
+
+        if not exists:
+            #new link
             current = datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')
             price = {}
-            price['text'] = result['text']
-            price['address'] = result['address']
-            price['area'] = result['area']
-            price['price'] = result['price']
-            price['time'] = current
-            pris_data[result['link']].append(price)
-            exists = True
-        else:
-            for p in pris_data[result['link']]:
-                if result['price'] in p['price']:
-                    exists = True
-                    break
-    if not exists:
-        current = datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')
-        price = {}
-        price['text'] = result['text']
-        price['address'] = result['address']
-        price['area'] = result['area']
-        price['price'] = result['price']
-        price['time'] = current
-        pris_data[result['link']].append(price)
-        
-    with open('json/pris.json', 'w') as outfile:
-        json.dump(pris_data, outfile)
+            price['link'] = result['link']
+            price['details'] = {}
+            price['details']['text'] =  result['text']
+            price['details']['area'] = result['area']
+            price['details']['address'] = result['address']
+
+            #now price list
+            price['price_list'] = []
+            new_price = {}
+            new_price['price'] = result['price']
+            new_price['time'] = current
+            price['price_list'].append(new_price)
+            pris_data['links'].append(price)
+
+    if exists:
+        #just add the price, rest exists at the correct place
+        #look for the link
+        for p in pris_data['links']:
+            if result['link'] in p['link']:
+                for pris in p['price_list']:
+                    if not result['price'] in pris['price']:
+                        current = datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')
+                        price = {}
+                        price['price'] = result['price']
+                        price['time'] = current
+                        p['price_list'].append(price)
+
+    with io.open('json/pris.json', 'w', encoding='utf8') as outfile:
+        json.dump(pris_data, outfile, ensure_ascii=False)
 
 def cleanupSold():
     sold_links = []
@@ -47,14 +59,15 @@ def cleanupSold():
     price_data = {}
     with open('json/pris.json') as input:
         price_data = json.load(input)
-        print("Total data: ", len(price_data))
-        for link in list(price_data):
-            if link in sold_links:
-                print("Deleting link from price: ", link)
-                del price_data[link]
+        count = 0
+        for item in list(price_data['links']):
+            if item['link'] in sold_links:
+                print("Deleting link from price: ", item['link'])
+                del price_data['links'][count]
+            count+=1
 
-    with open('json/pris.json', 'w') as output:
-        json.dump(price_data, output)
+    with io.open('json/pris.json', 'w', encoding='utf8') as output:
+        json.dump(price_data, output, ensure_ascii=False)
 
 def parsePrice():    
     with open('json/links.json') as input:
@@ -78,31 +91,29 @@ def parsePrice():
           uniString = str(pris)
           uniString = uniString.replace(u"\u00A0", " ")
           result['link'] = url
-          result['text'] = link['text']
-          result['address'] = link['address']
+          result['text'] = str(link['text'])
+          result['address'] = str(link['address'])
           result['price'] = uniString
-          result['area'] = link['area']
+          result['area'] = str(link['area'])
           add_pris(result)
 
 def multiplePriceLinks():
+
     multipleData = {}
     with open("json/multiplePris.json") as input:
         multipleData = json.load(input)
 
     with open ('json/pris.json') as output:
         data = json.load(output)
-        for item in data:
-            item_list = data[item]
+        for item in data['links']:
+            item_list = item['price_list']
             if len(item_list) > 1:
-                multipleData[item] = []
-                for pris in data[item]:
-                    new_item = {}
-                    new_item['price'] = pris['price']
-                    new_item['time'] = pris['time']
-                    new_item['text'] = pris['text']
-                    new_item['address'] = pris['address']
-                    new_item['area'] = pris['area']
-                    multipleData[item].append(new_item)
+                price = {}
+                price['link'] = item['link']
+                price['details'] = item['details']
+                price['price_list'] = []
+                price['price_list'] = item['price_list']
+                multipleData['links'].append(price)
 
-    with open ('json/multiplePris.json','w') as output:
-        json.dump(multipleData, output)
+    with io.open ('json/multiplePris.json','w',  encoding='utf8') as output:
+        json.dump(multipleData, output, ensure_ascii=False)

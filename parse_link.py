@@ -1,3 +1,5 @@
+#!/usr/bin/python3.5
+
 import sys
 import json
 from urllib.request import urlopen
@@ -68,7 +70,6 @@ def cleanupSold():
     with open('json/links.json') as input:
         links_data = json.load(input)
         count=0
-        print("Total data: ", len(links_data['links']))
         for link in links_data['links']:
             if link['link'] in sold_links:
                 print("Deleting link: ", link['link'])

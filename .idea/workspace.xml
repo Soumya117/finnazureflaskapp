@@ -12,16 +12,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94b62714-f070-4359-a02e-ede077cb6276" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Blob.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/json/links_week.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/json/realestates.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libHtml.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application.py" afterPath="$PROJECT_DIR$/application.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json/links.json" afterPath="$PROJECT_DIR$/json/links.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json/multiplePris.json" afterPath="$PROJECT_DIR$/json/multiplePris.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json/pris.json" afterPath="$PROJECT_DIR$/json/pris.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json/sold.json" afterPath="$PROJECT_DIR$/json/sold.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json/visning.json" afterPath="$PROJECT_DIR$/json/visning.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parse_link.py" afterPath="$PROJECT_DIR$/parse_link.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parse_price.py" afterPath="$PROJECT_DIR$/parse_price.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parse_sold.py" afterPath="$PROJECT_DIR$/parse_sold.py" />
@@ -35,26 +31,26 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.72149837">
+    <splitter split-orientation="horizontal" split-proportion="0.5286396">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="parse_price.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="parse_price.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/parse_price.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="72">
-                  <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+                <state relative-caret-position="363">
+                  <caret line="64" column="65" lean-forward="true" selection-start-line="64" selection-start-column="65" selection-end-line="64" selection-end-column="65" />
                   <folding>
-                    <element signature="e#0#34#0" expanded="true" />
+                    <element signature="e#22#56#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="pris.json" pinned="false" current-in-tab="false">
+          <file leaf-file-name="pris.json" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/json/pris.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="108">
-                  <caret line="0" column="1233" lean-forward="false" selection-start-line="0" selection-start-column="1233" selection-end-line="0" selection-end-column="1233" />
+                <state relative-caret-position="403">
+                  <caret line="0" column="2272" lean-forward="true" selection-start-line="0" selection-start-column="2272" selection-end-line="0" selection-end-column="2272" />
                   <folding />
                 </state>
               </provider>
@@ -63,8 +59,8 @@
           <file leaf-file-name="links.json" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/json/links.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="1682" lean-forward="false" selection-start-line="0" selection-start-column="1682" selection-end-line="0" selection-end-column="1682" />
+                <state relative-caret-position="-3608">
+                  <caret line="0" column="32700" lean-forward="false" selection-start-line="0" selection-start-column="32700" selection-end-line="0" selection-end-column="32700" />
                   <folding />
                 </state>
               </provider>
@@ -73,18 +69,8 @@
           <file leaf-file-name="application.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/application.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="108">
-                  <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="multiplePris.json" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/json/multiplePris.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="22" lean-forward="true" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+                <state relative-caret-position="305">
+                  <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
                   <folding />
                 </state>
               </provider>
@@ -103,8 +89,8 @@
           <file leaf-file-name="blob.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/blob.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="108">
-                  <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+                <state relative-caret-position="324">
+                  <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#20#0" expanded="true" />
                   </folding>
@@ -116,12 +102,14 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="sold.json" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/json/sold.json">
+          <file leaf-file-name="parse_link.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/parse_link.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="134" lean-forward="false" selection-start-line="0" selection-start-column="134" selection-end-line="0" selection-end-column="134" />
-                  <folding />
+                <state relative-caret-position="388">
+                  <caret line="72" column="26" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="79" selection-end-column="37" />
+                  <folding>
+                    <element signature="e#22#32#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -129,8 +117,8 @@
           <file leaf-file-name="parse_sold.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/parse_sold.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="396">
-                  <caret line="22" column="47" lean-forward="true" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+                <state relative-caret-position="180">
+                  <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#34#0" expanded="true" />
                   </folding>
@@ -138,14 +126,32 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="parse_link.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/parse_link.py">
+          <file leaf-file-name="sold.json" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/json/sold.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="86">
-                  <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-                  <folding>
-                    <element signature="e#0#10#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="0">
+                  <caret line="0" column="190" lean-forward="false" selection-start-line="0" selection-start-column="181" selection-end-line="0" selection-end-column="190" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="multiplePris.json" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/json/multiplePris.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="2382" lean-forward="false" selection-start-line="0" selection-start-column="2382" selection-end-line="0" selection-end-column="2382" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="visning.json" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/json/visning.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="396">
+                  <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -165,7 +171,6 @@
     <findStrings>
       <find>152509833</find>
       <find>parseLink</find>
-      <find>dump</find>
       <find>count</find>
       <find>parsePrice</find>
       <find>5 600 000</find>
@@ -174,8 +179,11 @@
       <find>pris</find>
       <find>151477333</find>
       <find>6 400 000 kr</find>
-      <find>153176180</find>
       <find>https://www.finn.no/realestate/homes/ad.html?finnkode=153176180</find>
+      <find>154059035</find>
+      <find>153176180</find>
+      <find>dump</find>
+      <find>Inkognitogata</find>
     </findStrings>
     <replaceStrings>
       <replace>price</replace>
@@ -193,13 +201,14 @@
         <option value="$PROJECT_DIR$/pris.json" />
         <option value="$PROJECT_DIR$/json/realestates.json" />
         <option value="$PROJECT_DIR$/json/sold.json" />
-        <option value="$PROJECT_DIR$/json/multiplePris.json" />
-        <option value="$PROJECT_DIR$/json/pris.json" />
-        <option value="$PROJECT_DIR$/parse_price.py" />
+        <option value="$PROJECT_DIR$/json/visning.json" />
         <option value="$PROJECT_DIR$/parse_sold.py" />
+        <option value="$PROJECT_DIR$/json/multiplePris.json" />
         <option value="$PROJECT_DIR$/json/links.json" />
-        <option value="$PROJECT_DIR$/application.py" />
+        <option value="$PROJECT_DIR$/parse_price.py" />
         <option value="$PROJECT_DIR$/parse_link.py" />
+        <option value="$PROJECT_DIR$/application.py" />
+        <option value="$PROJECT_DIR$/json/pris.json" />
       </list>
     </option>
   </component>
@@ -238,6 +247,11 @@
             <path>
               <item name="finnazureflaskapp" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="finnazureflaskapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="finnazureflaskapp" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="finnazureflaskapp" type="462c0819:PsiDirectoryNode" />
+              <item name="json" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -292,7 +306,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48550000" />
+    <option name="totallyTimeSpent" value="58785000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="32" y="-1" width="1888" height="1200" extended-state="6" />
@@ -304,9 +318,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293023" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3823256" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.787907" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="FAQ Robot" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11997829" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09011944" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Project Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953313" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Job Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="MaxCompute Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -339,32 +353,6 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283721" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293023" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1972093" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="FAQ Robot" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09391965" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953313" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Job Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="MaxCompute Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -379,16 +367,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/parse_sold.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="42" column="32" lean-forward="false" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -455,7 +433,7 @@
         <state relative-caret-position="504">
           <caret line="57" column="10" lean-forward="false" selection-start-line="57" selection-start-column="10" selection-end-line="57" selection-end-column="54" />
           <folding>
-            <element signature="e#0#34#0" expanded="true" />
+            <element signature="e#22#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -465,7 +443,7 @@
         <state relative-caret-position="629">
           <caret line="103" column="0" lean-forward="true" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#22#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -492,7 +470,7 @@
         <state relative-caret-position="690">
           <caret line="50" column="14" lean-forward="false" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="14" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#22#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -509,7 +487,7 @@
         <state relative-caret-position="990">
           <caret line="70" column="25" lean-forward="false" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
           <folding>
-            <element signature="e#0#34#0" expanded="true" />
+            <element signature="e#22#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -543,7 +521,7 @@
         <state relative-caret-position="351">
           <caret line="70" column="25" lean-forward="false" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
           <folding>
-            <element signature="e#0#34#0" expanded="true" />
+            <element signature="e#22#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -553,7 +531,7 @@
         <state relative-caret-position="557">
           <caret line="50" column="14" lean-forward="false" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="14" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#22#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -570,7 +548,7 @@
         <state relative-caret-position="180">
           <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#22#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -587,7 +565,7 @@
         <state relative-caret-position="162">
           <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
           <folding>
-            <element signature="e#0#34#0" expanded="true" />
+            <element signature="e#22#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -607,16 +585,6 @@
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt" />
     <entry file="file://$PROJECT_DIR$/pris.json" />
     <entry file="file://$PROJECT_DIR$/links.json" />
-    <entry file="file://$PROJECT_DIR$/blob.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/json/realestates.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3024">
@@ -649,10 +617,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parse_sold.py">
+    <entry file="file://$PROJECT_DIR$/blob.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/visning.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
-          <caret line="22" column="47" lean-forward="true" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/multiplePris.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2382" lean-forward="false" selection-start-line="0" selection-start-column="2382" selection-end-line="0" selection-end-column="2382" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parse_sold.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
@@ -662,60 +656,52 @@
     <entry file="file://$PROJECT_DIR$/json/sold.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="134" lean-forward="false" selection-start-line="0" selection-start-column="134" selection-end-line="0" selection-end-column="134" />
+          <caret line="0" column="190" lean-forward="false" selection-start-line="0" selection-start-column="181" selection-end-line="0" selection-end-column="190" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/json/links.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1682" lean-forward="false" selection-start-line="0" selection-start-column="1682" selection-end-line="0" selection-end-column="1682" />
+        <state relative-caret-position="-3608">
+          <caret line="0" column="32700" lean-forward="false" selection-start-line="0" selection-start-column="32700" selection-end-line="0" selection-end-column="32700" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/json/multiplePris.json">
+    <entry file="file://$PROJECT_DIR$/parse_link.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="22" lean-forward="true" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="388">
+          <caret line="72" column="26" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="79" selection-end-column="37" />
+          <folding>
+            <element signature="e#22#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parse_price.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="64" column="65" lean-forward="true" selection-start-line="64" selection-start-column="65" selection-end-line="64" selection-end-column="65" />
+          <folding>
+            <element signature="e#22#56#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        <state relative-caret-position="305">
+          <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/json/pris.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="0" column="1233" lean-forward="false" selection-start-line="0" selection-start-column="1233" selection-end-line="0" selection-end-column="1233" />
+        <state relative-caret-position="403">
+          <caret line="0" column="2272" lean-forward="true" selection-start-line="0" selection-start-column="2272" selection-end-line="0" selection-end-column="2272" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parse_price.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parse_link.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

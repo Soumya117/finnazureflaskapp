@@ -35,6 +35,7 @@ def renderPrice():
         price.parsePrice()
         price.multiplePriceLinks()
 
+
     blob.upload("multiplePris.json", "json/multiplePris.json")
     blob.upload("pris.json", "json/pris.json")
     return ""

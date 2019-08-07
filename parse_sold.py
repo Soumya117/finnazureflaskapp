@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import json
 import sys
+import io
 
 def add_sold(result):
     with open('json/sold.json') as input:
@@ -24,8 +25,8 @@ def add_sold(result):
             new_item['area'] = result['area']
             data['links'].append(new_item)
 
-        with open('json/sold.json', 'w') as output:
-            json.dump(data, output)
+        with io.open('json/sold.json', 'w', encoding='utf8') as output:
+            json.dump(data, output, ensure_ascii=False)
 
 def parseSold():
     with open('json/links.json') as input:
