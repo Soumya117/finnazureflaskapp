@@ -5,10 +5,13 @@ The parsing includes:
 1. Scanning for new ads of realstates.
 2. Scanning each realstate ad and parsing the price.
 3. Scanning for sold houses.
+4. Listing all the visnings.
 
 The ads are stored in links.json along with the time stamp. So its possible to find out when the link was first seen on finn. The prices are stored in pris.json with the links and timestamp. So if 1 ad contains two different prices at 2 different timestamps, it is easier to find out the change in price.
 
 It also tells you the SOLD status. Finn.no doesnt display the sold houses in the search. If the link is saved somewhere it is easy to browse it and see the sold houses. The webapp scans links and records the status changes.
+Additionaly it also collects all the visnings.
+
 The app is triggered by an azure timer function so it collects data in the background and store the json in the Azure Storage Blob.
 
 LOCAL
