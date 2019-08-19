@@ -4,6 +4,18 @@ from datetime import datetime, timedelta
 import json
 import sys
 import io
+import geocode
+
+def addGeocodes():
+    old_data = {}
+    with open("json/sold.json") as input:
+        old_data = json.load(input)
+        for item in old_data['links']:
+            item['geocode'] = {}
+            item['geocode'] = geocode.getMarkers(item['address'])
+
+    with open("json/sold.json", "w") as output:
+        json.dump(old_data, output)
 
 def add_sold(result):
     with open('json/sold.json') as input:
@@ -21,6 +33,7 @@ def add_sold(result):
             new_item['time'] = current
             new_item['text'] = result['text']
             new_item['address'] = result['address']
+            new_item['geocode'] = result['geocode']
             new_item['price'] = result['price']
             new_item['area'] = result['area']
             data['links'].append(new_item)
@@ -57,6 +70,7 @@ def parseSold():
               result['link'] = url
               result['text'] = link['text']
               result['address'] = link['address']
+              result['geocode'] = link['geocode']
               result['price'] = uniString
               result['area'] = link['area']
               add_sold(result)

@@ -4,6 +4,18 @@ from urllib.request import urlopen
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import io
+import geocode
+
+def addGeocodes():
+    old_data = {}
+    with open("json/links.json") as input:
+        old_data = json.load(input)
+        for item in old_data['links']:
+            item['geocode'] = {}
+            item['geocode'] = geocode.getMarkers(item['address'])
+
+    with open("json/links.json", "w") as output:
+        json.dump(old_data, output)
 
 def add_title(result):
     with open("json/links.json") as input:
@@ -18,6 +30,7 @@ def add_title(result):
             new_item = {}
             new_item['link'] = result['link']
             new_item['address'] = result['address']
+            new_item['geocode'] = result['geocode']
             new_item['area'] = result['area']
             new_item['price'] = result['price']
             new_item['text'] = result['text']
@@ -51,6 +64,7 @@ def parseTitle():
             result['link'] = finn_link + link
             result['text'] = str(link_text)
             result['address'] = str(add_value)
+            result['geocode'] = geocode.getMarkers(add_value)
             result['area'] = str(area)
             result['price'] = price.encode('ascii','ignore').decode('utf-8')
             add_title(result)

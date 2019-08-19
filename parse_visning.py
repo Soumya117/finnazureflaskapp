@@ -3,6 +3,18 @@ from bs4 import BeautifulSoup
 import json
 import sys
 import io
+import geocode
+
+def addGeocodes():
+    old_data = {}
+    with open("json/visning.json") as input:
+        old_data = json.load(input)
+        for item in old_data['links']:
+            item['details']['geocode'] = {}
+            item['details']['geocode'] = geocode.getMarkers(item['details']['address'])
+
+    with open("json/visning.json", "w") as output:
+        json.dump(old_data, output)
 
 def add_visning(result):
     with open('json/visning.json') as output:
@@ -21,6 +33,7 @@ def add_visning(result):
             visning['details']['price'] =  result['price']
             visning['details']['area'] = result['area']
             visning['details']['address'] = result['address']
+            visning['details']['geocode'] = result['geocode']
 
             #now price list
             visning['visnings'] = []
@@ -94,6 +107,7 @@ def parseVisning():
               result['link'] = url
               result['text'] = link['text']
               result['address'] = link['address']
+              result['geocode'] = link['geocode']
               result['price'] = uniString
               result['area'] = link['area']
               add_visning(result)

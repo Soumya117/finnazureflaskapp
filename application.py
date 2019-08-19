@@ -19,9 +19,10 @@ def renderLinks():
     if scan:
         print("Scanning links..")
         sys.stdout.flush()
+        link.addGeocodes()
         link.parseTitle()
 
-    blob.upload("links.json", "json/links.json")
+    # blob.upload("links.json", "json/links.json")
     return ""
 
 @app.route('/price')
@@ -33,11 +34,13 @@ def renderPrice():
     if scan:
         print("Scanning price..")
         sys.stdout.flush()
+        price.addGeocodesPris()
+        price.addGeocodesMultiple()
         price.parsePrice()
         price.multiplePriceLinks()
-
-    blob.upload("multiplePris.json", "json/multiplePris.json")
-    blob.upload("pris.json", "json/pris.json")
+    #
+    # blob.upload("multiplePris.json", "json/multiplePris.json")
+    # blob.upload("pris.json", "json/pris.json")
     return ""
 
 @app.route('/visning')
@@ -49,9 +52,10 @@ def renderVisning():
     if scan:
         print("Scanning visnings..")
         sys.stdout.flush()
+        visning.addGeocodes()
         visning.parseVisning()
 
-    blob.upload("visning.json", "json/visning.json")
+    # blob.upload("visning.json", "json/visning.json")
     return ""
 
 @app.route('/clean')
@@ -60,12 +64,12 @@ def removeSoldData():
     sys.stdout.flush()
 
     link.cleanupSold()
-    price.cleanupSold()
-    visning.cleanupSold()
+    # price.cleanupSold()
+    # visning.cleanupSold()
 
     blob.upload("links.json", "json/links.json")
-    blob.upload("pris.json", "json/pris.json")
-    blob.upload("visning.json", "json/visning.json")
+    # blob.upload("pris.json", "json/pris.json")
+    # blob.upload("visning.json", "json/visning.json")
     return ""
 
 @app.route('/sold')
@@ -76,7 +80,8 @@ def renderSold():
     if scan:
         print("Scanning sold..")
         sys.stdout.flush()
+        sold.addGeocodes()
         sold.parseSold()
 
-    blob.upload("sold.json", "json/sold.json")
+    # blob.upload("sold.json", "json/sold.json")
     return ""

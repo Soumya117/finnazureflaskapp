@@ -4,8 +4,32 @@ from datetime import datetime, timedelta
 import json
 import sys
 import io
+import geocode
+
+def addGeocodesPris():
+    old_data = {}
+    with open("json/pris.json") as input:
+        old_data = json.load(input)
+        for item in old_data['links']:
+            item['details']['geocode'] = {}
+            item['details']['geocode'] = geocode.getMarkers(item['details']['address'])
+
+    with open("json/pris.json", "w") as output:
+        json.dump(old_data, output)
+
+def addGeocodesMultiple():
+    old_data = {}
+    with open("json/multiplePris.json") as input:
+        old_data = json.load(input)
+        for item in old_data['links']:
+            item['details']['geocode'] = {}
+            item['details']['geocode'] = geocode.getMarkers(item['details']['address'])
+
+    with open("json/multiplePris.json", "w") as output:
+        json.dump(old_data, output)
 
 def add_pris(result):
+    pris_data = {}
     with open('json/pris.json') as output:
         pris_data = json.load(output)
         exists = False
@@ -22,6 +46,7 @@ def add_pris(result):
             price['details']['text'] =  result['text']
             price['details']['area'] = result['area']
             price['details']['address'] = result['address']
+            price['details']['geocode'] = result['geocode']
 
             #now price list
             price['price_list'] = []
@@ -31,13 +56,17 @@ def add_pris(result):
             price['price_list'].append(new_price)
             pris_data['links'].append(price)
 
-    if exists:
-        #just add the price, rest exists at the correct place
-        #look for the link
-        for p in pris_data['links']:
-            if result['link'] in p['link']:
-                for pris in p['price_list']:
-                    if not result['price'] in pris['price']:
+        if exists:
+            #just add the price, rest exists at the correct place
+            #look for the link
+            pris_exists = False
+            for p in pris_data['links']:
+                if result['link'] in p['link']:
+                    for pris in p['price_list']:
+                        if result['price'] in pris['price']:
+                            pris_exists = True
+                            break
+                    if not pris_exists:
                         current = datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')
                         price = {}
                         price['price'] = result['price']
@@ -91,6 +120,7 @@ def parsePrice():
           result['link'] = url
           result['text'] = str(link['text'])
           result['address'] = str(link['address'])
+          result['geocode'] = str(link['geocode'])
           result['price'] = uniString
           result['area'] = str(link['area'])
           add_pris(result)
@@ -106,6 +136,14 @@ def multiplePriceLinks():
     with open ('json/pris.json') as output:
         data = json.load(output)
         for item in data['links']:
+            #Check if the link is already present in multiplePris.json
+
+            count = 0
+            for mul in multipleData['links']:
+                if item['link'] in mul['link']:
+                    del multipleData['links'][count]
+                count = count + 1
+
             item_list = item['price_list']
             if len(item_list) > 1:
                 price = {}
