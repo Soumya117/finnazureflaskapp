@@ -19,7 +19,7 @@ def renderLinks():
     if scan:
         print("Scanning links..")
         sys.stdout.flush()
-        link.addGeocodes()
+        # link.addGeocodes()
         link.parseTitle()
 
     blob.upload("links.json", "json/links.json")
@@ -34,8 +34,8 @@ def renderPrice():
     if scan:
         print("Scanning price..")
         sys.stdout.flush()
-        price.addGeocodesPris()
-        price.addGeocodesMultiple()
+        # price.addGeocodesPris()
+        # price.addGeocodesMultiple()
         price.parsePrice()
         price.multiplePriceLinks()
 
@@ -52,7 +52,7 @@ def renderVisning():
     if scan:
         print("Scanning visnings..")
         sys.stdout.flush()
-        visning.addGeocodes()
+        # visning.addGeocodes()
         visning.parseVisning()
 
     blob.upload("visning.json", "json/visning.json")
@@ -80,7 +80,7 @@ def renderSold():
     if scan:
         print("Scanning sold..")
         sys.stdout.flush()
-        sold.addGeocodes()
+        # sold.addGeocodes()
         sold.parseSold()
 
     blob.upload("sold.json", "json/sold.json")
