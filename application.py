@@ -22,7 +22,7 @@ def renderLinks():
         link.addGeocodes()
         link.parseTitle()
 
-    # blob.upload("links.json", "json/links.json")
+    blob.upload("links.json", "json/links.json")
     return ""
 
 @app.route('/price')
@@ -38,9 +38,9 @@ def renderPrice():
         price.addGeocodesMultiple()
         price.parsePrice()
         price.multiplePriceLinks()
-    #
-    # blob.upload("multiplePris.json", "json/multiplePris.json")
-    # blob.upload("pris.json", "json/pris.json")
+
+    blob.upload("multiplePris.json", "json/multiplePris.json")
+    blob.upload("pris.json", "json/pris.json")
     return ""
 
 @app.route('/visning')
@@ -55,7 +55,7 @@ def renderVisning():
         visning.addGeocodes()
         visning.parseVisning()
 
-    # blob.upload("visning.json", "json/visning.json")
+    blob.upload("visning.json", "json/visning.json")
     return ""
 
 @app.route('/clean')
@@ -83,5 +83,5 @@ def renderSold():
         sold.addGeocodes()
         sold.parseSold()
 
-    # blob.upload("sold.json", "json/sold.json")
+    blob.upload("sold.json", "json/sold.json")
     return ""

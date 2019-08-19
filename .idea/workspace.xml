@@ -12,29 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94b62714-f070-4359-a02e-ede077cb6276" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/geocode.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myvenv/bin/activate" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myvenv/bin/activate.csh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myvenv/bin/activate.fish" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myvenv/bin/python" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myvenv/bin/python3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myvenv/lib64" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myvenv/pyvenv.cfg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/utils/Blob.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/utils/__init__.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application.py" afterPath="$PROJECT_DIR$/application.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blob.py" afterPath="$PROJECT_DIR$/blob.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json/links.json" afterPath="$PROJECT_DIR$/json/links.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json/multiplePris.json" afterPath="$PROJECT_DIR$/json/multiplePris.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json/pris.json" afterPath="$PROJECT_DIR$/json/pris.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json/sold.json" afterPath="$PROJECT_DIR$/json/sold.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/json/visning.json" afterPath="$PROJECT_DIR$/json/visning.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parse_link.py" afterPath="$PROJECT_DIR$/parse_link.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parse_price.py" afterPath="$PROJECT_DIR$/parse_price.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parse_sold.py" afterPath="$PROJECT_DIR$/parse_sold.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parse_visning.py" afterPath="$PROJECT_DIR$/parse_visning.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,7 +25,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5170758">
+    <splitter split-orientation="horizontal" split-proportion="0.5357524">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="parse_price.py" pinned="false" current-in-tab="false">
@@ -70,21 +50,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="application.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="application.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/application.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="198">
-                  <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+                <state relative-caret-position="369">
+                  <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="71" selection-end-column="52" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="geocode.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="geocode.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/geocode.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="36">
-                  <caret line="2" column="41" lean-forward="false" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+                  <caret line="2" column="41" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="41" />
                   <folding />
                 </state>
               </provider>
@@ -93,8 +73,8 @@
           <file leaf-file-name="visning.json" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/json/visning.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="0" column="1829" lean-forward="false" selection-start-line="0" selection-start-column="1829" selection-end-line="0" selection-end-column="1829" />
+                <state relative-caret-position="0">
+                  <caret line="0" column="816" lean-forward="false" selection-start-line="0" selection-start-column="816" selection-end-line="0" selection-end-column="833" />
                   <folding />
                 </state>
               </provider>
@@ -113,8 +93,8 @@
           <file leaf-file-name="blob.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/blob.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="144">
-                  <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+                <state relative-caret-position="54">
+                  <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
                   <folding>
                     <element signature="e#0#20#0" expanded="true" />
                   </folding>
@@ -173,8 +153,8 @@
           <file leaf-file-name="parse_visning.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/parse_visning.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="103">
-                  <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+                <state relative-caret-position="477">
+                  <caret line="103" column="25" lean-forward="false" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="25" />
                   <folding>
                     <element signature="e#0#34#0" expanded="true" />
                   </folding>
@@ -253,14 +233,14 @@
         <option value="$PROJECT_DIR$/parse_link.py" />
         <option value="$PROJECT_DIR$/json/links.json" />
         <option value="$PROJECT_DIR$/parse_sold.py" />
-        <option value="$PROJECT_DIR$/application.py" />
         <option value="$PROJECT_DIR$/json/pris.json" />
         <option value="$PROJECT_DIR$/parse_price.py" />
-        <option value="$PROJECT_DIR$/parse_visning.py" />
         <option value="$PROJECT_DIR$/json/sold.json" />
         <option value="$PROJECT_DIR$/json/visning.json" />
-        <option value="$PROJECT_DIR$/blob.py" />
+        <option value="$PROJECT_DIR$/parse_visning.py" />
         <option value="$PROJECT_DIR$/geocode.py" />
+        <option value="$PROJECT_DIR$/blob.py" />
+        <option value="$PROJECT_DIR$/application.py" />
       </list>
     </option>
   </component>
@@ -367,7 +347,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78506000" />
+    <option name="totallyTimeSpent" value="79662000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-1" width="1920" height="1200" extended-state="6" />
@@ -380,9 +360,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283721" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43627906" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22511628" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="FAQ Robot" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13874066" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13874066" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Project Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953313" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Job Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="MaxCompute Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -737,36 +717,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/json/visning.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="0" column="1829" lean-forward="false" selection-start-line="0" selection-start-column="1829" selection-end-line="0" selection-end-column="1829" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blob.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/parse_visning.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        <state relative-caret-position="477">
+          <caret line="103" column="25" lean-forward="false" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="25" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
@@ -776,7 +730,33 @@
     <entry file="file://$PROJECT_DIR$/geocode.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
-          <caret line="2" column="41" lean-forward="false" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+          <caret line="2" column="41" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/visning.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="816" lean-forward="false" selection-start-line="0" selection-start-column="816" selection-end-line="0" selection-end-column="833" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blob.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="71" selection-end-column="52" />
           <folding />
         </state>
       </provider>
