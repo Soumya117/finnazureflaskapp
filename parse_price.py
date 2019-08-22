@@ -118,11 +118,11 @@ def parsePrice():
           uniString = str(pris)
           uniString = uniString.replace(u"\u00A0", " ")
           result['link'] = url
-          result['text'] = str(link['text'])
-          result['address'] = str(link['address'])
-          result['geocode'] = str(link['geocode'])
+          result['text'] = link['text']
+          result['address'] = link['address']
+          result['geocode'] = link['geocode']
           result['price'] = uniString
-          result['area'] = str(link['area'])
+          result['area'] = link['area']
           add_pris(result)
     print("Parsing price finished..!")
     sys.stdout.flush()
@@ -137,7 +137,6 @@ def multiplePriceLinks():
         data = json.load(output)
         for item in data['links']:
             #Check if the link is already present in multiplePris.json
-
             count = 0
             for mul in multipleData['links']:
                 if item['link'] in mul['link']:
