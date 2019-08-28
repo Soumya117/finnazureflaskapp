@@ -40,12 +40,13 @@ def parseSold(linksBlob, soldBlob):
     print("Number of links to scan: ", len(data['links']))
     sys.stdout.flush()
     result = {}
+    html = None
     for link in data['links']:
         url = link['link']
         try:
             html = urlopen(url)
         except Exception as e:
-            print("Bad URL: ",e)
+            print("Bad URL {url}: {e}".format(e=e, url=url))
             sys.stdout.flush()
         soup = BeautifulSoup(html, 'lxml')
         pris_rows = soup.find_all('span')

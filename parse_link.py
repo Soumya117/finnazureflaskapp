@@ -42,7 +42,7 @@ def parseTitle(jsonData):
     try:
         html = urlopen(url)
     except Exception as e:
-        print("Bad URL: ",e)
+        print("Bad URL {url}: {e}".format(e=e, url=url))
         sys.stdout.flush()
 
     soup = BeautifulSoup(html, "lxml")

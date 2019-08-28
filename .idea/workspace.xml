@@ -12,46 +12,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94b62714-f070-4359-a02e-ede077cb6276" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deployments/02c3c91e65504deeb29ecb2d20257aee/log.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deployments/02c3c91e65504deeb29ecb2d20257aee/manifest" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deployments/02c3c91e65504deeb29ecb2d20257aee/status.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deployments/298ad02cf19c46e68c61b1e42ee3a0d4/log.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deployments/298ad02cf19c46e68c61b1e42ee3a0d4/manifest" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deployments/298ad02cf19c46e68c61b1e42ee3a0d4/status.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deployments/395ff8e99fda482e845da9fa296ad449/log.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deployments/395ff8e99fda482e845da9fa296ad449/manifest" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deployments/395ff8e99fda482e845da9fa296ad449/status.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deployments/4da5075df02b484f8742cd3e959febce/log.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deployments/4da5075df02b484f8742cd3e959febce/manifest" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deployments/4da5075df02b484f8742cd3e959febce/status.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deployments/56d93e0c08a64b108d45f489e1d83c36/log.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deployments/56d93e0c08a64b108d45f489e1d83c36/manifest" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deployments/56d93e0c08a64b108d45f489e1d83c36/status.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deployments/58bfdb30a38b4681b6a99b2817e3868e/log.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deployments/58bfdb30a38b4681b6a99b2817e3868e/manifest" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deployments/58bfdb30a38b4681b6a99b2817e3868e/status.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deployments/732c780289e84e03b80ab68d9fd92f6b/log.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deployments/732c780289e84e03b80ab68d9fd92f6b/manifest" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deployments/732c780289e84e03b80ab68d9fd92f6b/status.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deployments/77fbcb0704694cadb4871b490d7e1463/log.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deployments/77fbcb0704694cadb4871b490d7e1463/manifest" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deployments/77fbcb0704694cadb4871b490d7e1463/status.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deployments/active" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deployments/b53e291c377247489098e41c15cb0c2b/log.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deployments/b53e291c377247489098e41c15cb0c2b/manifest" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deployments/b53e291c377247489098e41c15cb0c2b/status.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deployments/f71f5b7f973a4095b18adf796ef2b1bc/log.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deployments/f71f5b7f973a4095b18adf796ef2b1bc/manifest" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deployments/f71f5b7f973a4095b18adf796ef2b1bc/status.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deployments/pending" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/json/links.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/json/multiplePris.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/json/pris.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/json/sold.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/json/visning.json" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application.py" afterPath="$PROJECT_DIR$/application.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blob.py" afterPath="$PROJECT_DIR$/blob.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parse_link.py" afterPath="$PROJECT_DIR$/parse_link.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parse_price.py" afterPath="$PROJECT_DIR$/parse_price.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parse_sold.py" afterPath="$PROJECT_DIR$/parse_sold.py" />
@@ -72,8 +32,8 @@
           <file leaf-file-name="parse_price.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/parse_price.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="299">
-                  <caret line="100" column="15" lean-forward="false" selection-start-line="100" selection-start-column="15" selection-end-line="100" selection-end-column="15" />
+                <state relative-caret-position="281">
+                  <caret line="99" column="12" lean-forward="false" selection-start-line="99" selection-start-column="12" selection-end-line="99" selection-end-column="60" />
                   <folding>
                     <element signature="e#0#34#0" expanded="true" />
                   </folding>
@@ -101,11 +61,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="parse_link.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="parse_link.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/parse_link.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="450">
-                  <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+                <state relative-caret-position="414">
+                  <caret line="44" column="56" lean-forward="false" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="56" />
                   <folding>
                     <element signature="e#0#10#0" expanded="true" />
                   </folding>
@@ -125,7 +85,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="geocode.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="geocode.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/geocode.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="108">
@@ -142,8 +102,8 @@
           <file leaf-file-name="parse_sold.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/parse_sold.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="40" column="8" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+                <state relative-caret-position="338">
+                  <caret line="41" column="15" lean-forward="true" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
                   <folding>
                     <element signature="e#0#34#0" expanded="true" />
                   </folding>
@@ -154,8 +114,8 @@
           <file leaf-file-name="parse_visning.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/parse_visning.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="443">
-                  <caret line="83" column="7" lean-forward="true" selection-start-line="83" selection-start-column="7" selection-end-line="83" selection-end-column="7" />
+                <state relative-caret-position="335">
+                  <caret line="80" column="60" lean-forward="false" selection-start-line="80" selection-start-column="60" selection-end-line="80" selection-end-column="60" />
                   <folding>
                     <element signature="e#0#34#0" expanded="true" />
                   </folding>
@@ -176,7 +136,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>SOLGT</find>
       <find>pris</find>
       <find>151477333</find>
       <find>6 400 000 kr</find>
@@ -204,8 +163,9 @@
       <find>dumps</find>
       <find>parse_sold.py&quot;</find>
       <find>json/</find>
-      <find>urlope</find>
       <find>block_blob_service</find>
+      <find>urlope</find>
+      <find>url</find>
     </findStrings>
     <replaceStrings>
       <replace>price</replace>
@@ -229,12 +189,12 @@
         <option value="$PROJECT_DIR$/json/pris.json" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/application.py" />
-        <option value="$PROJECT_DIR$/parse_sold.py" />
-        <option value="$PROJECT_DIR$/parse_price.py" />
-        <option value="$PROJECT_DIR$/parse_link.py" />
-        <option value="$PROJECT_DIR$/parse_visning.py" />
         <option value="$PROJECT_DIR$/blob.py" />
         <option value="$PROJECT_DIR$/geocode.py" />
+        <option value="$PROJECT_DIR$/parse_price.py" />
+        <option value="$PROJECT_DIR$/parse_link.py" />
+        <option value="$PROJECT_DIR$/parse_sold.py" />
+        <option value="$PROJECT_DIR$/parse_visning.py" />
       </list>
     </option>
   </component>
@@ -328,15 +288,16 @@
       <workItem from="1565180092674" duration="296000" />
       <workItem from="1565181553519" duration="53000" />
       <workItem from="1566458221411" duration="1971000" />
-      <workItem from="1566978488174" duration="9231000" />
+      <workItem from="1566978488174" duration="11270000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98598000" />
+    <option name="totallyTimeSpent" value="100637000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-1" width="1920" height="1200" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -345,7 +306,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283721" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22697674" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24930233" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="FAQ Robot" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14034152" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Project Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953313" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -666,33 +627,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parse_sold.py">
+    <entry file="file://$PROJECT_DIR$/geocode.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="40" column="8" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parse_visning.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="83" column="7" lean-forward="true" selection-start-line="83" selection-start-column="7" selection-end-line="83" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parse_link.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="108">
+          <caret line="6" column="52" lean-forward="true" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -701,16 +640,6 @@
         <state relative-caret-position="355">
           <caret line="65" column="18" lean-forward="true" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parse_price.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="100" column="15" lean-forward="false" selection-start-line="100" selection-start-column="15" selection-end-line="100" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -724,11 +653,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/geocode.py">
+    <entry file="file://$PROJECT_DIR$/parse_price.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="52" lean-forward="true" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
-          <folding />
+        <state relative-caret-position="281">
+          <caret line="99" column="12" lean-forward="false" selection-start-line="99" selection-start-column="12" selection-end-line="99" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parse_link.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="44" column="56" lean-forward="false" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parse_sold.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="41" column="15" lean-forward="true" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parse_visning.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="80" column="60" lean-forward="false" selection-start-line="80" selection-start-column="60" selection-end-line="80" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
