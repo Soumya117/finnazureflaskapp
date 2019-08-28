@@ -2,17 +2,30 @@ import os, uuid, sys
 from azure.storage.blob import BlockBlobService, PublicAccess
 
 container_name ='finnblob'
+account_name = 'accountName'
+account_key = 'accountKey'
 
-def upload(file_name, path):
-    print("Running blob setup")
+def writeBlob(file_name, text):
+    print("Writing blob: ", file_name)
     sys.stdout.flush()
     try:
-        block_blob_service = BlockBlobService(account_name='accountName', account_key='AccountKey')
+        block_blob_service = BlockBlobService(account_name=account_name,
+                                              account_key=account_key)
         block_blob_service.create_container(container_name)
         # Set the permission so the blobs are public.
         block_blob_service.set_container_acl(container_name, public_access=PublicAccess.Container)
-        print("Uploading file...", file_name)
-        sys.stdout.flush()
-        block_blob_service.create_blob_from_path(container_name, file_name, path)
+        block_blob_service.create_blob_from_text(container_name, file_name, text)
     except Exception as e:
-        print("Error while blobing..: ",e)
+        print("Error while writing blob..: ",e)
+
+def readBlob(blobName):
+    print("Reading blob: ", blobName)
+    sys.stdout.flush()
+    blob = None
+    try:
+        block_blob_service = BlockBlobService(account_name=account_name,
+                                              account_key=account_key)
+        blob = block_blob_service.get_blob_to_text(container_name, blobName)
+    except Exception as e:
+        print("Error while reading blob..: ", e)
+    return blob.content

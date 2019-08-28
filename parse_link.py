@@ -3,47 +3,48 @@ import json
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
-import io
 import geocode
 
-def addGeocodes():
-    old_data = {}
-    with open("json/links.json") as input:
-        old_data = json.load(input)
-        for item in old_data['links']:
-            item['geocode'] = {}
-            item['geocode'] = geocode.getMarkers(item['address'])
+# def addGeocodes():
+#     old_data = {}
+#     with open("json/links.json") as input:
+#         old_data = json.load(input)
+#         for item in old_data['links']:
+#             item['geocode'] = {}
+#             item['geocode'] = geocode.getMarkers(item['address'])
+#
+#     with open("json/links.json", "w") as output:
+#         json.dump(old_data, output)
 
-    with open("json/links.json", "w") as output:
-        json.dump(old_data, output)
+def add_title(result, data):
+    current = datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')
+    exists = False
+    for item in data['links']:
+        if result['link'] in item['link']:
+            exists = True
+            break
+    if not exists:
+        new_item = {}
+        new_item['link'] = result['link']
+        new_item['address'] = result['address']
+        new_item['geocode'] = result['geocode']
+        new_item['area'] = result['area']
+        new_item['price'] = result['price']
+        new_item['text'] = result['text']
+        new_item['time'] = current
 
-def add_title(result):
-    with open("json/links.json") as input:
-        data = json.load(input)
-        current = datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')
-        exists = False
-        for item in data['links']:
-            if result['link'] in item['link']:
-                exists = True
-                break
-        if not exists:
-            new_item = {}
-            new_item['link'] = result['link']
-            new_item['address'] = result['address']
-            new_item['geocode'] = result['geocode']
-            new_item['area'] = result['area']
-            new_item['price'] = result['price']
-            new_item['text'] = result['text']
-            new_item['time'] = current
+        data['links'].append(new_item)
 
-            data['links'].append(new_item)
-
-        with io.open("json/links.json", 'w', encoding='utf8') as output:
-            json.dump(data, output, ensure_ascii=False)
-
-def parseTitle():
+def parseTitle(jsonData):
+    data = json.loads(jsonData)
     url = "https://www.finn.no/realestate/homes/search.html?location=0.20061"
-    html = urlopen(url)
+    html = None
+    try:
+        html = urlopen(url)
+    except Exception as e:
+        print("Bad URL: ",e)
+        sys.stdout.flush()
+
     soup = BeautifulSoup(html, "lxml")
     type(soup)
     all_div = soup.find_all("div", {"class": "ads__unit__content"})
@@ -67,28 +68,27 @@ def parseTitle():
             result['geocode'] = geocode.getMarkers(add_value)
             result['area'] = str(area)
             result['price'] = price.encode('ascii','ignore').decode('utf-8')
-            add_title(result)
+            add_title(result, data)
         else:
             continue
     print("Parsing links finished..!")
     sys.stdout.flush()
+    data = json.dumps(data, indent=4, sort_keys=True, ensure_ascii=False)
+    return data
 
-def cleanupSold():
+def cleanupSold(soldBlob, linksBlob):
+
     sold_links = []
-    with open('json/sold.json') as input:
-        sold = json.load(input)
-        for link in sold['links']:
-            sold_links.append(link['link'])
+    sold = json.loads(soldBlob)
+    for link in sold['links']:
+        sold_links.append(link['link'])
 
-    links_data = {}
-    with open('json/links.json') as input:
-        links_data = json.load(input)
-        count=0
-        for link in links_data['links']:
-            if link['link'] in sold_links:
-                print("Deleting link: ", link['link'])
-                del links_data['links'][count]
-            count+=1
-
-    with open('json/links.json', 'w') as output:
-        json.dump(links_data, output)
+    links_data = json.loads(linksBlob)
+    count=0
+    for link in links_data['links']:
+        if link['link'] in sold_links:
+            print("Deleting link: ", link['link'])
+            del links_data['links'][count]
+        count+=1
+    links_data = json.dumps(links_data, indent=4, sort_keys=True, ensure_ascii=False)
+    return links_data

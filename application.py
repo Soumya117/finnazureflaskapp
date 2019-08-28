@@ -15,14 +15,13 @@ def renderLinks():
     print("Request received for links..")
     sys.stdout.flush()
     scan = request.args.get('scan')
-
+    linksData = {}
     if scan:
         print("Scanning links..")
         sys.stdout.flush()
-        # link.addGeocodes()
-        link.parseTitle()
-
-    blob.upload("links.json", "json/links.json")
+        linksBlob = blob.readBlob('links.json')
+        linksData = link.parseTitle(linksBlob)
+    blob.writeBlob("links.json", linksData)
     return ""
 
 @app.route('/price')
@@ -30,17 +29,19 @@ def renderPrice():
     print("Request receieved for price.")
     sys.stdout.flush()
     scan = request.args.get('scan')
-
+    pris = None
+    multiple = None
     if scan:
         print("Scanning price..")
         sys.stdout.flush()
-        # price.addGeocodesPris()
-        # price.addGeocodesMultiple()
-        price.parsePrice()
-        price.multiplePriceLinks()
+        linkBlob = blob.readBlob('links.json')
+        prisBlob = blob.readBlob('pris.json')
+        multipleBlob = blob.readBlob('multiplePris.json')
+        pris = price.parsePrice(linkBlob, prisBlob)
+        multiple = price.multiplePriceLinks(multipleBlob, prisBlob)
 
-    blob.upload("multiplePris.json", "json/multiplePris.json")
-    blob.upload("pris.json", "json/pris.json")
+    blob.writeBlob("multiplePris.json", multiple)
+    blob.writeBlob("pris.json", pris)
     return ""
 
 @app.route('/visning')
@@ -48,28 +49,30 @@ def renderVisning():
     print("Request received for visning.")
     sys.stdout.flush()
     scan = request.args.get('scan')
-
+    visnings = None
     if scan:
         print("Scanning visnings..")
         sys.stdout.flush()
-        # visning.addGeocodes()
-        visning.parseVisning()
+        linkBlob = blob.readBlob('links.json')
+        visningBlob = blob.readBlob('visning.json')
+        visnings = visning.parseVisning(linkBlob, visningBlob)
 
-    blob.upload("visning.json", "json/visning.json")
+    blob.writeBlob("visning.json", visnings)
     return ""
 
 @app.route('/clean')
 def removeSoldData():
     print("Running cleanup..")
     sys.stdout.flush()
+    linkBlob = blob.readBlob('links.json')
+    prisBlob = blob.readBlob('pris.json')
+    soldBlob = blob.readBlob('sold.json')
 
-    link.cleanupSold()
-    # price.cleanupSold()
-    # visning.cleanupSold()
+    linkData = link.cleanupSold(soldBlob, linkBlob)
+    prisData = price.cleanupSold(soldBlob, prisBlob)
 
-    blob.upload("links.json", "json/links.json")
-    # blob.upload("pris.json", "json/pris.json")
-    # blob.upload("visning.json", "json/visning.json")
+    blob.writeBlob("links.json", linkData)
+    blob.writeBlob("pris.json", prisData)
     return ""
 
 @app.route('/sold')
@@ -77,11 +80,13 @@ def renderSold():
     print("Request receieved for sold..")
     sys.stdout.flush()
     scan = request.args.get('scan')
+    soldData = None
     if scan:
         print("Scanning sold..")
         sys.stdout.flush()
-        # sold.addGeocodes()
-        sold.parseSold()
+        linkBlob = blob.readBlob('links.json')
+        soldBlob = blob.readBlob('sold.json')
+        soldData = sold.parseSold(linkBlob, soldBlob)
 
-    blob.upload("sold.json", "json/sold.json")
+    blob.writeBlob("sold.json", soldData)
     return ""
