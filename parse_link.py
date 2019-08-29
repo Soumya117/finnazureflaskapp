@@ -1,6 +1,6 @@
 import sys
 import json
-from urllib.request import urlopen
+import requests
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import geocode
@@ -38,41 +38,40 @@ def add_title(result, data):
 def parseTitle(jsonData):
     data = json.loads(jsonData)
     url = "https://www.finn.no/realestate/homes/search.html?location=0.20061"
-    html = None
     try:
-        html = urlopen(url)
+        html = requests.get(url)
+        soup = BeautifulSoup(html.text, "lxml")
+        type(soup)
+        all_div = soup.find_all("div", {"class": "ads__unit__content"})
+        for div in all_div:
+            result = {}
+            link_class = div.find_all('a', {"class": "ads__unit__link"})
+            link = link_class[0].get('href', '')
+            link_text = link_class[0].get_text().strip()
+            if "realestate/homes/" in link:
+                add_span = div.find_all("span", {"class": "ads__unit__content__details"})
+                add_text = add_span[0].find_all('span')
+                add_value = add_text[0].get_text().strip()
+                p = div.find_all("p",{"class": "ads__unit__content__keys"})
+                p_span = p[0].find_all('span')
+                if len(p_span) < 2:
+                    continue
+                area = p_span[0].get_text().strip()
+                price = p_span[1].get_text().strip()
+                finn_link = str("https://www.finn.no")
+                result['link'] = finn_link + link
+                result['text'] = str(link_text)
+                result['address'] = str(add_value)
+                result['geocode'] = geocode.getMarkers(add_value)
+                result['area'] = str(area)
+                result['price'] = price.encode('ascii','ignore').decode('utf-8')
+                add_title(result, data)
+            else:
+                continue
     except Exception as e:
         print("Bad URL {url}: {e}".format(e=e, url=url))
         sys.stdout.flush()
 
-    soup = BeautifulSoup(html, "lxml")
-    type(soup)
-    all_div = soup.find_all("div", {"class": "ads__unit__content"})
-    for div in all_div:
-        result = {}
-        link_class = div.find_all('a', {"class": "ads__unit__link"})
-        link = link_class[0].get('href', '')
-        link_text = link_class[0].get_text().strip()
-        if "realestate/homes/" in link:
-            add_span = div.find_all("span", {"class": "ads__unit__content__details"})
-            add_text = add_span[0].find_all('span')
-            add_value = add_text[0].get_text().strip()
-            p = div.find_all("p",{"class": "ads__unit__content__keys"})
-            p_span = p[0].find_all('span')
-            if len(p_span) < 2:
-                continue
-            area = p_span[0].get_text().strip()
-            price = p_span[1].get_text().strip()
-            finn_link = str("https://www.finn.no")
-            result['link'] = finn_link + link
-            result['text'] = str(link_text)
-            result['address'] = str(add_value)
-            result['geocode'] = geocode.getMarkers(add_value)
-            result['area'] = str(area)
-            result['price'] = price.encode('ascii','ignore').decode('utf-8')
-            add_title(result, data)
-        else:
-            continue
     print("Parsing links finished..!")
     sys.stdout.flush()
     data = json.dumps(data, indent=4, sort_keys=True, ensure_ascii=False)

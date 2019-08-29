@@ -1,4 +1,4 @@
-from urllib.request import urlopen
+import requests
 from bs4 import BeautifulSoup
 import json
 import sys
@@ -72,40 +72,39 @@ def parseVisning(linkBlob, visningBlob):
     print("Number of links to scan: ", len(data['links']))
     sys.stdout.flush()
     result = {}
-    for link in data['links']:
-        url = link['link']
-        html = None
-        try:
-            html = urlopen(url)
-        except Exception as e:
-            print("Bad URL {url}: {e}".format(e=e, url=url))
-            sys.stdout.flush()
+    url = None
+    try:
+        for link in data['links']:
+            url = link['link']
+            html = requests.get(url)
+            soup = BeautifulSoup(html.text, 'lxml')
+            pris_rows = soup.find_all('span')
+            i = 0
+            for row in pris_rows:
+                i = i + 1
+                if "Prisantydning" in row:
+                    break
+            pris = pris_rows[i].get_text().strip()
+            uniString = str(pris)
+            uniString = uniString.replace(u"\u00A0", " ")
 
-        soup = BeautifulSoup(html, 'lxml')
-        pris_rows = soup.find_all('span')
-        i = 0
-        for row in pris_rows:
-            i = i + 1
-            if "Prisantydning" in row:
-                break
-        pris = pris_rows[i].get_text().strip()
-        uniString = str(pris)
-        uniString = uniString.replace(u"\u00A0", " ")
-
-        rows = soup.findAll("div", {"class": "u-hide-gt768 u-no-print"})
-        time_list = []
-        if rows:
-            time_list = rows[0].find_all('time')
-        for time in time_list:
-            time_txt = time.get_text().strip()
-            result['time'] = time_txt
-            result['link'] = url
-            result['text'] = link['text']
-            result['address'] = link['address']
-            result['geocode'] = link['geocode']
-            result['price'] = uniString
-            result['area'] = link['area']
-            add_visning(result, visning_data)
+            rows = soup.findAll("div", {"class": "u-hide-gt768 u-no-print"})
+            time_list = []
+            if rows:
+                time_list = rows[0].find_all('time')
+            for time in time_list:
+                time_txt = time.get_text().strip()
+                result['time'] = time_txt
+                result['link'] = url
+                result['text'] = link['text']
+                result['address'] = link['address']
+                result['geocode'] = link['geocode']
+                result['price'] = uniString
+                result['area'] = link['area']
+                add_visning(result, visning_data)
+    except Exception as e:
+        print("Bad URL {url}: {e}".format(e=e, url=url))
+        sys.stdout.flush()
 
     print("Parsing visnings finished..!")
     sys.stdout.flush()

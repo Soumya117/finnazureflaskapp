@@ -1,4 +1,4 @@
-from urllib.request import urlopen
+import requests
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import json
@@ -90,36 +90,36 @@ def parsePrice(linkBlob, priceBlob):
     priceBlob = json.loads(priceBlob)
     print("Number of links to scan: ", len(data['links']))
     sys.stdout.flush()
-    for link in data['links']:
-        url = link['link']
-        result = {}
-        html = None
-        try:
-            html = urlopen(url)
-        except Exception as e:
-            print("Bad URL {url}: {e}".format(e=e, url=url))
-            sys.stdout.flush()
-
-        soup = BeautifulSoup(html, 'lxml')
-        rows = soup.find_all('span')
-        i = 0
-        for row in rows:
-            i = i + 1
-            if "Prisantydning" in row:
-                break
-        pris = rows[i].get_text().strip()
-        uniString = str(pris)
-        uniString = uniString.replace(u"\u00A0", " ")
-        result['link'] = url
-        result['text'] = link['text']
-        result['address'] = link['address']
-        result['geocode'] = link['geocode']
-        result['price'] = uniString
-        result['area'] = link['area']
-        add_pris(result, priceBlob)
+    url = None
+    try:
+        for link in data['links']:
+            result = {}
+            url = link['link']
+            html = requests.get(url)
+            soup = BeautifulSoup(html.text, 'lxml')
+            rows = soup.find_all('span')
+            i = 0
+            for row in rows:
+                i = i + 1
+                if "Prisantydning" in row:
+                    break
+            pris = rows[i].get_text().strip()
+            uniString = pris
+            uniString = uniString.replace(u"\u00A0", " ")
+            result['link'] = url
+            result['text'] = link['text']
+            result['address'] = link['address']
+            result['geocode'] = link['geocode']
+            result['price'] = uniString
+            result['area'] = link['area']
+            add_pris(result, priceBlob)
+    except Exception as e:
+        print("Bad URL {url}: {e}".format(e=e, url=url))
+        sys.stdout.flush()
 
     print("Parsing price finished..!")
     sys.stdout.flush()
+
     data = json.dumps(priceBlob, indent=4, sort_keys=True, ensure_ascii=False)
     return data
 
