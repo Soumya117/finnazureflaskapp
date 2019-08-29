@@ -59,6 +59,8 @@ def parseTitle(jsonData):
             add_value = add_text[0].get_text().strip()
             p = div.find_all("p",{"class": "ads__unit__content__keys"})
             p_span = p[0].find_all('span')
+            if len(p_span) < 2:
+                continue
             area = p_span[0].get_text().strip()
             price = p_span[1].get_text().strip()
             finn_link = str("https://www.finn.no")
