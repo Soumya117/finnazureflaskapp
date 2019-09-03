@@ -81,7 +81,8 @@ def cleanupSold(soldBlob, prisBlob):
         if item['link'] in sold_links:
             if len(item['price_list']) < 2:
                 del price_data['links'][count]
-        count += 1
+            else:
+                count = count + 1
     data = json.dumps(price_data, indent=4, sort_keys=True, ensure_ascii=False)
     return data
 

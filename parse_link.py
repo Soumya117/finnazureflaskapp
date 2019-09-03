@@ -90,6 +90,7 @@ def cleanupSold(soldBlob, linksBlob):
         if link['link'] in sold_links:
             print("Deleting link: ", link['link'])
             del links_data['links'][count]
-        count+=1
+        else:
+            count+=1
     links_data = json.dumps(links_data, indent=4, sort_keys=True, ensure_ascii=False)
     return links_data

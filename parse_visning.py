@@ -60,7 +60,8 @@ def cleanupSold(soldBlob, viewBlob):
         if item['link'] in sold_links:
             print("Deleting link from visnings: ", item['link'])
             del visning_data['links'][count]
-        count += 1
+        else:
+            count += 1
 
     data = json.dumps(visning_data, indent=4, sort_keys=True, ensure_ascii=False)
     return data
