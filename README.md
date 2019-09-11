@@ -44,3 +44,8 @@ GOOGLE CLOUD
 2. App is deployed on the cloud locally using :
    gcloud app deploy
 3. The flask app is now deployed on the google app engine and the azure timer function sends the request to scan every 3 hours.
+
+
+ARCHITECTURE
+
+![alt text](https://github.com/Soumya117/finnazureflaskapp/blob/master/Selection_152.png) <br /><br />
