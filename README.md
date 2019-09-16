@@ -14,10 +14,9 @@ Additionaly it also collects all the visnings.
 
 The app is triggered by an azure timer function so it collects data in the background and store the json in the Azure Storage Blob.
 
+DEPLOYMENT:<br />
 LOCAL
 
-DEPLOYMENT:<br />
-App can be deployed locally using flask. 
 1. Clone the project.
 2. Enter the project directory.
 3. Enter following commands: <br />
@@ -28,10 +27,8 @@ App can be deployed locally using flask.
    FLASK_APP=application.py flask run <br />
    This will start the flask and you can browse your app on the localhost.
 
-CLOUD (MICROSOFT AZURE)
+MICROSOFT AZURE
 
-DEPLOYMENT:<br />
-I have deployed this app on my azure account. 
 1. Get a free azure account (or paid if you can).
 2. Enter the cloud shell.
 3. Clone the project.
@@ -39,4 +36,16 @@ I have deployed this app on my azure account.
    az webapp up -n "app-name"
 5. Using cloud shell, you can makes changes to the code and then deploy it back with the same command.
 6. Since now the /price request takes long time to load, the app timed out. So i changed the startup configuration using        command: az webapp config set --resource-group "resource-group" --name "app-name" --startup-file "gunicorn --bind=0.0.0.0    --timeout 2000 application:app"
-7. I have a timer-function created on azure that requests the scan every n hours.
+
+
+GOOGLE CLOUD 
+
+1. For google cloud, i need to create app.yaml and add an entrypoint to main.py or application.py.
+2. App is deployed on the cloud locally using :
+   gcloud app deploy
+3. The flask app is now deployed on the google app engine and the azure timer function sends the request to scan every 3 hours.
+
+
+ARCHITECTURE
+
+![alt text](https://github.com/Soumya117/finnazureflaskapp/blob/master/Selection_152.png) <br /><br />
