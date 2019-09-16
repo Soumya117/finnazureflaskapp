@@ -74,7 +74,7 @@ def parseTitle(jsonData):
             else:
                 continue
         except Exception as e:
-                print("Bad URL {url}: {e}".format(e=e, url=url))
+                print("Bad URL {url}: {e}".format(e=e, url=link))
                 sys.stdout.flush()
 
     print("Parsing links finished..!")
