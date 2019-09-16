@@ -65,10 +65,10 @@ def parseTitle(jsonData):
                 price = p_span[1].get_text().strip()
                 finn_link = str("https://www.finn.no")
                 result['link'] = finn_link + link
-                result['text'] = str(link_text)
-                result['address'] = str(add_value)
+                result['text'] = link_text
+                result['address'] = add_value
                 result['geocode'] = geocode.getMarkers(add_value)
-                result['area'] = str(area)
+                result['area'] = area
                 result['price'] = price.encode('ascii','ignore').decode('utf-8')
                 add_title(result, data)
             else:

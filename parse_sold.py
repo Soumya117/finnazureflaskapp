@@ -54,8 +54,7 @@ def parseSold(linksBlob, soldBlob):
                 if "Prisantydning" in row:
                     break
             pris = pris_rows[i].get_text().strip()
-            uniString = str(pris)
-            uniString = uniString.replace(u"\u00A0", " ")
+            pris = pris.replace(u"\u00A0", " ")
 
             rows = soup.findAll("span", {"class": "u-capitalize status status--warning u-mb0"})
             if rows:
@@ -65,7 +64,7 @@ def parseSold(linksBlob, soldBlob):
                 result['text'] = link['text']
                 result['address'] = link['address']
                 result['geocode'] = link['geocode']
-                result['price'] = uniString
+                result['price'] = pris
                 result['area'] = link['area']
                 add_sold(result, soldData)
         except Exception as e:

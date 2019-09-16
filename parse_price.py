@@ -104,13 +104,12 @@ def parsePrice(linkBlob, priceBlob):
                 if "Prisantydning" in row:
                     break
             pris = rows[i].get_text().strip()
-            uniString = pris
-            uniString = uniString.replace(u"\u00A0", " ")
+            pris = pris.replace(u"\u00A0", " ")
             result['link'] = url
             result['text'] = link['text']
             result['address'] = link['address']
             result['geocode'] = link['geocode']
-            result['price'] = uniString
+            result['price'] = pris
             result['area'] = link['area']
             add_pris(result, priceBlob)
         except Exception as e:

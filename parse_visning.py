@@ -85,8 +85,7 @@ def parseVisning(linkBlob, visningBlob):
                 if "Prisantydning" in row:
                     break
             pris = pris_rows[i].get_text().strip()
-            uniString = str(pris)
-            uniString = uniString.replace(u"\u00A0", " ")
+            pris = pris.replace(u"\u00A0", " ")
 
             rows = soup.findAll("div", {"class": "u-hide-gt768 u-no-print"})
             time_list = []
@@ -99,7 +98,7 @@ def parseVisning(linkBlob, visningBlob):
                 result['text'] = link['text']
                 result['address'] = link['address']
                 result['geocode'] = link['geocode']
-                result['price'] = uniString
+                result['price'] = pris
                 result['area'] = link['area']
                 add_visning(result, visning_data)
         except Exception as e:
