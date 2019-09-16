@@ -39,10 +39,10 @@ def parseSold(linksBlob, soldBlob):
     soldData = json.loads(soldBlob)
     print("Number of links to scan: ", len(data['links']))
     sys.stdout.flush()
+    result = {}
     url = None
-    try:
-        result = {}
-        for link in data['links']:
+    for link in data['links']:
+        try:
             url = link['link']
             html = requests.get(url)
 
@@ -68,9 +68,9 @@ def parseSold(linksBlob, soldBlob):
                 result['price'] = uniString
                 result['area'] = link['area']
                 add_sold(result, soldData)
-    except Exception as e:
-        print("Bad URL {url}: {e}".format(e=e, url=url))
-        sys.stdout.flush()
+        except Exception as e:
+            print("Bad URL {url}: {e}".format(e=e, url=url))
+            sys.stdout.flush()
 
     print("Parsing sold finished..!")
     sys.stdout.flush()

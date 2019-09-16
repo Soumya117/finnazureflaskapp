@@ -91,9 +91,8 @@ def parsePrice(linkBlob, priceBlob):
     priceBlob = json.loads(priceBlob)
     print("Number of links to scan: ", len(data['links']))
     sys.stdout.flush()
-    url = None
-    try:
-        for link in data['links']:
+    for link in data['links']:
+        try:
             result = {}
             url = link['link']
             html = requests.get(url)
@@ -114,9 +113,9 @@ def parsePrice(linkBlob, priceBlob):
             result['price'] = uniString
             result['area'] = link['area']
             add_pris(result, priceBlob)
-    except Exception as e:
-        print("Bad URL {url}: {e}".format(e=e, url=url))
-        sys.stdout.flush()
+        except Exception as e:
+            print("Bad URL {url}: {e}".format(e=e, url=url))
+            sys.stdout.flush()
 
     print("Parsing price finished..!")
     sys.stdout.flush()

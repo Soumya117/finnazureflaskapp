@@ -73,9 +73,8 @@ def parseVisning(linkBlob, visningBlob):
     print("Number of links to scan: ", len(data['links']))
     sys.stdout.flush()
     result = {}
-    url = None
-    try:
-        for link in data['links']:
+    for link in data['links']:
+        try:
             url = link['link']
             html = requests.get(url)
             soup = BeautifulSoup(html.text, 'lxml')
@@ -103,9 +102,9 @@ def parseVisning(linkBlob, visningBlob):
                 result['price'] = uniString
                 result['area'] = link['area']
                 add_visning(result, visning_data)
-    except Exception as e:
-        print("Bad URL {url}: {e}".format(e=e, url=url))
-        sys.stdout.flush()
+        except Exception as e:
+            print("Bad URL {url}: {e}".format(e=e, url=url))
+            sys.stdout.flush()
 
     print("Parsing visnings finished..!")
     sys.stdout.flush()

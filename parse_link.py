@@ -38,13 +38,18 @@ def add_title(result, data):
 def parseTitle(jsonData):
     data = json.loads(jsonData)
     url = "https://www.finn.no/realestate/homes/search.html?location=0.20061"
+    html = requests.get(url)
+    soup = BeautifulSoup(html.text, "lxml")
+    type(soup)
     try:
-        html = requests.get(url)
-        soup = BeautifulSoup(html.text, "lxml")
-        type(soup)
         all_div = soup.find_all("div", {"class": "ads__unit__content"})
-        for div in all_div:
-            result = {}
+    except Exception as e:
+        print("Failed to find divs in {}".format(url))
+        sys.stdout.flush()
+
+    for div in all_div:
+        result = {}
+        try:
             link_class = div.find_all('a', {"class": "ads__unit__link"})
             link = link_class[0].get('href', '')
             link_text = link_class[0].get_text().strip()
@@ -68,9 +73,9 @@ def parseTitle(jsonData):
                 add_title(result, data)
             else:
                 continue
-    except Exception as e:
-        print("Bad URL {url}: {e}".format(e=e, url=url))
-        sys.stdout.flush()
+        except Exception as e:
+                print("Bad URL {url}: {e}".format(e=e, url=url))
+                sys.stdout.flush()
 
     print("Parsing links finished..!")
     sys.stdout.flush()
