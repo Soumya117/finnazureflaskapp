@@ -4,6 +4,7 @@ import json
 import sys
 import io
 import geocode
+from logger import log
 
 # def addGeocodes():
 #     old_data = {}
@@ -58,7 +59,7 @@ def cleanupSold(soldBlob, viewBlob):
     count = 0
     for item in list(visning_data['links']):
         if item['link'] in sold_links:
-            print("Deleting link from visnings: ", item['link'])
+            log("Deleting link from visnings: {}".format(item['link']))
             del visning_data['links'][count]
         else:
             count += 1
@@ -70,7 +71,7 @@ def cleanupSold(soldBlob, viewBlob):
 def parseVisning(linkBlob, visningBlob):
     visning_data = json.loads(visningBlob)
     data = json.loads(linkBlob)
-    print("Number of links to scan: ", len(data['links']))
+    log("Number of links to scan: {}".format(len(data['links'])))
     sys.stdout.flush()
     result = {}
     for link in data['links']:
@@ -102,10 +103,10 @@ def parseVisning(linkBlob, visningBlob):
                 result['area'] = link['area']
                 add_visning(result, visning_data)
         except Exception as e:
-            print("Bad URL {url}: {e}".format(e=e, url=url))
+            log("Bad URL {url}: {e}".format(e=e, url=url))
             sys.stdout.flush()
 
-    print("Parsing visnings finished..!")
+    log("Parsing visnings finished..!")
     sys.stdout.flush()
     data = json.dumps(visning_data, indent=4, sort_keys=True, ensure_ascii=False)
     return data

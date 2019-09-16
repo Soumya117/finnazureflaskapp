@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import geocode
-
+from logger import log
 # def addGeocodes():
 #     old_data = {}
 #     with open("json/links.json") as input:
@@ -44,7 +44,7 @@ def parseTitle(jsonData):
     try:
         all_div = soup.find_all("div", {"class": "ads__unit__content"})
     except Exception as e:
-        print("Failed to find divs in {}".format(url))
+        log("Failed to find divs in {}".format(url))
         sys.stdout.flush()
 
     for div in all_div:
@@ -74,10 +74,10 @@ def parseTitle(jsonData):
             else:
                 continue
         except Exception as e:
-                print("Bad URL {url}: {e}".format(e=e, url=link))
+                log("Bad URL {url}: {e}".format(e=e, url=link))
                 sys.stdout.flush()
 
-    print("Parsing links finished..!")
+    log("Parsing links finished..!")
     sys.stdout.flush()
     data = json.dumps(data, indent=4, sort_keys=True, ensure_ascii=False)
     return data
@@ -93,7 +93,7 @@ def cleanupSold(soldBlob, linksBlob):
     count=0
     for link in links_data['links']:
         if link['link'] in sold_links:
-            print("Deleting link: ", link['link'])
+            log("Deleting link: {}".format(link['link']))
             del links_data['links'][count]
         else:
             count+=1

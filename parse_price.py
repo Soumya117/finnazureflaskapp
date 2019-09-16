@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import json
 import sys
-
+from logger import log
 # def addGeocodesPris():
 #     old_data = {}
 #     with open("json/pris.json") as input:
@@ -80,6 +80,7 @@ def cleanupSold(soldBlob, prisBlob):
     for item in list(price_data['links']):
         if item['link'] in sold_links:
             if len(item['price_list']) < 2:
+                log("Deleting link from pris: {}".format(link['link']))
                 del price_data['links'][count]
             else:
                 count = count + 1
@@ -89,7 +90,7 @@ def cleanupSold(soldBlob, prisBlob):
 def parsePrice(linkBlob, priceBlob):
     data = json.loads(linkBlob)
     priceBlob = json.loads(priceBlob)
-    print("Number of links to scan: ", len(data['links']))
+    log("Number of links to scan: {}".format(len(data['links'])))
     sys.stdout.flush()
     for link in data['links']:
         try:
@@ -113,10 +114,10 @@ def parsePrice(linkBlob, priceBlob):
             result['area'] = link['area']
             add_pris(result, priceBlob)
         except Exception as e:
-            print("Bad URL {url}: {e}".format(e=e, url=url))
+            log("Bad URL {url}: {e}".format(e=e, url=url))
             sys.stdout.flush()
 
-    print("Parsing price finished..!")
+    log("Parsing price finished..!")
     sys.stdout.flush()
 
     data = json.dumps(priceBlob, indent=4, sort_keys=True, ensure_ascii=False)

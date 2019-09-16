@@ -3,6 +3,7 @@ from datetime import datetime, timedelta
 import json
 import sys
 import requests
+from logger import log
 
 # def addGeocodes():
 #     old_data = {}
@@ -37,7 +38,7 @@ def add_sold(result, data):
 def parseSold(linksBlob, soldBlob):
     data = json.loads(linksBlob)
     soldData = json.loads(soldBlob)
-    print("Number of links to scan: ", len(data['links']))
+    log("Number of links to scan: {}".format(len(data['links'])))
     sys.stdout.flush()
     result = {}
     url = None
@@ -68,10 +69,10 @@ def parseSold(linksBlob, soldBlob):
                 result['area'] = link['area']
                 add_sold(result, soldData)
         except Exception as e:
-            print("Bad URL {url}: {e}".format(e=e, url=url))
+            log("Bad URL {url}: {e}".format(e=e, url=url))
             sys.stdout.flush()
 
-    print("Parsing sold finished..!")
+    log("Parsing sold finished..!")
     sys.stdout.flush()
     data = json.dumps(soldData, indent=4, sort_keys=True, ensure_ascii=False)
     return data
