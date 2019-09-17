@@ -45,6 +45,25 @@ GOOGLE CLOUD
    gcloud app deploy
 3. The flask app is now deployed on the google app engine and the azure timer function sends the request to scan every 3 hours.
 
+UPDATE: I have not running this app as an app service on GCP. I am running it as a daemon inside a GCP vm instance. The reason for this change was it was not really handling the huge requests well. It was getting timedout. 
+For running it inside a vm instance as a daemon:
+1. Create a VM instance.
+2. Git clone this project there.
+3. Change the required keys (gmaps and azure blob)
+4. Create a conf file inside /etc/supervisor/conf.d/ as finnazureflaskapp.conf. 
+5. Write the conf file with following:
+   [program:finn-flask-app]
+   directory=/home/soumya/python/finnazureflaskapp
+   command=python main.py
+   autostart=true
+   autorestart=true
+   stopsignal=INT
+   stopasgroup=true
+   killasgroup=true
+6. Run sudo /usr/bin/supervisord. Make sure no other supervisor processes are running. (sudo ps -ax | grep 'supervisor').
+7. Enter sudo supervisorctl and check your app.
+
+After this architectural change, there is a timer daemon running inside the vm that will schedule the scans. 
 
 ARCHITECTURE
 
