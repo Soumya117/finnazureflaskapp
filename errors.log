@@ -1,0 +1,289 @@
+2019-09-16 14:36:34,748 - werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-09-16 14:37:29,145 - file - DEBUG - Request received for links at 2019-09-16 14:37:29.144961
+2019-09-16 14:37:29,145 - file - DEBUG - Reading blob: links.json
+2019-09-16 14:37:48,769 - file - DEBUG - Parsing links finished..!
+2019-09-16 14:37:48,799 - file - DEBUG - Writing blob: links.json
+2019-09-16 14:37:49,137 - file - DEBUG - Request finished for links at 2019-09-16 14:37:49.137442
+2019-09-16 14:37:49,139 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2019 14:37:49] "GET /links HTTP/1.1" 200 -
+2019-09-16 14:37:49,144 - file - DEBUG - Request received for price at 2019-09-16 14:37:49.144034
+2019-09-16 14:37:49,144 - file - DEBUG - Reading blob: links.json
+2019-09-16 14:37:49,464 - file - DEBUG - Reading blob: pris.json
+2019-09-16 14:37:49,809 - file - DEBUG - Reading blob: multiplePris.json
+2019-09-16 14:37:49,991 - file - DEBUG - Number of links to scan: 720
+2019-09-16 14:49:00,402 - file - DEBUG - Parsing price finished..!
+2019-09-16 14:49:00,466 - file - DEBUG - Writing blob: multiplePris.json
+2019-09-16 14:49:00,819 - file - DEBUG - Writing blob: pris.json
+2019-09-16 14:49:01,186 - file - DEBUG - Request finished for price at 2019-09-16 14:49:01.186265
+2019-09-16 14:49:01,187 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2019 14:49:01] "GET /price HTTP/1.1" 200 -
+2019-09-16 14:49:01,197 - file - DEBUG - Request received for sold at 2019-09-16 14:49:01.197277
+2019-09-16 14:49:01,197 - file - DEBUG - Reading blob: links.json
+2019-09-16 14:49:01,527 - file - DEBUG - Reading blob: sold.json
+2019-09-16 14:49:02,191 - file - DEBUG - Number of links to scan: 720
+2019-09-16 15:00:17,052 - file - DEBUG - Parsing sold finished..!
+2019-09-16 15:00:17,078 - file - DEBUG - Writing blob: sold.json
+2019-09-16 15:00:17,487 - file - DEBUG - Request finished for sold at 2019-09-16 15:00:17.487595
+2019-09-16 15:00:17,488 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2019 15:00:17] "GET /sold HTTP/1.1" 200 -
+2019-09-16 15:00:17,492 - file - DEBUG - Request received for visnings at 2019-09-16 15:00:17.492501
+2019-09-16 15:00:17,492 - file - DEBUG - Reading blob: links.json
+2019-09-16 15:00:17,831 - file - DEBUG - Reading blob: visning.json
+2019-09-16 15:00:18,365 - file - DEBUG - Number of links to scan: 720
+2019-09-16 15:11:38,843 - file - DEBUG - Parsing visnings finished..!
+2019-09-16 15:11:38,956 - file - DEBUG - Writing blob: visning.json
+2019-09-16 15:11:39,642 - file - DEBUG - Request finished for visnings at 2019-09-16 15:11:39.642745
+2019-09-16 15:11:39,643 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2019 15:11:39] "GET /visning HTTP/1.1" 200 -
+2019-09-16 15:11:39,647 - file - DEBUG - Request received for cleanup at 2019-09-16 15:11:39.647899
+2019-09-16 15:11:39,648 - file - DEBUG - Reading blob: links.json
+2019-09-16 15:11:39,958 - file - DEBUG - Reading blob: pris.json
+2019-09-16 15:11:40,346 - file - DEBUG - Reading blob: sold.json
+2019-09-16 15:11:40,666 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=157006140
+2019-09-16 15:11:40,668 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=157312129
+2019-09-16 15:11:40,668 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=157307462
+2019-09-16 15:11:40,668 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=157017476
+2019-09-16 15:11:40,669 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=156397690
+2019-09-16 15:11:40,669 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=156421701
+2019-09-16 15:11:40,670 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=155775350
+2019-09-16 15:11:40,672 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=156753516
+2019-09-16 15:11:40,674 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=156933146
+2019-09-16 15:11:40,675 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=153427351
+2019-09-16 15:11:40,678 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=156942853
+2019-09-16 15:11:40,678 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=156862848
+2019-09-16 15:11:40,679 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=157632868
+2019-09-16 15:11:40,680 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=157306459
+2019-09-16 15:11:40,686 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 15:11:40,733 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 15:11:40,736 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 15:11:40,736 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 15:11:40,736 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 15:11:40,737 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 15:11:40,739 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 15:11:40,742 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 15:11:40,742 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 15:11:40,743 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 15:11:40,744 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 15:11:40,744 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 15:11:40,745 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 15:11:40,746 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 15:11:40,748 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 15:11:40,752 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 15:11:40,752 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 15:11:40,753 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 15:11:40,753 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 15:11:40,753 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 15:11:40,755 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 15:11:40,755 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 15:11:40,759 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 15:11:40,760 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 15:11:40,762 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 15:11:40,763 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 15:11:40,811 - file - DEBUG - Writing blob: links.json
+2019-09-16 15:11:41,143 - file - DEBUG - Writing blob: pris.json
+2019-09-16 15:11:41,508 - file - DEBUG - Request finished for cleanup at 2019-09-16 15:11:41.508644
+2019-09-16 15:11:41,510 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2019 15:11:41] "GET /clean HTTP/1.1" 200 -
+2019-09-16 16:47:56,533 - file - DEBUG - Request received for links at 2019-09-16 16:47:56.533556
+2019-09-16 16:47:56,534 - file - DEBUG - Reading blob: links.json
+2019-09-16 16:48:18,245 - file - DEBUG - Parsing links finished..!
+2019-09-16 16:48:18,277 - file - DEBUG - Writing blob: links.json
+2019-09-16 16:48:18,614 - file - DEBUG - Request finished for links at 2019-09-16 16:48:18.614161
+2019-09-16 16:48:18,615 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2019 16:48:18] "GET /links HTTP/1.1" 200 -
+2019-09-16 16:48:18,619 - file - DEBUG - Request received for price at 2019-09-16 16:48:18.619690
+2019-09-16 16:48:18,620 - file - DEBUG - Reading blob: links.json
+2019-09-16 16:48:18,964 - file - DEBUG - Reading blob: pris.json
+2019-09-16 16:48:19,301 - file - DEBUG - Reading blob: multiplePris.json
+2019-09-16 16:48:19,565 - file - DEBUG - Number of links to scan: 727
+2019-09-16 16:54:19,027 - file - DEBUG - Bad URL https://www.finn.no/realestate/homes/ad.html?finnkode=157712359: list index out of range
+2019-09-16 16:59:39,624 - file - DEBUG - Parsing price finished..!
+2019-09-16 16:59:39,688 - file - DEBUG - Writing blob: multiplePris.json
+2019-09-16 16:59:40,028 - file - DEBUG - Writing blob: pris.json
+2019-09-16 16:59:40,398 - file - DEBUG - Request finished for price at 2019-09-16 16:59:40.398168
+2019-09-16 16:59:40,399 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2019 16:59:40] "GET /price HTTP/1.1" 200 -
+2019-09-16 16:59:40,403 - file - DEBUG - Request received for sold at 2019-09-16 16:59:40.403229
+2019-09-16 16:59:40,403 - file - DEBUG - Reading blob: links.json
+2019-09-16 16:59:40,732 - file - DEBUG - Reading blob: sold.json
+2019-09-16 16:59:41,045 - file - DEBUG - Number of links to scan: 727
+2019-09-16 17:11:06,126 - file - DEBUG - Parsing sold finished..!
+2019-09-16 17:11:06,151 - file - DEBUG - Writing blob: sold.json
+2019-09-16 17:11:06,556 - file - DEBUG - Request finished for sold at 2019-09-16 17:11:06.556354
+2019-09-16 17:11:06,557 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2019 17:11:06] "GET /sold HTTP/1.1" 200 -
+2019-09-16 17:11:06,561 - file - DEBUG - Request received for visnings at 2019-09-16 17:11:06.561034
+2019-09-16 17:11:06,561 - file - DEBUG - Reading blob: links.json
+2019-09-16 17:11:06,933 - file - DEBUG - Reading blob: visning.json
+2019-09-16 17:11:07,448 - file - DEBUG - Number of links to scan: 727
+2019-09-16 17:22:29,103 - file - DEBUG - Parsing visnings finished..!
+2019-09-16 17:22:29,214 - file - DEBUG - Writing blob: visning.json
+2019-09-16 17:22:29,691 - file - DEBUG - Request finished for visnings at 2019-09-16 17:22:29.691028
+2019-09-16 17:22:29,693 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2019 17:22:29] "GET /visning HTTP/1.1" 200 -
+2019-09-16 17:22:29,696 - file - DEBUG - Request received for cleanup at 2019-09-16 17:22:29.696711
+2019-09-16 17:22:29,696 - file - DEBUG - Reading blob: links.json
+2019-09-16 17:22:30,081 - file - DEBUG - Reading blob: pris.json
+2019-09-16 17:22:30,475 - file - DEBUG - Reading blob: sold.json
+2019-09-16 17:22:30,823 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=157312129
+2019-09-16 17:22:30,823 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=157017476
+2019-09-16 17:22:30,824 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=156397690
+2019-09-16 17:22:30,824 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=156421701
+2019-09-16 17:22:30,825 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=155775350
+2019-09-16 17:22:30,827 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=156753516
+2019-09-16 17:22:30,829 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=156933146
+2019-09-16 17:22:30,831 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=153427351
+2019-09-16 17:22:30,833 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=156942853
+2019-09-16 17:22:30,833 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=156862848
+2019-09-16 17:22:30,834 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=157632868
+2019-09-16 17:22:30,835 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=157306459
+2019-09-16 17:22:30,841 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 17:22:30,886 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 17:22:30,886 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 17:22:30,887 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 17:22:30,887 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 17:22:30,889 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 17:22:30,891 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 17:22:30,892 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 17:22:30,893 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 17:22:30,893 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 17:22:30,894 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 17:22:30,894 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 17:22:30,895 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 17:22:30,897 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 17:22:30,900 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 17:22:30,901 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 17:22:30,901 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 17:22:30,901 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 17:22:30,902 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 17:22:30,903 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 17:22:30,903 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 17:22:30,907 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 17:22:30,908 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 17:22:30,909 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 17:22:30,910 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 17:22:30,910 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-16 17:22:30,960 - file - DEBUG - Writing blob: links.json
+2019-09-16 17:22:31,298 - file - DEBUG - Writing blob: pris.json
+2019-09-16 17:22:31,669 - file - DEBUG - Request finished for cleanup at 2019-09-16 17:22:31.669511
+2019-09-16 17:22:31,670 - werkzeug - INFO - 127.0.0.1 - - [16/Sep/2019 17:22:31] "GET /clean HTTP/1.1" 200 -
+2019-09-17 07:44:13,253 - werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-09-17 07:44:24,161 - file - DEBUG - Request received for links at 2019-09-17 07:44:24.161366
+2019-09-17 07:44:24,161 - file - DEBUG - Reading blob: links.json
+2019-09-17 07:44:41,774 - file - DEBUG - Parsing links finished..!
+2019-09-17 07:44:41,808 - file - DEBUG - Writing blob: links.json
+2019-09-17 07:44:42,155 - file - DEBUG - Request finished for links at 2019-09-17 07:44:42.155042
+2019-09-17 07:44:42,156 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2019 07:44:42] "GET /links HTTP/1.1" 200 -
+2019-09-17 07:44:42,161 - file - DEBUG - Request received for price at 2019-09-17 07:44:42.161254
+2019-09-17 07:44:42,161 - file - DEBUG - Reading blob: links.json
+2019-09-17 07:44:42,494 - file - DEBUG - Reading blob: pris.json
+2019-09-17 07:44:42,928 - file - DEBUG - Reading blob: multiplePris.json
+2019-09-17 07:44:43,115 - file - DEBUG - Number of links to scan: 758
+2019-09-17 07:56:25,119 - file - DEBUG - Parsing price finished..!
+2019-09-17 07:56:25,183 - file - DEBUG - Writing blob: multiplePris.json
+2019-09-17 07:56:25,505 - file - DEBUG - Writing blob: pris.json
+2019-09-17 07:56:25,877 - file - DEBUG - Request finished for price at 2019-09-17 07:56:25.877610
+2019-09-17 07:56:25,878 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2019 07:56:25] "GET /price HTTP/1.1" 200 -
+2019-09-17 07:56:25,882 - file - DEBUG - Request received for sold at 2019-09-17 07:56:25.882300
+2019-09-17 07:56:25,882 - file - DEBUG - Reading blob: links.json
+2019-09-17 07:56:26,244 - file - DEBUG - Reading blob: sold.json
+2019-09-17 07:56:26,595 - file - DEBUG - Number of links to scan: 758
+2019-09-17 08:01:14,962 - file - DEBUG - Bad URL https://www.finn.no/realestate/homes/ad.html?finnkode=157659316: list index out of range
+2019-09-17 08:08:28,224 - file - DEBUG - Parsing sold finished..!
+2019-09-17 08:08:28,249 - file - DEBUG - Writing blob: sold.json
+2019-09-17 08:08:28,705 - file - DEBUG - Request finished for sold at 2019-09-17 08:08:28.705479
+2019-09-17 08:08:28,706 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2019 08:08:28] "GET /sold HTTP/1.1" 200 -
+2019-09-17 08:08:28,709 - file - DEBUG - Request received for visnings at 2019-09-17 08:08:28.709902
+2019-09-17 08:08:28,710 - file - DEBUG - Reading blob: links.json
+2019-09-17 08:08:29,097 - file - DEBUG - Reading blob: visning.json
+2019-09-17 08:08:29,789 - file - DEBUG - Number of links to scan: 758
+2019-09-17 08:20:11,280 - file - DEBUG - Parsing visnings finished..!
+2019-09-17 08:20:11,393 - file - DEBUG - Writing blob: visning.json
+2019-09-17 08:20:11,931 - file - DEBUG - Request finished for visnings at 2019-09-17 08:20:11.931545
+2019-09-17 08:20:11,932 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2019 08:20:11] "GET /visning HTTP/1.1" 200 -
+2019-09-17 08:20:11,936 - file - DEBUG - Request received for cleanup at 2019-09-17 08:20:11.936168
+2019-09-17 08:20:11,936 - file - DEBUG - Reading blob: links.json
+2019-09-17 08:20:12,305 - file - DEBUG - Reading blob: pris.json
+2019-09-17 08:20:12,719 - file - DEBUG - Reading blob: sold.json
+2019-09-17 08:20:13,071 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=157017476
+2019-09-17 08:20:13,071 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=156397690
+2019-09-17 08:20:13,072 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=156541156
+2019-09-17 08:20:13,072 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=156421701
+2019-09-17 08:20:13,072 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=155775350
+2019-09-17 08:20:13,073 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=148693869
+2019-09-17 08:20:13,074 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=157637297
+2019-09-17 08:20:13,074 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=156753516
+2019-09-17 08:20:13,076 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=156933146
+2019-09-17 08:20:13,078 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=153427351
+2019-09-17 08:20:13,080 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=156862848
+2019-09-17 08:20:13,081 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=157632868
+2019-09-17 08:20:13,082 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=157306459
+2019-09-17 08:20:13,088 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=151708327
+2019-09-17 08:20:13,133 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=157637297
+2019-09-17 08:20:13,133 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=157637297
+2019-09-17 08:20:13,134 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=157637297
+2019-09-17 08:20:13,134 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=157637297
+2019-09-17 08:20:13,134 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=157637297
+2019-09-17 08:20:13,136 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=157637297
+2019-09-17 08:20:13,138 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=157637297
+2019-09-17 08:20:13,139 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=157637297
+2019-09-17 08:20:13,140 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=157637297
+2019-09-17 08:20:13,141 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=157637297
+2019-09-17 08:20:13,141 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=157637297
+2019-09-17 08:20:13,142 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=157637297
+2019-09-17 08:20:13,142 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=157637297
+2019-09-17 08:20:13,144 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=157637297
+2019-09-17 08:20:13,148 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=157637297
+2019-09-17 08:20:13,148 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=157637297
+2019-09-17 08:20:13,148 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=157637297
+2019-09-17 08:20:13,148 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=157637297
+2019-09-17 08:20:13,149 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=157637297
+2019-09-17 08:20:13,150 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=157637297
+2019-09-17 08:20:13,150 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=157637297
+2019-09-17 08:20:13,150 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=157637297
+2019-09-17 08:20:13,154 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=157637297
+2019-09-17 08:20:13,155 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=157637297
+2019-09-17 08:20:13,156 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=157637297
+2019-09-17 08:20:13,157 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=157637297
+2019-09-17 08:20:13,157 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=157637297
+2019-09-17 08:20:13,158 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=157637297
+2019-09-17 08:20:13,209 - file - DEBUG - Writing blob: links.json
+2019-09-17 08:20:13,557 - file - DEBUG - Writing blob: pris.json
+2019-09-17 08:20:13,915 - file - DEBUG - Request finished for cleanup at 2019-09-17 08:20:13.915888
+2019-09-17 08:20:13,916 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2019 08:20:13] "GET /clean HTTP/1.1" 200 -
+2019-09-17 10:48:46,605 - file - DEBUG - Request received for links at 2019-09-17 10:48:46.605536
+2019-09-17 10:48:46,606 - file - DEBUG - Reading blob: links.json
+2019-09-17 10:49:03,358 - file - DEBUG - Parsing links finished..!
+2019-09-17 10:49:03,392 - file - DEBUG - Writing blob: links.json
+2019-09-17 10:49:03,736 - file - DEBUG - Request finished for links at 2019-09-17 10:49:03.736057
+2019-09-17 10:49:03,737 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2019 10:49:03] "GET /links HTTP/1.1" 200 -
+2019-09-17 10:49:03,742 - file - DEBUG - Request received for price at 2019-09-17 10:49:03.742799
+2019-09-17 10:49:03,743 - file - DEBUG - Reading blob: links.json
+2019-09-17 10:49:04,093 - file - DEBUG - Reading blob: pris.json
+2019-09-17 10:49:04,644 - file - DEBUG - Reading blob: multiplePris.json
+2019-09-17 10:49:04,917 - file - DEBUG - Number of links to scan: 771
+2019-09-17 11:46:00,243 - werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-09-17 11:46:58,938 - werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-09-17 11:47:50,593 - werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-09-17 11:48:02,317 - werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-09-17 11:55:39,111 - werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-09-17 11:55:54,949 - werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-09-17 11:56:08,011 - werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-09-17 11:58:54,673 - werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-09-17 12:03:55,894 - werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-09-17 12:04:26,708 - werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-09-17 12:04:49,985 - file - DEBUG - Request received for links at 2019-09-17 12:04:49.985634
+2019-09-17 12:04:49,985 - file - DEBUG - Reading blob: links.json
+2019-09-17 12:05:08,731 - file - DEBUG - Parsing links finished..!
+2019-09-17 12:05:08,763 - file - DEBUG - Writing blob: links.json
+2019-09-17 12:05:09,271 - file - DEBUG - Request finished for links at 2019-09-17 12:05:09.271690
+2019-09-17 12:05:09,273 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2019 12:05:09] "GET /links HTTP/1.1" 200 -
+2019-09-17 12:11:29,228 - file - DEBUG - Request received for links at 2019-09-17 12:11:29.228318
+2019-09-17 12:11:29,228 - file - DEBUG - Reading blob: links.json
+2019-09-17 12:11:39,744 - file - DEBUG - Parsing links finished..!
+2019-09-17 12:11:39,779 - file - DEBUG - Writing blob: links.json
+2019-09-17 12:11:40,164 - file - DEBUG - Request finished for links at 2019-09-17 12:11:40.164916
+2019-09-17 12:11:40,166 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2019 12:11:40] "GET /links HTTP/1.1" 200 -
+2019-09-17 12:13:24,734 - werkzeug - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2019-09-17 12:16:46,460 - file - DEBUG - Request received for links at 2019-09-17 12:16:46.460651
+2019-09-17 12:16:46,461 - file - DEBUG - Reading blob: links.json
+2019-09-17 12:16:54,649 - file - DEBUG - Parsing links finished..!
+2019-09-17 12:16:54,681 - file - DEBUG - Writing blob: links.json
+2019-09-17 12:16:55,101 - file - DEBUG - Request finished for links at 2019-09-17 12:16:55.101287
+2019-09-17 12:16:55,103 - werkzeug - INFO - 127.0.0.1 - - [17/Sep/2019 12:16:55] "GET /links HTTP/1.1" 200 -
+2019-09-17 12:16:55,106 - file - DEBUG - Request received for price at 2019-09-17 12:16:55.106327
+2019-09-17 12:16:55,106 - file - DEBUG - Reading blob: links.json
+2019-09-17 12:16:55,449 - file - DEBUG - Reading blob: pris.json
+2019-09-17 12:16:55,860 - file - DEBUG - Reading blob: multiplePris.json
+2019-09-17 12:16:56,044 - file - DEBUG - Number of links to scan: 785

@@ -1,5 +1,3 @@
-#!/usr/bin/python3.5
-
 from flask import Flask, render_template
 app = Flask(__name__)
 import parse_link as link
@@ -82,6 +80,8 @@ def renderSold():
     log("Request finished for sold at {}".format(datetime.datetime.now()))
     return ""
 
+if __name__ == "__main__":
+    app.run()
 # def request():
 #     log("Sending requests at {}: ".format(datetime.datetime.now()))
 #     # threading.Timer(1200.0, request).start()
