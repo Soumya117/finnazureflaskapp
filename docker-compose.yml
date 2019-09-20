@@ -8,4 +8,3 @@ services:
       - 56733:80
     volumes:
       - ./app:/app
-    tty: true
