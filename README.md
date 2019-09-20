@@ -73,7 +73,7 @@ Changes:
 3. To start the dockers, just navigate to the project folder and run sudo bash start.sh.This script will perform a docker        build and fire up the required containers. 
 Prometheus runs on port 9090 and grafana on 3000.
 
-Since the dockers are running inside the VM, i have to open some ports to access prometheus and grafana. That can be done by enabling some firewalls. For ex:
+Since the dockers are running inside the VM, i have to open some ports to access prometheus and grafana. That can be done by enabling some firewalls. For ex: <br />
 gcloud compute firewall-rules create allow-http-5000 \
     --allow tcp:5000 \
     --source-ranges 0.0.0.0/0 \
