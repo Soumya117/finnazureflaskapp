@@ -63,6 +63,14 @@ For running it inside a vm instance as a daemon:
 6. Run sudo /usr/bin/supervisord. Make sure no other supervisor processes are running. (sudo ps -ax | grep 'supervisor').
 7. Enter sudo supervisorctl and check your app.
 
+
+UPDATE Again: So i changed the arhitecture a little bit. I wanted to run prometheus and grafana service along with my python web app. So i found out good solution will be to dockarize it. So every thing is not running into dockers. This also fufilled the need to add supervisord.
+Changes: 
+1. docker-compose.yml contains configuration of the webapp.
+2. docker-compose-infra.yml contains configuration of prometheus and grafana.
+3. To start the dockers, just navigate to the project folder and run sudo bash start.sh.This script will perform a docker        build and fire up the required containers. 
+Prometheus runs on port 9090 and grafana on 3000.
+
 After this architectural change, there is a timer daemon running inside the vm that will schedule the scans. 
 
 ARCHITECTURE
