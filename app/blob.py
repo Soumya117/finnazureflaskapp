@@ -3,8 +3,8 @@ from azure.storage.blob import BlockBlobService, PublicAccess
 from logger import log
 
 container_name ='finnblob'
-account_name = 'accountName'
-account_key = 'accountKey'
+account_name = 'account_name'
+account_key = 'account_key'
 
 def writeBlob(file_name, text):
     log("Writing blob: {}".format(file_name))

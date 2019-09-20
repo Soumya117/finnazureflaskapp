@@ -3,7 +3,7 @@ import json
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
-import geocode
+import geocode as geocode
 from logger import log
 # def addGeocodes():
 #     old_data = {}

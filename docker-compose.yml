@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  webapp:
+    image: docker.test
+    container_name: webapp
+    ports:
+      - 56733:80
+    volumes:
+      - ./app:/app
+    tty: true

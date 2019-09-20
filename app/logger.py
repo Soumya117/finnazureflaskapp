@@ -1,6 +1,9 @@
 import logging, logging.config, yaml
+import os
 
-logging.config.dictConfig(yaml.load(open('logging.conf')))
+working_dir = os.getcwd()
+conf = os.path.join(working_dir, "logging.conf")
+logging.config.dictConfig(yaml.load(open(conf)))
 logfile    = logging.getLogger('file')
 logconsole = logging.getLogger('console')
 

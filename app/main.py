@@ -1,17 +1,21 @@
-from flask import Flask, render_template
-app = Flask(__name__)
 import parse_link as link
 import parse_price as price
 import parse_sold as sold
 import parse_visning as visning
-import sys
-import blob
+import blob as blob
 import datetime
+from flask import Flask
 from logger import log
+from helpers.middleware import setup_metrics
+import sys
+
+sys.path.append('/usr/local/lib/python3.6/dist-packages/')
+
+app = Flask(__name__)
+setup_metrics(app)
 
 @app.route('/links')
 def renderLinks():
-
     log("Request received for links at {}".format(datetime.datetime.now()))
 
     linksBlob = blob.readBlob('links.json')
@@ -79,19 +83,3 @@ def renderSold():
 
     log("Request finished for sold at {}".format(datetime.datetime.now()))
     return ""
-
-if __name__ == "__main__":
-    app.run()
-# def request():
-#     log("Sending requests at {}: ".format(datetime.datetime.now()))
-#     # threading.Timer(1200.0, request).start()
-#     renderLinks()
-#     renderPrice()
-#     renderSold()
-#     renderVisning()
-#     removeSoldData()
-#     log("Finished at: {}!".format(datetime.datetime.now()))
-#
-# # if __name__== "__main__":
-# #     print("Running main!!")
-#     # request()

@@ -287,3 +287,87 @@
 2019-09-17 12:16:55,449 - file - DEBUG - Reading blob: pris.json
 2019-09-17 12:16:55,860 - file - DEBUG - Reading blob: multiplePris.json
 2019-09-17 12:16:56,044 - file - DEBUG - Number of links to scan: 785
+2019-09-18 10:58:02,672 - werkzeug - INFO -  * Running on http://0.0.0.0:9871/ (Press CTRL+C to quit)
+2019-09-18 10:58:07,897 - werkzeug - INFO - 127.0.0.1 - - [18/Sep/2019 10:58:07] "GET / HTTP/1.1" 404 -
+2019-09-18 10:58:08,193 - werkzeug - INFO - 127.0.0.1 - - [18/Sep/2019 10:58:08] "GET /favicon.ico HTTP/1.1" 404 -
+2019-09-18 10:58:16,063 - file - DEBUG - Request received for links at 2019-09-18 10:58:16.063003
+2019-09-18 10:58:16,065 - file - DEBUG - Reading blob: links.json
+2019-09-18 10:58:33,060 - file - DEBUG - Parsing links finished..!
+2019-09-18 10:58:33,072 - file - DEBUG - Writing blob: links.json
+2019-09-18 10:58:34,212 - file - DEBUG - Request finished for links at 2019-09-18 10:58:34.212462
+2019-09-18 10:58:34,213 - werkzeug - INFO - 127.0.0.1 - - [18/Sep/2019 10:58:34] "GET /links HTTP/1.1" 200 -
+2019-09-18 11:18:55,226 - file - DEBUG - Request received for links at 2019-09-18 11:18:55.226415
+2019-09-18 11:18:55,227 - file - DEBUG - Reading blob: links.json
+2019-09-18 11:19:11,232 - file - DEBUG - Parsing links finished..!
+2019-09-18 11:19:11,245 - file - DEBUG - Writing blob: links.json
+2019-09-18 11:19:12,411 - file - DEBUG - Request finished for links at 2019-09-18 11:19:12.411847
+2019-09-18 11:19:37,207 - file - DEBUG - Request received for sold at 2019-09-18 11:19:37.207260
+2019-09-18 11:19:37,207 - file - DEBUG - Reading blob: links.json
+2019-09-18 11:19:38,230 - file - DEBUG - Reading blob: sold.json
+2019-09-18 11:19:39,373 - file - DEBUG - Number of links to scan: 648
+2019-09-18 11:20:46,940 - file - DEBUG - Request received for sold at 2019-09-18 11:20:46.940445
+2019-09-18 11:20:46,941 - file - DEBUG - Reading blob: links.json
+2019-09-18 11:20:48,048 - file - DEBUG - Reading blob: sold.json
+2019-09-18 11:20:49,013 - file - DEBUG - Number of links to scan: 648
+2019-09-18 11:21:46,762 - file - DEBUG - Request received for sold at 2019-09-18 11:21:46.762349
+2019-09-18 11:21:46,762 - file - DEBUG - Reading blob: links.json
+2019-09-18 11:21:47,784 - file - DEBUG - Reading blob: sold.json
+2019-09-18 11:21:48,921 - file - DEBUG - Number of links to scan: 648
+2019-09-18 11:22:01,999 - file - DEBUG - Parsing sold finished..!
+2019-09-18 11:22:02,011 - file - DEBUG - Writing blob: sold.json
+2019-09-18 11:22:03,223 - file - DEBUG - Request finished for sold at 2019-09-18 11:22:03.223271
+2019-09-18 11:22:18,378 - file - DEBUG - Parsing sold finished..!
+2019-09-18 11:22:18,390 - file - DEBUG - Writing blob: sold.json
+2019-09-18 11:22:19,555 - file - DEBUG - Request finished for sold at 2019-09-18 11:22:19.555662
+2019-09-18 11:25:02,250 - file - DEBUG - Parsing sold finished..!
+2019-09-18 11:25:02,265 - file - DEBUG - Writing blob: sold.json
+2019-09-18 11:25:03,501 - file - DEBUG - Request finished for sold at 2019-09-18 11:25:03.501756
+2019-09-18 14:27:27,653 - werkzeug - INFO -  * Running on http://localhost:4000/ (Press CTRL+C to quit)
+2019-09-18 14:27:38,773 - file - DEBUG - Request received for links at 2019-09-18 14:27:38.772994
+2019-09-18 14:27:38,773 - file - DEBUG - Reading blob: links.json
+2019-09-18 14:27:55,970 - file - DEBUG - Parsing links finished..!
+2019-09-18 14:27:55,992 - file - DEBUG - Writing blob: links.json
+2019-09-18 14:27:57,173 - file - DEBUG - Request finished for links at 2019-09-18 14:27:57.173069
+2019-09-18 14:27:57,173 - werkzeug - INFO - 127.0.0.1 - - [18/Sep/2019 14:27:57] "GET /links HTTP/1.1" 200 -
+2019-09-18 14:27:57,176 - werkzeug - INFO - 127.0.0.1 - - [18/Sep/2019 14:27:57] "GET /metrics/ HTTP/1.1" 200 -
+2019-09-18 15:52:46,861 - werkzeug - INFO -  * Running on http://localhost:4000/ (Press CTRL+C to quit)
+2019-09-18 15:52:58,247 - werkzeug - INFO - 127.0.0.1 - - [18/Sep/2019 15:52:58] "GET /metrics/ HTTP/1.1" 200 -
+2019-09-18 15:52:58,348 - werkzeug - INFO - 127.0.0.1 - - [18/Sep/2019 15:52:58] "GET /favicon.ico HTTP/1.1" 404 -
+2019-09-18 15:53:08,045 - file - DEBUG - Request received for links at 2019-09-18 15:53:08.045171
+2019-09-18 15:53:08,045 - file - DEBUG - Reading blob: links.json
+2019-09-18 15:53:26,524 - file - DEBUG - Parsing links finished..!
+2019-09-18 15:53:26,534 - file - DEBUG - Writing blob: links.json
+2019-09-18 15:53:27,693 - file - DEBUG - Request finished for links at 2019-09-18 15:53:27.693620
+2019-09-18 15:53:27,694 - werkzeug - INFO - 127.0.0.1 - - [18/Sep/2019 15:53:27] "GET /links HTTP/1.1" 200 -
+2019-09-18 15:53:27,696 - werkzeug - INFO - 127.0.0.1 - - [18/Sep/2019 15:53:27] "GET /metrics/ HTTP/1.1" 200 -
+2019-09-18 16:21:53,910 - werkzeug - INFO -  * Running on http://localhost:4000/ (Press CTRL+C to quit)
+2019-09-19 14:11:04,793 - file - DEBUG - Request received for links at 2019-09-19 14:11:04.793642
+2019-09-19 14:11:04,794 - file - DEBUG - Reading blob: links.json
+2019-09-19 14:11:22,844 - file - DEBUG - Parsing links finished..!
+2019-09-19 14:11:22,870 - file - DEBUG - Writing blob: links.json
+2019-09-19 14:11:24,740 - file - DEBUG - Request finished for links at 2019-09-19 14:11:24.740788
+2019-09-19 14:19:30,584 - file - DEBUG - Request received for links at 2019-09-19 14:19:30.584718
+2019-09-19 14:19:30,585 - file - DEBUG - Reading blob: links.json
+2019-09-19 14:19:34,427 - file - DEBUG - Parsing links finished..!
+2019-09-19 14:19:34,452 - file - DEBUG - Writing blob: links.json
+2019-09-19 14:19:35,599 - file - DEBUG - Request finished for links at 2019-09-19 14:19:35.599387
+2019-09-19 14:22:08,149 - file - DEBUG - Request received for links at 2019-09-19 14:22:08.149248
+2019-09-19 14:22:08,149 - file - DEBUG - Reading blob: links.json
+2019-09-19 14:22:11,611 - file - DEBUG - Parsing links finished..!
+2019-09-19 14:22:11,632 - file - DEBUG - Writing blob: links.json
+2019-09-19 14:22:12,736 - file - DEBUG - Request finished for links at 2019-09-19 14:22:12.736622
+2019-09-20 07:23:54,405 - file - DEBUG - Request received for links at 2019-09-20 07:23:54.405034
+2019-09-20 07:23:54,405 - file - DEBUG - Reading blob: links.json
+2019-09-20 07:24:23,913 - file - DEBUG - Parsing links finished..!
+2019-09-20 07:24:23,927 - file - DEBUG - Writing blob: links.json
+2019-09-20 07:24:25,526 - file - DEBUG - Request finished for links at 2019-09-20 07:24:25.526467
+2019-09-20 07:27:43,534 - file - DEBUG - Request received for links at 2019-09-20 07:27:43.534733
+2019-09-20 07:27:43,535 - file - DEBUG - Reading blob: links.json
+2019-09-20 07:28:02,827 - file - DEBUG - Parsing links finished..!
+2019-09-20 07:28:02,843 - file - DEBUG - Writing blob: links.json
+2019-09-20 07:28:04,919 - file - DEBUG - Request finished for links at 2019-09-20 07:28:04.919396
+2019-09-20 07:38:09,982 - file - DEBUG - Request received for links at 2019-09-20 07:38:09.982079
+2019-09-20 07:38:09,982 - file - DEBUG - Reading blob: links.json
+2019-09-20 07:38:25,523 - file - DEBUG - Parsing links finished..!
+2019-09-20 07:38:25,537 - file - DEBUG - Writing blob: links.json
+2019-09-20 07:38:28,499 - file - DEBUG - Request finished for links at 2019-09-20 07:38:28.499111
