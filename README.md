@@ -51,15 +51,15 @@ For running it inside a vm instance as a daemon:
 2. Git clone this project there.
 3. Change the required keys (gmaps and azure blob)
 4. Create a conf file inside /etc/supervisor/conf.d/ as finnazureflaskapp.conf. 
-5. Write the conf file with following:
-   [program:finn-flask-app]
-   directory=/home/soumya/python/finnazureflaskapp
-   command=python main.py
-   autostart=true
-   autorestart=true
-   stopsignal=INT
-   stopasgroup=true
-   killasgroup=true
+5. Write the conf file with following:<br />
+   [program:finn-flask-app]<br />
+   directory=/home/soumya/python/finnazureflaskapp<br />
+   command=python main.py<br />
+   autostart=true<br />
+   autorestart=true<br />
+   stopsignal=INT<br />
+   stopasgroup=true<br />
+   killasgroup=true<br />
 6. Run sudo /usr/bin/supervisord. Make sure no other supervisor processes are running. (sudo ps -ax | grep 'supervisor').
 7. Enter sudo supervisorctl and check your app.
 
