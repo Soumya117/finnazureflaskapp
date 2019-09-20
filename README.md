@@ -79,7 +79,7 @@ gcloud compute firewall-rules create allow-http-5000 \
     --source-ranges 0.0.0.0/0 \
     --target-tags http-server \
     --description "Allow port 5000 access to http-server"
-
+To tail docker-compose logs: sudo docker-compose logs --tail="all" -f
 ARCHITECTURE
 
 ![alt text](https://github.com/Soumya117/finnazureflaskapp/blob/master/app/Selection_152.png) <br /><br />
