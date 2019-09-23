@@ -8,3 +8,4 @@ services:
       - 56733:80
     volumes:
       - ./app:/app
+      - ./nginx.conf:/etc/nginx/nginx.conf

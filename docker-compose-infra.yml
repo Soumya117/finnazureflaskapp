@@ -3,6 +3,9 @@ version: '2'
 volumes:
     prometheus_data: {}
     grafana_data: {}
+    elasticsearch: {}
+networks:
+  elk:
 
 services:
   prometheus:
@@ -28,3 +31,21 @@ services:
     environment:
       - GF_SECURITY_ADMIN_PASSWORD=foobar
       - GF_USERS_ALLOW_SIGN_UP=false
+  elasticsearch:
+    image: elasticsearch:6.5.3
+    volumes:
+      - elasticsearch:/usr/share/elasticsearch/data
+    networks:
+      - elk
+    expose:
+      - 9200
+    ports:
+      - 9200:9200
+  kibana:
+    image: kibana:6.5.3
+    networks:
+      - elk
+    expose:
+      - 5601
+    ports:
+      - 5601:5601
