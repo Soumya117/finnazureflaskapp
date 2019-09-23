@@ -77,11 +77,11 @@ Changes:
 
 ****************************************************************************************************************************
 
-Services and ports<br/ ><br/ >
-Prometheus: 9090<br/ >
-Grafana: 3000<br/ >
-ElasticSearch: 9200<br/ >
-Kibana: 5601<br/ >
+Services and ports<br /><br />
+Prometheus: 9090<br />
+Grafana: 3000<br />
+ElasticSearch: 9200<br />
+Kibana: 5601<br />
 
 Since the dockers are running inside the VM, i have to open some ports to access prometheus and grafana. That can be done by enabling some firewalls. For ex: <br />
 gcloud compute firewall-rules create allow-http-5000 \
