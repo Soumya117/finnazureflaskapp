@@ -37,15 +37,16 @@ MICROSOFT AZURE
 5. Using cloud shell, you can makes changes to the code and then deploy it back with the same command.
 6. Since now the /price request takes long time to load, the app timed out. So i changed the startup configuration using        command: az webapp config set --resource-group "resource-group" --name "app-name" --startup-file "gunicorn --bind=0.0.0.0    --timeout 2000 application:app"
 
-
 GOOGLE CLOUD 
 
 1. For google cloud, i need to create app.yaml and add an entrypoint to main.py or application.py.
 2. App is deployed on the cloud locally using :
    gcloud app deploy
 3. The flask app is now deployed on the google app engine and the azure timer function sends the request to scan every 3 hours.
-
-UPDATE: I have not running this app as an app service on GCP. I am running it as a daemon inside a GCP vm instance. The reason for this change was it was not really handling the huge requests well. It was getting timedout. 
+<br /> <br/ >
+****************************************************************************************************************************
+<br/ > <br/ >
+UPDATE: I am not running this app as an app service on GCP. I am running it as a daemon inside a GCP vm instance. The reason for this change was it was not really handling the huge requests well. It was getting timedout. 
 For running it inside a vm instance as a daemon:
 1. Create a VM instance.
 2. Git clone this project there.
@@ -63,22 +64,31 @@ For running it inside a vm instance as a daemon:
 6. Run sudo /usr/bin/supervisord. Make sure no other supervisor processes are running. (sudo ps -ax | grep 'supervisor').
 7. Enter sudo supervisorctl and check your app.
 
-
 After this architectural change, there is a timer daemon running inside the vm that will schedule the scans. 
-
-UPDATE Again: So i changed the arhitecture a little bit. I wanted to run prometheus and grafana service along with my python web app. So i found out good solution will be to dockarize it. So every thing is not running into dockers. This also fufilled the need to add supervisord.
+<br /> <br/ >
+****************************************************************************************************************************
+<br/ > <br/ >
+UPDATE Again: So i changed the arhitecture a little bit. I wanted to run prometheus, grafana and elk service along with my python web app. So i found out that good solution will be to dockarize it. So every thing is now running as dockers.
 Changes: 
 1. docker-compose.yml contains configuration of the webapp.
-2. docker-compose-infra.yml contains configuration of prometheus and grafana.
-3. To start the dockers, just navigate to the project folder and run sudo bash start.sh.This script will perform a docker        build and fire up the required containers. 
-Prometheus runs on port 9090 and grafana on 3000.
+2. docker-compose-infra.yml contains configuration of prometheus, grafana, elastic search and kibana.
+3. To start the dockers, just navigate to the project folder and run sudo bash start.sh.This script will perform a docker        build and fire up the required containers.
+4. After all the dockers are running, run install_filebeat.sh to install and start filebeat service. Change the configuration in //etc/filebeat/filebeat.yml and restart filebeat.
+<br /> <br/ >
+****************************************************************************************************************************
+<br/ > <br/ >
+Services and ports < br/ >< br/ >
+Prometheus: 9090 < br/ >
+Grafana: 3000 < br/ >
+ElasticSearch: 9200 < br/ >
+Kibana: 5601 < br/ >
 
 Since the dockers are running inside the VM, i have to open some ports to access prometheus and grafana. That can be done by enabling some firewalls. For ex: <br />
 gcloud compute firewall-rules create allow-http-5000 \
     --allow tcp:5000 \
     --source-ranges 0.0.0.0/0 \
     --target-tags http-server \
-    --description "Allow port 5000 access to http-server"
+    --description "Allow port 5000 access to http-server" <br />
 To tail docker-compose logs: sudo docker-compose logs --tail="all" -f
 ARCHITECTURE
 
