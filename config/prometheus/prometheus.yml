@@ -32,3 +32,13 @@ scrape_configs:
     # scheme defaults to 'http'.
     static_configs:
         - targets: ['webapp:56733']
+
+  - job_name: 'displayapp'
+
+    # Override the global default and scrape targets from this job every 5 seconds.
+    scrape_interval: 5s
+
+    # metrics_path defaults to '/metrics'
+    # scheme defaults to 'http'.
+    static_configs:
+        - targets: ['displayapp:9871']
