@@ -59,13 +59,16 @@ def removeSoldData():
 
     linkBlob = blob.readBlob('links.json')
     prisBlob = blob.readBlob('pris.json')
+    visningBlob = blob.readBlob('visning.json')
     soldBlob = blob.readBlob('sold.json')
 
     linkData = link.cleanupSold(soldBlob, linkBlob)
     prisData = price.cleanupSold(soldBlob, prisBlob)
+    visningData = visning.cleanupSold(soldBlob, visningBlob)
 
     blob.writeBlob("links.json", linkData)
     blob.writeBlob("pris.json", prisData)
+    blob.writeBlob("visning.json", visningData)
 
     log("Request finished for cleanup at {}".format(datetime.datetime.now()))
     return ""
