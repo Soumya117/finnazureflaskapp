@@ -1,7 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 import json
-import sys
 from logger import log
 
 # def addGeocodes():
@@ -39,8 +38,6 @@ def add_visning(result, visning_data):
         visning_data['links'].append(visning)
 
     if exists:
-        #just add the price, rest exists at the correct place
-        #look for the link
         for p in visning_data['links']:
             if result['link'] in p['link']:
                 if not result['time'] in p['visnings']:
@@ -70,7 +67,6 @@ def parseVisning(linkBlob, visningBlob):
     visning_data = json.loads(visningBlob)
     data = json.loads(linkBlob)
     log("Number of links to scan: {}".format(len(data['links'])))
-    sys.stdout.flush()
     result = {}
     for link in data['links']:
         try:
@@ -86,12 +82,9 @@ def parseVisning(linkBlob, visningBlob):
             pris = pris_rows[i].get_text().strip()
             pris = pris.replace(u"\u00A0", " ")
 
-            rows = soup.findAll("div", {"class": "u-hide-gt768 u-no-print"})
-            time_list = []
-            if rows:
-                time_list = rows[0].find_all('time')
-            for time in time_list:
-                time_txt = time.get_text().strip()
+            rows = soup.findAll("time")
+            for row in rows:
+                time_txt = row.get_text().strip()
                 result['time'] = time_txt
                 result['link'] = url
                 result['text'] = link['text']
@@ -102,9 +95,7 @@ def parseVisning(linkBlob, visningBlob):
                 add_visning(result, visning_data)
         except Exception as e:
             log("Bad URL {url}: {e}".format(e=e, url=url))
-            sys.stdout.flush()
 
     log("Parsing visnings finished..!")
-    sys.stdout.flush()
     data = json.dumps(visning_data, indent=4, sort_keys=True, ensure_ascii=False)
     return data
