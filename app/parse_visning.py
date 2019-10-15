@@ -3,16 +3,6 @@ from bs4 import BeautifulSoup
 import json
 from logger import log
 
-# def addGeocodes():
-#     old_data = {}
-#     with open("json/visning.json") as input:
-#         old_data = json.load(input)
-#         for item in old_data['links']:
-#             item['details']['geocode'] = {}
-#             item['details']['geocode'] = geocode.getMarkers(item['details']['address'])
-#
-#     with open("json/visning.json", "w") as output:
-#         json.dump(old_data, output)
 
 def add_visning(result, visning_data):
     exists = False
@@ -44,13 +34,14 @@ def add_visning(result, visning_data):
                     new_visning = result['time']
                     p['visnings'].append(new_visning)
 
-def cleanupSold(soldBlob, viewBlob):
+
+def cleanup_sold(sold_blob, view_blob):
     sold_links = []
-    sold = json.loads(soldBlob)
+    sold = json.loads(sold_blob)
     for link in sold['links']:
         sold_links.append(link['link'])
 
-    visning_data = json.loads(viewBlob)
+    visning_data = json.loads(view_blob)
     count = 0
     for item in list(visning_data['links']):
         if item['link'] in sold_links:
@@ -63,9 +54,9 @@ def cleanupSold(soldBlob, viewBlob):
     return data
 
 
-def parseVisning(linkBlob, visningBlob):
-    visning_data = json.loads(visningBlob)
-    data = json.loads(linkBlob)
+def parse_visning(link_blob, visning_blob):
+    visning_data = json.loads(visning_blob)
+    data = json.loads(link_blob)
     log("Number of links to scan: {}".format(len(data['links'])))
     result = {}
     for link in data['links']:

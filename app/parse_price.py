@@ -1,30 +1,9 @@
 import requests
 from bs4 import BeautifulSoup
-from datetime import datetime, timedelta
+from datetime import datetime
 import json
 import sys
 from logger import log
-# def addGeocodesPris():
-#     old_data = {}
-#     with open("json/pris.json") as input:
-#         old_data = json.load(input)
-#         for item in old_data['links']:
-#             item['details']['geocode'] = {}
-#             item['details']['geocode'] = geocode.getMarkers(item['details']['address'])
-#
-#     with open("json/pris.json", "w") as output:
-#         json.dump(old_data, output)
-#
-# def addGeocodesMultiple():
-#     old_data = {}
-#     with open("json/multiplePris.json") as input:
-#         old_data = json.load(input)
-#         for item in old_data['links']:
-#             item['details']['geocode'] = {}
-#             item['details']['geocode'] = geocode.getMarkers(item['details']['address'])
-#
-#     with open("json/multiplePris.json", "w") as output:
-#         json.dump(old_data, output)
 
 
 def add_pris(result, pris_data):
@@ -69,13 +48,14 @@ def add_pris(result, pris_data):
                     price['time'] = current
                     p['price_list'].append(price)
 
-def cleanupSold(soldBlob, prisBlob):
+
+def cleanup_sold(sold_blob, pris_blob):
     sold_links = []
-    sold = json.loads(soldBlob)
+    sold = json.loads(sold_blob)
     for link in sold['links']:
         sold_links.append(link['link'])
 
-    price_data = json.loads(prisBlob)
+    price_data = json.loads(pris_blob)
     count = 0
     for item in list(price_data['links']):
         if item['link'] in sold_links:
@@ -87,11 +67,11 @@ def cleanupSold(soldBlob, prisBlob):
     data = json.dumps(price_data, indent=4, sort_keys=True, ensure_ascii=False)
     return data
 
-def parsePrice(linkBlob, priceBlob):
-    data = json.loads(linkBlob)
-    priceBlob = json.loads(priceBlob)
+
+def parse_price(link_blob, price_blob):
+    data = json.loads(link_blob)
+    price_blob = json.loads(price_blob)
     log("Number of links to scan: {}".format(len(data['links'])))
-    sys.stdout.flush()
     for link in data['links']:
         try:
             result = {}
@@ -112,26 +92,25 @@ def parsePrice(linkBlob, priceBlob):
             result['geocode'] = link['geocode']
             result['price'] = pris
             result['area'] = link['area']
-            add_pris(result, priceBlob)
+            add_pris(result, price_blob)
         except Exception as e:
             log("Bad URL {url}: {e}".format(e=e, url=url))
-            sys.stdout.flush()
 
     log("Parsing price finished..!")
-    sys.stdout.flush()
 
-    data = json.dumps(priceBlob, indent=4, sort_keys=True, ensure_ascii=False)
+    data = json.dumps(price_blob, indent=4, sort_keys=True, ensure_ascii=False)
     return data
 
-def multiplePriceLinks(multipleBlob, prisBlob):
-    multipleData = json.loads(multipleBlob)
-    data = json.loads(prisBlob)
+
+def multiple_price_links(multiple_blob, pris_blob):
+    multiple_data = json.loads(multiple_blob)
+    data = json.loads(pris_blob)
     for item in data['links']:
         # Check if the link is already present in multiplePris.json
         count = 0
-        for mul in multipleData['links']:
+        for mul in multiple_data['links']:
             if item['link'] in mul['link']:
-                del multipleData['links'][count]
+                del multiple_data['links'][count]
             count = count + 1
 
         item_list = item['price_list']
@@ -141,6 +120,6 @@ def multiplePriceLinks(multipleBlob, prisBlob):
             price['details'] = item['details']
             price['price_list'] = []
             price['price_list'] = item['price_list']
-            multipleData['links'].append(price)
-    data = json.dumps(multipleData, indent=4, sort_keys=True, ensure_ascii=False)
+            multiple_data['links'].append(price)
+    data = json.dumps(multiple_data, indent=4, sort_keys=True, ensure_ascii=False)
     return data

@@ -14,75 +14,79 @@ sys.path.append('/usr/local/lib/python3.6/dist-packages/')
 app = Flask(__name__)
 setup_metrics(app)
 
+
 @app.route('/links')
-def renderLinks():
+def render_links():
     log("Request received for links at {}".format(datetime.datetime.now()))
 
-    linksBlob = blob.readBlob('links.json')
-    linksData = link.parseTitle(linksBlob)
-    blob.writeBlob("links.json", linksData)
+    links_blob = blob.read_blob('links.json')
+    links_data = link.parse_title(links_blob)
+    blob.write_blob("links.json", links_data)
 
     log("Request finished for links at {}".format(datetime.datetime.now()))
     return ""
 
+
 @app.route('/price')
-def renderPrice():
+def render_price():
     log("Request received for price at {}".format(datetime.datetime.now()))
 
-    linkBlob = blob.readBlob('links.json')
-    prisBlob = blob.readBlob('pris.json')
-    multipleBlob = blob.readBlob('multiplePris.json')
-    pris = price.parsePrice(linkBlob, prisBlob)
-    multiple = price.multiplePriceLinks(multipleBlob, prisBlob)
+    link_blob = blob.read_blob('links.json')
+    pris_blob = blob.read_blob('pris.json')
+    multiple_blob = blob.read_blob('multiplePris.json')
+    pris = price.parse_price(link_blob, pris_blob)
+    multiple = price.multiple_price_links(multiple_blob, pris_blob)
 
-    blob.writeBlob("multiplePris.json", multiple)
-    blob.writeBlob("pris.json", pris)
+    blob.write_blob("multiplePris.json", multiple)
+    blob.write_blob("pris.json", pris)
 
     log("Request finished for price at {}".format(datetime.datetime.now()))
     return ""
 
+
 @app.route('/visning')
-def renderVisning():
+def render_visning():
     log("Request received for visnings at {}".format(datetime.datetime.now()))
 
-    linkBlob = blob.readBlob('links.json')
-    visningBlob = blob.readBlob('visning.json')
-    visnings = visning.parseVisning(linkBlob, visningBlob)
-    blob.writeBlob("visning.json", visnings)
+    link_blob = blob.read_blob('links.json')
+    visning_blob = blob.read_blob('visning.json')
+    visnings = visning.parse_visning(link_blob, visning_blob)
+    blob.write_blob("visning.json", visnings)
 
     log("Request finished for visnings at {}".format(datetime.datetime.now()))
     return ""
 
+
 @app.route('/clean')
-def removeSoldData():
+def remove_sold_data():
     log("Request received for cleanup at {}".format(datetime.datetime.now()))
 
-    linkBlob = blob.readBlob('links.json')
-    prisBlob = blob.readBlob('pris.json')
-    visningBlob = blob.readBlob('visning.json')
-    soldBlob = blob.readBlob('sold.json')
+    link_blob = blob.read_blob('links.json')
+    pris_blob = blob.read_blob('pris.json')
+    visning_blob = blob.read_blob('visning.json')
+    sold_blob = blob.read_blob('sold.json')
 
-    linkData = link.cleanupSold(soldBlob, linkBlob)
-    prisData = price.cleanupSold(soldBlob, prisBlob)
-    visningData = visning.cleanupSold(soldBlob, visningBlob)
+    link_data = link.cleanup_sold(sold_blob, link_blob)
+    pris_data = price.cleanup_sold(sold_blob, pris_blob)
+    visning_data = visning.cleanup_sold(sold_blob, visning_blob)
 
-    blob.writeBlob("links.json", linkData)
-    blob.writeBlob("pris.json", prisData)
-    blob.writeBlob("visning.json", visningData)
+    blob.write_blob("links.json", link_data)
+    blob.write_blob("pris.json", pris_data)
+    blob.write_blob("visning.json", visning_data)
 
     log("Request finished for cleanup at {}".format(datetime.datetime.now()))
     return ""
 
+
 @app.route('/sold')
-def renderSold():
+def render_sold():
     log("Request received for sold at {}".format(datetime.datetime.now()))
 
-    sys.stdout.flush()
-    linkBlob = blob.readBlob('links.json')
-    soldBlob = blob.readBlob('sold.json')
-    soldData = sold.parseSold(linkBlob, soldBlob)
+    link_blob = blob.read_blob('links.json')
+    sold_blob = blob.read_blob('sold.json')
+    sold_data = sold.parse_sold(link_blob, sold_blob)
 
-    blob.writeBlob("sold.json", soldData)
+    blob.write_blob("sold.json", sold_data)
 
     log("Request finished for sold at {}".format(datetime.datetime.now()))
     return ""

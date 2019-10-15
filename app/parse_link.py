@@ -2,19 +2,10 @@ import sys
 import json
 import requests
 from bs4 import BeautifulSoup
-from datetime import datetime, timedelta
+from datetime import datetime
 import geocode as geocode
 from logger import log
-# def addGeocodes():
-#     old_data = {}
-#     with open("json/links.json") as input:
-#         old_data = json.load(input)
-#         for item in old_data['links']:
-#             item['geocode'] = {}
-#             item['geocode'] = geocode.getMarkers(item['address'])
-#
-#     with open("json/links.json", "w") as output:
-#         json.dump(old_data, output)
+
 
 def add_title(result, data):
     current = datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')
@@ -35,17 +26,16 @@ def add_title(result, data):
 
         data['links'].append(new_item)
 
-def parseTitle(jsonData):
-    data = json.loads(jsonData)
+
+def parse_title(json_data):
+    data = json.loads(json_data)
     url = "https://www.finn.no/realestate/homes/search.html?location=0.20061"
     html = requests.get(url)
     soup = BeautifulSoup(html.text, "lxml")
-    type(soup)
     try:
         all_div = soup.find_all("div", {"class": "ads__unit__content"})
     except Exception as e:
         log("Failed to find divs in {}".format(url))
-        sys.stdout.flush()
 
     for div in all_div:
         result = {}
@@ -67,7 +57,7 @@ def parseTitle(jsonData):
                 result['link'] = finn_link + link
                 result['text'] = link_text
                 result['address'] = add_value
-                result['geocode'] = geocode.getMarkers(add_value)
+                result['geocode'] = geocode.get_markers(add_value)
                 result['area'] = area
                 result['price'] = price.encode('ascii','ignore').decode('utf-8')
                 add_title(result, data)
@@ -75,27 +65,26 @@ def parseTitle(jsonData):
                 continue
         except Exception as e:
                 log("Bad URL {url}: {e}".format(e=e, url=link))
-                sys.stdout.flush()
 
     log("Parsing links finished..!")
-    sys.stdout.flush()
     data = json.dumps(data, indent=4, sort_keys=True, ensure_ascii=False)
     return data
 
-def cleanupSold(soldBlob, linksBlob):
+
+def cleanup_sold(sold_blob, links_blob):
 
     sold_links = []
-    sold = json.loads(soldBlob)
+    sold = json.loads(sold_blob)
     for link in sold['links']:
         sold_links.append(link['link'])
 
-    links_data = json.loads(linksBlob)
+    links_data = json.loads(links_blob)
     count=0
     for link in links_data['links']:
         if link['link'] in sold_links:
             log("Deleting link: {}".format(link['link']))
             del links_data['links'][count]
         else:
-            count+=1
+            count += 1
     links_data = json.dumps(links_data, indent=4, sort_keys=True, ensure_ascii=False)
     return links_data

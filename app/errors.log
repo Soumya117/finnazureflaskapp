@@ -371,3 +371,209 @@
 2019-09-20 07:38:25,523 - file - DEBUG - Parsing links finished..!
 2019-09-20 07:38:25,537 - file - DEBUG - Writing blob: links.json
 2019-09-20 07:38:28,499 - file - DEBUG - Request finished for links at 2019-09-20 07:38:28.499111
+2019-10-15 08:14:55,241 - file - DEBUG - Request received for links at 2019-10-15 08:14:55.240518
+2019-10-15 08:14:55,255 - file - DEBUG - Reading blob: links.json
+2019-10-15 08:14:59,453 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160072881: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,457 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160054729: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,461 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=149211663: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,464 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=158935997: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,468 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=155775643: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,472 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=158394762: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,476 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160087270: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,480 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160524626: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,484 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=158291040: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,488 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160451776: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,492 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160523588: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,496 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160523595: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,500 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160522798: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,505 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=157029443: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,509 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160521415: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,513 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160468763: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,517 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160470041: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,522 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160498574: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,526 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160505183: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,531 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160467862: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,536 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160508420: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,547 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160510028: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,552 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=151771656: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,556 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160501144: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,560 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=157417791: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,565 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160507706: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,570 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160507099: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,575 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160505507: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,580 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160504910: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,584 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=158462934: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,588 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160503923: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,592 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160501320: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,597 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=155541776: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,601 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=155921630: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,605 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=158374536: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,610 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=155075550: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,614 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=156701293: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,618 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160495986: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,622 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160494346: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,627 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160146491: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,631 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160471179: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,635 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=152898491: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,639 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=154773648: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,644 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160310331: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,648 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=158788090: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:14:59,648 - file - DEBUG - Parsing links finished..!
+2019-10-15 08:14:59,747 - file - DEBUG - Writing blob: links.json
+2019-10-15 08:15:01,229 - file - DEBUG - Request finished for links at 2019-10-15 08:15:01.229691
+2019-10-15 08:18:04,523 - file - DEBUG - Request received for links at 2019-10-15 08:18:04.522694
+2019-10-15 08:18:04,524 - file - DEBUG - Reading blob: links.json
+2019-10-15 08:18:08,012 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=159895369: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,016 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160526803: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,020 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=149211663: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,024 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160054729: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,028 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=158935997: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,033 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=155775643: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,037 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=158394762: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,042 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160087270: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,047 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160524626: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,052 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=158291040: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,057 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160451776: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,063 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160523588: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,068 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160523595: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,072 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160522798: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,077 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=157029443: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,081 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160521415: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,085 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160468763: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,090 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160470041: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,094 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160498574: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,098 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160505183: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,103 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160467862: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,107 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160508420: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,117 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160510028: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,121 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=151771656: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,126 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160501144: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,131 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=157417791: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,136 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160507706: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,141 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160507099: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,145 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160505507: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,150 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160504910: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,154 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=158462934: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,159 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160503923: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,163 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160501320: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,167 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=155541776: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,171 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=155921630: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,176 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=158374536: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,180 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=155075550: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,184 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=156701293: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,189 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160495986: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,194 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160494346: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,199 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160146491: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,204 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160471179: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,208 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=152898491: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,212 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=154773648: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,216 - file - DEBUG - Bad URL /realestate/homes/ad.html?finnkode=160310331: module 'geocode' has no attribute 'getMarkers'
+2019-10-15 08:18:08,217 - file - DEBUG - Parsing links finished..!
+2019-10-15 08:18:08,313 - file - DEBUG - Writing blob: links.json
+2019-10-15 08:18:10,936 - file - DEBUG - Request finished for links at 2019-10-15 08:18:10.936754
+2019-10-15 08:20:27,485 - file - DEBUG - Request received for links at 2019-10-15 08:20:27.485391
+2019-10-15 08:20:27,486 - file - DEBUG - Reading blob: links.json
+2019-10-15 08:20:46,001 - file - DEBUG - Parsing links finished..!
+2019-10-15 08:20:46,103 - file - DEBUG - Writing blob: links.json
+2019-10-15 08:20:47,611 - file - DEBUG - Request finished for links at 2019-10-15 08:20:47.611769
+2019-10-15 08:20:53,995 - file - DEBUG - Request received for sold at 2019-10-15 08:20:53.995873
+2019-10-15 08:20:53,996 - file - DEBUG - Reading blob: links.json
+2019-10-15 08:20:55,176 - file - DEBUG - Reading blob: sold.json
+2019-10-15 08:20:56,326 - file - DEBUG - Number of links to scan: 902
+2019-10-15 08:28:03,358 - file - DEBUG - Parsing sold finished..!
+2019-10-15 08:28:03,463 - file - DEBUG - Writing blob: sold.json
+2019-10-15 08:28:04,961 - file - DEBUG - Request finished for sold at 2019-10-15 08:28:04.961071
+2019-10-15 08:28:11,011 - file - DEBUG - Request received for price at 2019-10-15 08:28:11.011089
+2019-10-15 08:28:11,011 - file - DEBUG - Reading blob: links.json
+2019-10-15 08:28:12,106 - file - DEBUG - Reading blob: pris.json
+2019-10-15 08:28:13,816 - file - DEBUG - Reading blob: multiplePris.json
+2019-10-15 08:28:14,389 - file - DEBUG - Number of links to scan: 902
+2019-10-15 08:34:55,782 - file - DEBUG - Parsing price finished..!
+2019-10-15 08:34:56,008 - file - DEBUG - Writing blob: multiplePris.json
+2019-10-15 08:34:56,920 - file - DEBUG - Writing blob: pris.json
+2019-10-15 08:34:58,536 - file - DEBUG - Request finished for price at 2019-10-15 08:34:58.535941
+2019-10-15 08:38:21,555 - file - DEBUG - Request received for visnings at 2019-10-15 08:38:21.555888
+2019-10-15 08:38:21,556 - file - DEBUG - Reading blob: links.json
+2019-10-15 08:38:22,925 - file - DEBUG - Reading blob: visning.json
+2019-10-15 08:38:24,657 - file - DEBUG - Number of links to scan: 902
+2019-10-15 08:45:14,436 - file - DEBUG - Parsing visnings finished..!
+2019-10-15 08:45:14,821 - file - DEBUG - Writing blob: visning.json
+2019-10-15 08:45:21,077 - file - DEBUG - Request finished for visnings at 2019-10-15 08:45:21.077156
+2019-10-15 08:49:48,131 - file - DEBUG - Request received for cleanup at 2019-10-15 08:49:48.131397
+2019-10-15 08:49:48,132 - file - DEBUG - Reading blob: links.json
+2019-10-15 08:49:49,713 - file - DEBUG - Reading blob: pris.json
+2019-10-15 08:49:51,138 - file - DEBUG - Reading blob: visning.json
+2019-10-15 08:49:52,998 - file - DEBUG - Reading blob: sold.json
+2019-10-15 08:49:54,724 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=154057036
+2019-10-15 08:49:54,732 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=159522519
+2019-10-15 08:49:54,736 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=159322913
+2019-10-15 08:49:54,740 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=159589920
+2019-10-15 08:49:54,742 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=159687894
+2019-10-15 08:49:54,744 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=159772483
+2019-10-15 08:49:54,745 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=159492284
+2019-10-15 08:49:54,750 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=159797414
+2019-10-15 08:49:54,758 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=157881242
+2019-10-15 08:49:54,761 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=159874945
+2019-10-15 08:49:54,765 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=159878679
+2019-10-15 08:49:54,810 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=160050618
+2019-10-15 08:49:54,833 - file - DEBUG - Deleting link: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,003 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,006 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,007 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,009 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,015 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,030 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,038 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,039 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,042 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,045 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,046 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,047 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,048 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,049 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,052 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,054 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,055 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,065 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,066 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,075 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,081 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,085 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,088 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,106 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,108 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,116 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,120 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,127 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,132 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,136 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,138 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,139 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,156 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,157 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,159 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,164 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,165 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,178 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,187 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,198 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,204 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,211 - file - DEBUG - Deleting link from pris: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,462 - file - DEBUG - Deleting link from visnings: https://www.finn.no/realestate/homes/ad.html?finnkode=154112678
+2019-10-15 08:49:55,467 - file - DEBUG - Deleting link from visnings: https://www.finn.no/realestate/homes/ad.html?finnkode=153735559
+2019-10-15 08:49:55,499 - file - DEBUG - Deleting link from visnings: https://www.finn.no/realestate/homes/ad.html?finnkode=154057036
+2019-10-15 08:49:55,544 - file - DEBUG - Deleting link from visnings: https://www.finn.no/realestate/homes/ad.html?finnkode=155098003
+2019-10-15 08:49:55,650 - file - DEBUG - Deleting link from visnings: https://www.finn.no/realestate/homes/ad.html?finnkode=157796568
+2019-10-15 08:49:55,696 - file - DEBUG - Deleting link from visnings: https://www.finn.no/realestate/homes/ad.html?finnkode=157881242
+2019-10-15 08:49:55,721 - file - DEBUG - Deleting link from visnings: https://www.finn.no/realestate/homes/ad.html?finnkode=159483438
+2019-10-15 08:49:55,725 - file - DEBUG - Deleting link from visnings: https://www.finn.no/realestate/homes/ad.html?finnkode=159572682
+2019-10-15 08:49:55,726 - file - DEBUG - Deleting link from visnings: https://www.finn.no/realestate/homes/ad.html?finnkode=159621595
+2019-10-15 08:49:55,745 - file - DEBUG - Deleting link from visnings: https://www.finn.no/realestate/homes/ad.html?finnkode=159522519
+2019-10-15 08:49:55,786 - file - DEBUG - Deleting link from visnings: https://www.finn.no/realestate/homes/ad.html?finnkode=159874945
+2019-10-15 08:49:55,835 - file - DEBUG - Deleting link from visnings: https://www.finn.no/realestate/homes/ad.html?finnkode=160050618
+2019-10-15 08:49:55,854 - file - DEBUG - Deleting link from visnings: https://www.finn.no/realestate/homes/ad.html?finnkode=158261120
+2019-10-15 08:49:55,879 - file - DEBUG - Deleting link from visnings: https://www.finn.no/realestate/homes/ad.html?finnkode=159878679
+2019-10-15 08:49:56,277 - file - DEBUG - Writing blob: links.json
+2019-10-15 08:49:57,830 - file - DEBUG - Writing blob: pris.json
+2019-10-15 08:50:01,158 - file - DEBUG - Writing blob: visning.json
+2019-10-15 08:50:05,207 - file - DEBUG - Request finished for cleanup at 2019-10-15 08:50:05.207107

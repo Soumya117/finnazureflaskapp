@@ -1,20 +1,9 @@
 from bs4 import BeautifulSoup
-from datetime import datetime, timedelta
+from datetime import datetime
 import json
-import sys
 import requests
 from logger import log
 
-# def addGeocodes():
-#     old_data = {}
-#     with open("json/sold.json") as input:
-#         old_data = json.load(input)
-#         for item in old_data['links']:
-#             item['geocode'] = {}
-#             item['geocode'] = geocode.getMarkers(item['address'])
-#
-#     with open("json/sold.json", "w") as output:
-#         json.dump(old_data, output)
 
 def add_sold(result, data):
     exists = False
@@ -35,11 +24,11 @@ def add_sold(result, data):
         new_item['area'] = result['area']
         data['links'].append(new_item)
 
-def parseSold(linksBlob, soldBlob):
-    data = json.loads(linksBlob)
-    soldData = json.loads(soldBlob)
+
+def parse_sold(links_blob, sold_blob):
+    data = json.loads(links_blob)
+    sold_data = json.loads(sold_blob)
     log("Number of links to scan: {}".format(len(data['links'])))
-    sys.stdout.flush()
     result = {}
     url = None
     for link in data['links']:
@@ -67,12 +56,10 @@ def parseSold(linksBlob, soldBlob):
                 result['geocode'] = link['geocode']
                 result['price'] = pris
                 result['area'] = link['area']
-                add_sold(result, soldData)
+                add_sold(result, sold_data)
         except Exception as e:
             log("Bad URL {url}: {e}".format(e=e, url=url))
-            sys.stdout.flush()
 
     log("Parsing sold finished..!")
-    sys.stdout.flush()
-    data = json.dumps(soldData, indent=4, sort_keys=True, ensure_ascii=False)
+    data = json.dumps(sold_data, indent=4, sort_keys=True, ensure_ascii=False)
     return data
