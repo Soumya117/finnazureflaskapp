@@ -1,9 +1,9 @@
-import requests
-from bs4 import BeautifulSoup
 from datetime import datetime
 import json
 from logger import log
 from helpers.util import link_exists
+from helpers.htmlutil import HtmlUtil
+from helpers.jsonutil import JsonUtil
 
 
 def add_pris(result, pris_data):
@@ -11,13 +11,11 @@ def add_pris(result, pris_data):
     if not exists:
         # new link
         current = datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')
-        price = {}
-        price['link'] = result['link']
+        price = dict()
         price['details'] = {}
-        price['details']['text'] = result['text']
-        price['details']['area'] = result['area']
-        price['details']['address'] = result['address']
-        price['details']['geocode'] = result['geocode']
+        output = price['details']
+        print("Adding pris...")
+        JsonUtil(price, result).prepare_json(output=price['details'])
 
         # now price list
         price['price_list'] = []
@@ -72,22 +70,8 @@ def parse_price(link_blob, price_blob):
         try:
             result = {}
             url = link['link']
-            html = requests.get(url)
-            soup = BeautifulSoup(html.text, 'lxml')
-            rows = soup.find_all('span')
-            i = 0
-            for row in rows:
-                i = i + 1
-                if "Prisantydning" in row:
-                    break
-            pris = rows[i].get_text().strip()
-            pris = pris.replace(u"\u00A0", " ")
-            result['link'] = url
-            result['text'] = link['text']
-            result['address'] = link['address']
-            result['geocode'] = link['geocode']
-            result['price'] = pris
-            result['area'] = link['area']
+            html = HtmlUtil(url)
+            JsonUtil(result, link).prepare_json(price=html.get_price())
             add_pris(result, price_blob)
         except Exception as e:
             log("Bad URL {url}: {e}".format(e=e, url=url))

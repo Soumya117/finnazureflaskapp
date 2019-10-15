@@ -1,8 +1,8 @@
-import requests
-from bs4 import BeautifulSoup
 import json
 from logger import log
 from helpers.util import link_exists
+from helpers.htmlutil import HtmlUtil
+from helpers.jsonutil import JsonUtil
 
 
 def add_visning(result, visning_data):
@@ -10,13 +10,9 @@ def add_visning(result, visning_data):
     if not exists:
         # new link
         visning = {}
-        visning['link'] = result['link']
         visning['details'] = {}
-        visning['details']['text'] = result['text']
+        JsonUtil(visning, result).prepare_json(output=visning['details'])
         visning['details']['price'] = result['price']
-        visning['details']['area'] = result['area']
-        visning['details']['address'] = result['address']
-        visning['details']['geocode'] = result['geocode']
 
         # now price list
         visning['visnings'] = []
@@ -59,27 +55,13 @@ def parse_visning(link_blob, visning_blob):
     for link in data['links']:
         try:
             url = link['link']
-            html = requests.get(url)
-            soup = BeautifulSoup(html.text, 'lxml')
-            pris_rows = soup.find_all('span')
-            i = 0
-            for row in pris_rows:
-                i = i + 1
-                if "Prisantydning" in row:
-                    break
-            pris = pris_rows[i].get_text().strip()
-            pris = pris.replace(u"\u00A0", " ")
-
+            html = HtmlUtil(url)
+            soup = html.get_soup()
             rows = soup.findAll("time")
             for row in rows:
                 time_txt = row.get_text().strip()
                 result['time'] = time_txt
-                result['link'] = url
-                result['text'] = link['text']
-                result['address'] = link['address']
-                result['geocode'] = link['geocode']
-                result['price'] = pris
-                result['area'] = link['area']
+                JsonUtil(result, link).prepare_json(price=html.get_price())
                 add_visning(result, visning_data)
         except Exception as e:
             log("Bad URL {url}: {e}".format(e=e, url=url))

@@ -1,10 +1,10 @@
 import json
-import requests
-from bs4 import BeautifulSoup
 from datetime import datetime
 import geocode as geocode
 from logger import log
 from helpers.util import link_exists
+from helpers.htmlutil import HtmlUtil
+from helpers.jsonutil import JsonUtil
 
 
 def add_title(result, data):
@@ -12,22 +12,16 @@ def add_title(result, data):
     exists = link_exists(result['link'], data)
     if not exists:
         new_item = {}
-        new_item['link'] = result['link']
-        new_item['address'] = result['address']
-        new_item['geocode'] = result['geocode']
-        new_item['area'] = result['area']
-        new_item['price'] = result['price']
+        JsonUtil(new_item, result).prepare_json(price=result['price'])
         new_item['text'] = result['text']
         new_item['time'] = current
-
         data['links'].append(new_item)
 
 
 def parse_title(json_data):
     data = json.loads(json_data)
     url = "https://www.finn.no/realestate/homes/search.html?location=0.20061"
-    html = requests.get(url)
-    soup = BeautifulSoup(html.text, "lxml")
+    soup = HtmlUtil(url, skip_prep_price=True).get_soup()
     try:
         all_div = soup.find_all("div", {"class": "ads__unit__content"})
     except Exception as e:
