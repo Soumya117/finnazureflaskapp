@@ -10,16 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0a25b0c-7ca3-4c4a-b359-5a8b69e214cb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/finnazureflaskapp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/finnazureflaskapp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/helpers/errors.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/blob.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/blob.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/errors.log" beforeDir="false" afterPath="$PROJECT_DIR$/app/errors.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/geocode.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/geocode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blob.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/blob.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/errors.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/geocode.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/geocode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/logger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/logging.conf" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/logging.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/parse_link.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/parse_link.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/parse_price.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/parse_price.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/parse_sold.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/parse_sold.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/parse_visning.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/parse_visning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/parse_link.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/parsers/parse_link.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/parse_price.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/parsers/parse_price.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/parse_sold.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/parsers/parse_sold.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/parse_visning.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/parsers/parse_visning.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,113 +32,146 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/requirements.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blob.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/blob.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#61#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="geocode.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/geocode.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="start.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/start.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="21" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="parse_sold.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/parse_sold.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="parse_visning.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/parse_visning.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="parse_price.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/parse_price.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="74" column="20" lean-forward="true" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="parse_link.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/parse_link.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.8372093">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="parse_link.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/parsers/parse_link.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="30">
+                  <caret line="2" column="14" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="14" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="parse_price.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/parsers/parse_price.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="30">
+                  <caret line="2" column="5" lean-forward="true" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="parse_sold.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/parsers/parse_sold.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="30">
+                  <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="parse_visning.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/parsers/parse_visning.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="105">
+                  <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+                  <folding>
+                    <element signature="e#0#11#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="blob.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/helpers/blob.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="75">
+                  <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+                  <folding>
+                    <element signature="e#0#61#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="start.sh" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/start.sh">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="45">
+                  <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="logger.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/helpers/logger.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="90">
+                  <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+                  <folding>
+                    <element signature="e#0#22#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="errors.log" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/helpers/errors.log">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/main.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="60">
+                  <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="geocode.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/helpers/geocode.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="30">
+                  <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="htmlutil.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/helpers/htmlutil.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="135">
+                  <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+                  <folding>
+                    <element signature="e#0#15#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="jsonutil.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/helpers/jsonutil.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret column="2" selection-start-column="2" selection-end-column="2" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>parse_sold</find>
-      <find>flush</find>
       <find>setup_metrics</find>
+      <find>flush</find>
+      <find>html</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -146,13 +181,27 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/requirements.txt" />
+        <option value="$PROJECT_DIR$/app/geocode.py" />
+        <option value="$PROJECT_DIR$/app/blob.py" />
+        <option value="$PROJECT_DIR$/app/helpers/preparehtml.py" />
+        <option value="$PROJECT_DIR$/app/helpers/util.py" />
+        <option value="$PROJECT_DIR$/start.sh" />
+        <option value="$PROJECT_DIR$/app/helpers/htmlutil.py" />
         <option value="$PROJECT_DIR$/app/parse_sold.py" />
-        <option value="$PROJECT_DIR$/app/parse_visning.py" />
-        <option value="$PROJECT_DIR$/app/main.py" />
         <option value="$PROJECT_DIR$/app/parse_link.py" />
         <option value="$PROJECT_DIR$/app/parse_price.py" />
-        <option value="$PROJECT_DIR$/app/blob.py" />
-        <option value="$PROJECT_DIR$/app/geocode.py" />
+        <option value="$PROJECT_DIR$/app/helpers/jsonutil.py" />
+        <option value="$PROJECT_DIR$/app/parse_visning.py" />
+        <option value="$PROJECT_DIR$/app/logger.py" />
+        <option value="$PROJECT_DIR$/app/errors.log" />
+        <option value="$PROJECT_DIR$/app/main.py" />
+        <option value="$PROJECT_DIR$/app/parsers/parse_link.py" />
+        <option value="$PROJECT_DIR$/app/parsers/parse_price.py" />
+        <option value="$PROJECT_DIR$/app/parsers/parse_sold.py" />
+        <option value="$PROJECT_DIR$/app/parsers/parse_visning.py" />
+        <option value="$PROJECT_DIR$/app/helpers/logger.py" />
+        <option value="$PROJECT_DIR$/app/helpers/geocode.py" />
+        <option value="$PROJECT_DIR$/app/helpers/blob.py" />
       </list>
     </option>
   </component>
@@ -188,6 +237,18 @@
               <item name="finnazureflaskapp" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="finnazureflaskapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="finnazureflaskapp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="helpers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="finnazureflaskapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="finnazureflaskapp" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="parsers" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -198,6 +259,12 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/parsers" />
+      <recent name="$PROJECT_DIR$/app/helpers" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -224,22 +291,23 @@
       <workItem from="1569172347936" duration="1109000" />
       <workItem from="1569704344797" duration="35000" />
       <workItem from="1570354033203" duration="36000" />
-      <workItem from="1571122041630" duration="4796000" />
+      <workItem from="1571122041630" duration="22545000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5976000" />
+    <option name="totallyTimeSpent" value="23725000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13793103" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19122256" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="CMake" order="7" weight="0.32843137" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="CMake" order="10" weight="0.32843137" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.29180327" />
@@ -254,17 +322,17 @@
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14184953" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.088557996" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.29180327" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.29180327" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -307,10 +375,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/parse_visning.py">
+    <entry file="file://$PROJECT_DIR$/app/helpers/preparehtml.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/parseDate.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/htmlutil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -319,65 +400,83 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/start.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="21" />
+        <state relative-caret-position="45">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/parse_sold.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/parse_link.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/parse_price.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="74" column="20" lean-forward="true" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/helpers/errors.log">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        <state relative-caret-position="60">
+          <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/parsers/parse_link.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/parsers/parse_price.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="5" lean-forward="true" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/jsonutil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/parsers/parse_sold.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/parsers/parse_visning.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/blob.py">
+    <entry file="file://$PROJECT_DIR$/app/helpers/logger.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        <state relative-caret-position="90">
+          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/geocode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/blob.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
           <folding>
             <element signature="e#0#61#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/geocode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
         </state>
       </provider>
     </entry>

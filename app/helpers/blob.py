@@ -1,5 +1,5 @@
 from azure.storage.blob import BlockBlobService, PublicAccess
-from logger import log
+from helpers.logger import log
 
 container_name ='finnblob'
 account_name = 'account_name'

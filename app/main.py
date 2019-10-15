@@ -1,11 +1,11 @@
-import parse_link as link
-import parse_price as price
-import parse_sold as sold
-import parse_visning as visning
-import blob as blob
+import parsers.parse_link as link
+import parsers.parse_price as price
+import parsers.parse_sold as sold
+import parsers.parse_visning as visning
+import helpers.blob as blob
 import datetime
 from flask import Flask
-from logger import log
+from helpers.logger import log
 from helpers.middleware import setup_metrics
 import sys
 

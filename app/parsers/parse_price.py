@@ -1,6 +1,6 @@
 from datetime import datetime
 import json
-from logger import log
+from helpers.logger import log
 from helpers.util import link_exists
 from helpers.htmlutil import HtmlUtil
 from helpers.jsonutil import JsonUtil

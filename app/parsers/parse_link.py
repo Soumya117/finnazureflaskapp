@@ -1,7 +1,7 @@
 import json
 from datetime import datetime
-import geocode as geocode
-from logger import log
+import helpers.geocode as geocode
+from helpers.logger import log
 from helpers.util import link_exists
 from helpers.htmlutil import HtmlUtil
 from helpers.jsonutil import JsonUtil
