@@ -3,14 +3,11 @@ from datetime import datetime
 import json
 import requests
 from logger import log
+from helpers.util import link_exists
 
 
 def add_sold(result, data):
-    exists = False
-    for item in data['links']:
-        if result['link'] in item['link']:
-            exists = True
-            break
+    exists = link_exists(result['link'], data)
     if not exists:
         current = datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')
         new_item = {}

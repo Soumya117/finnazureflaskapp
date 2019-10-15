@@ -2,16 +2,12 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
 import json
-import sys
 from logger import log
+from helpers.util import link_exists
 
 
 def add_pris(result, pris_data):
-    exists = False
-    for price in pris_data['links']:
-        if result['link'] in price['link']:
-            exists = True
-
+    exists = link_exists(result['link'], pris_data)
     if not exists:
         # new link
         current = datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')

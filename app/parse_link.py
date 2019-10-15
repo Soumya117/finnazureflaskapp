@@ -1,19 +1,15 @@
-import sys
 import json
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
 import geocode as geocode
 from logger import log
+from helpers.util import link_exists
 
 
 def add_title(result, data):
     current = datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')
-    exists = False
-    for item in data['links']:
-        if result['link'] in item['link']:
-            exists = True
-            break
+    exists = link_exists(result['link'], data)
     if not exists:
         new_item = {}
         new_item['link'] = result['link']

@@ -2,14 +2,11 @@ import requests
 from bs4 import BeautifulSoup
 import json
 from logger import log
+from helpers.util import link_exists
 
 
 def add_visning(result, visning_data):
-    exists = False
-    for item in visning_data['links']:
-        if result['link'] in item['link']:
-            exists = True
-
+    exists = link_exists(result['link'], visning_data)
     if not exists:
         # new link
         visning = {}
